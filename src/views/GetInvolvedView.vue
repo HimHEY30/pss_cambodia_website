@@ -80,34 +80,6 @@
         </p>
       </div>
     </section>
-
-    <section class="reveal py-24 bg-slate-50 border-y border-slate-100 px-6">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-extrabold text-slate-900 mb-12 text-center">Other Ways to Help</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div v-for="way in otherWays" :key="way.title" class="bg-white p-10 rounded-[2.5rem] shadow-sm flex flex-col h-full">
-            <h3 class="text-xl font-bold mb-4 text-[#F6A240]">{{ way.title }}</h3>
-            <p class="text-slate-500 text-sm leading-relaxed mb-8 flex-1">{{ way.desc }}</p>
-            <button class="w-full py-3 border-2 border-slate-100 rounded-xl font-bold text-slate-600 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all">
-              Learn More
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="reveal py-24 px-6">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-extrabold text-slate-900 mb-6">Stay updated on our progress</h2>
-        <p class="text-slate-500 mb-10">Sign up for our quarterly newsletter to see the direct impact of your support.</p>
-        <div class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-          <input type="email" placeholder="Your email address" class="flex-1 px-6 py-4 rounded-xl bg-slate-100 border-none focus:ring-2 focus:ring-[#00AEEF] outline-none transition-all" />
-          <button class="bg-[#00AEEF] text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:shadow-lg transition-all">
-            Subscribe
-          </button>
-        </div>
-      </div>
-    </section>
     <Footer></Footer>
   </div>
 </template>

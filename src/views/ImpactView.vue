@@ -120,20 +120,6 @@
       </div>
     </section>
 
-    <section class="reveal py-24 px-6">
-      <div class="max-w-5xl mx-auto bg-slate-900 p-12 lg:p-20 rounded-[3rem] text-white text-center relative overflow-hidden shadow-2xl">
-        <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-[#F6A240] opacity-20 rounded-full blur-3xl"></div>
-        <h2 class="text-4xl lg:text-5xl font-extrabold mb-8 relative z-10">Be Part of the Impact</h2>
-        <div class="flex flex-wrap justify-center gap-6 relative z-10">
-          <button class="bg-[#F6A240] text-white px-10 py-4 rounded-md font-black uppercase tracking-widest hover:bg-[#00AEEF] transition-all">
-            Support Our Mission
-          </button>
-          <button class="border border-white/20 hover:bg-white/10 text-white px-10 py-4 rounded-md font-black uppercase tracking-widest transition-all">
-            Read More Stories
-          </button>
-        </div>
-      </div>
-    </section>
     <Footer></Footer>
   </div>
 </template>
