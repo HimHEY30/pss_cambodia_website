@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between text-white px-4 sm:px-8 md:px-24 py-3 gap-4">
+    <nav class="flex w-full items-center justify-between text-white px-4 sm:px-8 md:px-24 py-3 gap-4">
         <!-- Logo -->
         <div class="flex items-center gap-3 flex-shrink-0">
             <img src="@/assets/images/pss_logo.png" alt="PSS Logo" class="w-10 h-10 sm:w-12 sm:h-12">

@@ -73,11 +73,8 @@
         <div>
           <h3 class="text-lg font-semibold mb-6 border-b border-white/20 pb-2 inline-block">{{ t('common.footer.legal') }}</h3>
           <ul class="space-y-3">
-            <li v-for="legal in legalLinks" :key="legal.name">
-              <a :href="legal.href" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
-                {{ legal.name }}
-              </a>
-            </li>
+            <li><a href="#">{{ t('common.footer.terms_and_conditions') }}</a></li>
+            <li><a href="#">{{ t('common.footer.privacy_policy') }}</a></li>
           </ul>
         </div>
 
@@ -107,12 +104,6 @@ import {
 } from 'lucide-vue-next';
 
 
-
-
-const legalLinks = [
-  { name: t('common.footer.terms_and_conditions'), href: '#' },
-  { name: t('common.footer.privacy_policy'), href: '#' },
-];
 
 // Dynamic Year Logic
 const currentYear = computed(() => new Date().getFullYear());

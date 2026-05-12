@@ -80,5 +80,166 @@
       "s4_women": "Women",
       "s4_source": "Source: MoEYS 2023-2024"
     }
+  },
+  "about": {
+    "hero":{
+      "eyes_catching_title": "About PSS Cambodia",
+      "title_line_01": "Promoting Skills for Success,",
+      "title_line_02": "Cambodia",
+      "subtitle": "PSS is the local operational partner of Passerelles Numériques Cambodia (PNC), which began in 2005 in Phnom Penh and offered a two-year, full-time IT training program for underprivileged youth. The program combines software development with soft skills, English, wellbeing activities, and strong employability support. PSS also provides technical support for NomadLab, an open-source solution for ICT infrastructure used as an educational tool for youth clubs, students, teachers, and prisoners in Cambodia to help expand digital access and build digital skills.",
+      "cta": "Explore our impact"
+    },
+    "mission_vision": {
+      "eye_catching_title": "Our Mission & Vision",
+      "mission_title": "Our Mission",
+      "mission_desc": "To provide high-quality IT training, professional skills, and employment support to underprivileged Cambodian youth, enabling them to access quality employment and build sustainable livelihoods.",
+      "mission_point1": "Encourage and motivate youth to continue their education",
+      "mission_point2": "Provide opportunities for youth to pursue higher education and specialization in Information Technology (IT)",
+      "mission_point3": "Contribute to the Royal Government’s efforts to build and develop human capital",
+      "mission_point4": "Support the delivery of skills training and foreign language training",
+      "vision_title": "Our Vision",
+      "vision_desc": "PSS envisions a Cambodia where all youth, regardless of background, have access to quality education and the opportunities to fulfil their potential in the digital economy."
+    },
+    "director_message": {
+      "eye_catching_title": "Message from Our Director",
+      "message": "We don’t just teach code; we foster a sense of belonging. At PSS, responsibility and solidarity are the tools our youth use to build sustainable livelihoods.",
+      "signature": "Director of PSS Cambodia",
+      "director_name": "Mr. Hang Hybunna"
+    },
+    "core_values": {
+      "eye_catching_title": "We strive to employ and pass on these values to our beneficiaries",
+      "title": "Our Core Values",
+      "value1_title": "Trust",
+      "value1_desc": "We build trust through open communication and reliability, ensuring that our students and stakeholders feel secure in their relationships with us",
+      "value2_title": "Responsibility",
+      "value2_desc": "We instill a sense of responsibility in our students, encouraging them to take ownership of their learning and future, while also being accountable to their community",
+      "value3_title": "Solidarity",
+      "value3_desc": "We promote solidarity by fostering a sense of belonging and support among our students, encouraging them to uplift one another and collaborate towards common goals",
+      "value4_title": "Respect",
+      "value4_desc": "We create an environment of mutual respect, valuing each individual's unique background and contributions, which enhances the learning experience and community spirit."
+    },
+    "journey": {
+      "title": "Our Evolution Since 2005",
+      "year1": "2005",
+      "event1_title": "Foundation and First Program Launch",
+      "event1": "Center for Information System Training (CIST) and Passerelles Numériques Cambodia founded; launches its first 2-year IT training program with 25 students.",
+      "year2": "2009–2014",
+      "event2_title": "Expansion of Training Programs",
+      "event2": "Runs a 6-month Data Management Program, reaching more than 400 graduates, who pursued further studies and work with Digital Divide Data.",
+      "year3": "2015",
+      "event3_title": "Launch of Khmer Typing Tool",
+      "event3": "Khmer Typing Tool (National Digital Learning Platform): A proven, long-running national digital product supporting Khmer literacy and digital skills",
+      "event3_link": "https://khmer-typing.passerellesnumeriques.org",
+      "year4": "2019-2025",
+      "event4_title": "Introduction of NomadLab",
+      "event4": "NomadLab using tablets and computer-tracking & deployment management platform: An open-source solution for ICT infrastructure used as an educational tool for youth clubs, students, teachers, and prisoners in Cambodia to help expand digital access and build digital skills.",
+      "year5": "2024-2025",
+      "event5_title": "Skill for Development Program",
+      "event5": "Skill for Development Program (SDP), Education in Prison which is an offline e-learning platform to support prisoners to access and build digital skills.",
+      "year6": "2025",
+      "event6_title": "PSS Cambodia Becomes an Independent Local NGO",
+      "event6": "PSS Cambodia becomes an independent local NGO, registered with the Ministry of Social Affairs, Labour and Employment."
+    }
+  },
+  "ourTeam": {
+    "hero": {
+      "eye_catching_title": "Leadership & Governance",
+      "title_line1": "The People",
+      "title_line2": "Behind PSS.",
+      "subtitle": "Our team combines decades of experience in education, technology, and social impact to ensure every student has the support they need to succeed."
+    },
+    "executive_team": {
+      "title": "Meet Our Executive Team",
+      "director_name": "Mr. Hang Hybunna",
+      "director_role": "Director",
+      "ero_director_name": "Ms. Leng Sreynich",
+      "ero_director_role": "Director of External Relation",
+      "admin_director_name": "Mrs. Sok Sreysros",
+      "admin_director_role": "Director of Administration and Finance",
+      "selection_director_name": "Mr. Seang Thaina",
+      "selection_director_role": "Director of Student Selection and Career Guidance",
+      "training_director_name": "Ms. Hok Lihuy",
+      "training_director_role": "Director of Training",
+      "edu_director_name": "Mr. Hul Sim",
+      "edu_director_role": "Director of Education"
+    },
+    "board": {
+      "title": "Our Board of Directors",
+      "desc": "Providing strategic oversight and ensuring the long-term sustainability of our mission.",
+      "member1_name": "Mr. Phou Sophorn",
+      "member1_role": "Chairman",
+      "member2_name": "Mr. Oun Suosdey",
+      "member2_role": "Member",
+      "member3_name": "Mrs. Va Vannakserreyraksmey",
+      "member3_role": "Member",
+      "member4_name": "Mrs. Heang Oumoy",
+      "member4_role": "Member",
+      "member5_name": "Mr. Thun Chantha",
+      "member5_role": "Member"
+    }
+  },
+  "programs": {
+    "hero": {
+      "eye_catching_title": "Our Curriculum",
+      "title_line1": "2-Year",
+      "title_line2": "IT Training Program",
+      "subtitle": "Built on 20 years of PNC experience, the program is aligned with market needs and combines IT training with professional development, soft skills, English, wellbeing activities, and strong employability support. It helps motivated students progress from zero to job-ready."
+    },
+    "majors": {
+      "major1_title": "Web Programming",
+      "major1_desc": "The graduate will have strong front- and back-end skills, database management, and deployment capabilities. They are ready to step into roles as Web Programmers, Quality Assurance, Junior Data Analytics, database administrator etc.",
+      "major1_career_path": "Career Pathways",
+      "major1_career1": "Web Programmers",
+      "major1_career2": "Quality Assurance",
+      "major1_career3": "Junior Data Analytics",
+      "major1_career4": "Database Administrator",
+      "major2_title": "System, Network Administration and Cybersecurity",
+      "major2_desc": "The graduates will possess strong technical and hands-on skills in IT support, networking, system administration, and cybersecurity. Their potential job roles include System Administrator, Network Engineer, Cloud Administrator, Cybersecurity Analyst,  DevOps engineer, IT Support Specialist etc. ",
+      "major2_career_path": "Career Pathways",
+      "major2_career1": "System Administrator",
+      "major2_career2": "Network Engineer",
+      "major2_career3": "Cloud Administrator",
+      "major2_career4": "Cybersecurity Analyst",
+      "major2_career5": "DevOps engineer",
+      "major2_career6": "IT Support Specialist"
+    },
+    "subject_support": {
+      "english_pl": "English & Professional Readiness",
+      "english_pl_desc": "Technical skills open the door, but professional skills build the career. We integrate language training and soft-skill workshops daily to ensure students are ready for international workplace standards.",
+      "english_bage_title": "English Immersion",
+      "english_bage_desc": "Business communication and technical English for IT documentation.",
+      "pl_bage_title": "Soft Skills",
+      "pl_bage_desc": "Critical thinking, problem-solving, and emotional intelligence.",
+      "metoring_title": "Professional Mentoring",
+      "metoring_desc": "Every student is paired with a mentor, providing guidance on career paths, interview preparation, and workplace etiquette.", 
+      "metoring_highlight": "Industry Network",
+      "employment_title": "Employability Support",
+      "employment_desc": "From CV workshops to mock interviews, our team provides ongoing support until the student secures their first quality job."
+    },
+    "selection":{
+      "process_title": "Selection Process",
+      "process_desc": "Every year from Jan to Oct, we select 75-100 youth from disadvantaged backgrounds who are motivated to bridge the digital gap.",
+      "target_value": "50%",
+      "target_label": "Target for Female Students in Tech",
+      "step1": "Outreach across Cambodia",
+      "step2": "Written Examination",
+      "step3": "Individual Interviews",
+      "step4": "Social Background Assessment"
+    },
+    "life_support": {
+      "title": "Life Skills & Wellbeing",
+      "desc": "A holistic approach to education",
+      "extra_course_title": "Clubs & Extracurriculars",
+      "extra_course_desc": "Personal development through Music, Sports, and specialized clubs like Photography and Reading.",
+      "subsistence_title": "Full Subsistence",
+      "subsistence_desc": "Secure accommodation, healthy meals, and a monthly allowance to cover all student needs.",
+      "health_title": "Health & Support",
+      "health_desc": "Coverage for health costs and socio-educational guidance from our team of dedicated educators."
+    },
+    "join_us": {
+      "title": "Join our community",
+      "desc": "Whether as a student, mentor, or partner, there's a place for you.",
+      "cta": "Contact us"
+    }
   }
 }
