@@ -145,7 +145,7 @@
             <div class="flex items-center gap-6">
               <div
                 class="w-24 h-24 rounded-2xl bg-sky-50 flex items-center justify-center flex-shrink-0 group-hover:bg-[#00AEEF] transition-colors">
-                <img :src="BUNNA" class="rounded-xl w-20 h-20" />
+                <img :src="SOURSDEY" class="rounded-xl w-20 h-20" />
               </div>
               <div>
                 <h4 class="font-bold text-slate-900 text-xl leading-tight">{{ t("ourTeam.board.member1_name") }}</h4>
@@ -159,7 +159,7 @@
             <div class="flex items-center gap-6">
               <div
                 class="w-24 h-24 rounded-2xl bg-sky-50 flex items-center justify-center flex-shrink-0 group-hover:bg-[#00AEEF] transition-colors">
-                <img :src="BUNNA" class="rounded-xl w-20 h-20" />
+                <img :src="SOURSDEY" class="rounded-xl w-20 h-20" />
               </div>
               <div>
                 <h4 class="font-bold text-slate-900 text-xl leading-tight">{{ t("ourTeam.board.member2_name") }}</h4>
@@ -173,7 +173,7 @@
             <div class="flex items-center gap-6">
               <div
                 class="w-24 h-24 rounded-2xl bg-sky-50 flex items-center justify-center flex-shrink-0 group-hover:bg-[#00AEEF] transition-colors">
-                <img :src="BUNNA" class="rounded-xl w-20 h-20" />
+                <img :src="SOURSDEY" class="rounded-xl w-20 h-20" />
               </div>
               <div>
                 <h4 class="font-bold text-slate-900 text-xl leading-tight">{{ t("ourTeam.board.member3_name") }}</h4>
@@ -187,7 +187,7 @@
             <div class="flex items-center gap-6">
               <div
                 class="w-24 h-24 rounded-2xl bg-sky-50 flex items-center justify-center flex-shrink-0 group-hover:bg-[#00AEEF] transition-colors">
-                <img :src="BUNNA" class="rounded-xl w-20 h-20" />
+                <img :src="SOURSDEY" class="rounded-xl w-20 h-20" />
               </div>
               <div>
                 <h4 class="font-bold text-slate-900 text-xl leading-tight">{{ t("ourTeam.board.member4_name") }}</h4>
@@ -201,7 +201,7 @@
             <div class="flex items-center gap-6">
               <div
                 class="w-24 h-24 rounded-2xl bg-sky-50 flex items-center justify-center flex-shrink-0 group-hover:bg-[#00AEEF] transition-colors">
-                <img :src="BUNNA" class="rounded-xl w-20 h-20" />
+                <img :src="SOURSDEY" class="rounded-xl w-20 h-20" />
               </div>
               <div>
                 <h4 class="font-bold text-slate-900 text-xl leading-tight">{{ t("ourTeam.board.member5_name") }}</h4>
@@ -224,12 +224,13 @@ import { useI18n } from 'vue-i18n';
 
 import Footer from '@/components/common/Footer.vue';
 
-import BUNNA from '@/assets/images/staffs/BUNNA.jpg';
-import THAINA from '@/assets/images/staffs/THAINA.jpg';
-import LIHUY from '@/assets/images/staffs/LIHUY.jpg';
-import SREYNICH from '@/assets/images/staffs/SREYNICH.jpg';
-import SROS from '@/assets/images/staffs/SROS.avif';
-import SIM from '@/assets/images/staffs/SIM.jpg';
+import BUNNA from "@/assets/images/staffs/BUNNA.png";
+import SROS from "@/assets/images/staffs/SROS.avif";
+import SIM from "@/assets/images/staffs/SIM.png";
+import SREYNICH from "@/assets/images/staffs/SREYNICH.png";
+import LIHUY from "@/assets/images/staffs/LIHUY.png";
+import THAINA from "@/assets/images/staffs/THAINA.png";
+import SOURSDEY from "@/assets/images/staffs/SOURSDEY.jpg";
 
 const { t } = useI18n();
 onMounted(() => {

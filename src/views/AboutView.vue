@@ -128,7 +128,7 @@
           <div class="flex items-center gap-6">
             <div class="relative">
               <div class="w-20 h-20 rounded-full overflow-hidden ring-4 ring-sky-100 shadow-lg">
-                <img src="@/assets/images/staffs/BUNNA.jpg" alt="Director" />
+                <img src="@/assets/images/staffs/BUNNA - SQAURE.png" alt="Director" />
               </div>
               <div
                 class="absolute -bottom-2 -right-2 bg-orange-400 w-8 h-8 rounded-full border-4 border-white flex items-center justify-center">
