@@ -41,13 +41,13 @@
         <div class="lg:w-1/2 flex flex-col items-center">
           <div class="bg-white p-6 rounded-[2rem] shadow-2xl relative group transition-transform hover:scale-105 duration-500">
             <div class="w-64 h-64 bg-slate-100 rounded-xl flex items-center justify-center border-2 border-dashed border-slate-300">
-              <img src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=PSS_CAMBODIA_DONATION" alt="KHQR Code" class="w-full h-full opacity-80" />
+              <img src="@/assets/images/QR.png" alt="KHQR Code" class="w-full h-full opacity-80" />
             </div>
             <div class="mt-4 flex justify-center">
-              <span class="text-slate-900 font-black tracking-tighter text-xl">KH<span class="text-red-600">QR</span></span>
+              <span class="text-slate-900 font-black tracking-tighter text-xl">PSS Cambodia KH<span class="text-red-600">QR</span></span>
             </div>
           </div>
-          <p class="text-slate-500 text-xs mt-6 uppercase font-bold tracking-widest">Professional Skills Society (Cambodia)</p>
+          <p class="text-slate-500 text-xs mt-6 uppercase font-bold tracking-widest">PSS Cambodia Bank Account</p>
         </div>
       </div>
     </section>

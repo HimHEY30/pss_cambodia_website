@@ -31,42 +31,7 @@
       </div>
     </section>
 
-    <section class="reveal py-24 bg-slate-50 border-y border-slate-100 px-6">
-      <div class="max-w-7xl mx-auto">
-        <div class="mb-16">
-          <h2 class="text-3xl font-extrabold text-slate-900 mb-2">What success:</h2>
-          <p class="text-sky-500 font-bold uppercase tracking-widest text-sm">Built on 20 years of PNC experience</p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-sky-300 transition-all group">
-            <div class="text-5xl font-black text-[#00AEEF] mb-4 group-hover:scale-110 transition-transform origin-left">1,800+</div>
-            <p class="text-slate-600 font-bold leading-tight uppercase text-xs tracking-widest">Graduates since 2005</p>
-          </div>
-          <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-sky-300 transition-all group">
-            <div class="text-5xl font-black text-[#00AEEF] mb-4 group-hover:scale-110 transition-transform origin-left">98%</div>
-            <p class="text-slate-600 font-bold leading-tight uppercase text-xs tracking-widest">Graduates work in the IT sector</p>
-          </div>
-          <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-sky-300 transition-all group">
-            <div class="text-5xl font-black text-[#F6A240] mb-4 group-hover:scale-110 transition-transform origin-left">92%+</div>
-            <p class="text-slate-600 font-bold leading-tight uppercase text-xs tracking-widest">Find a job within 2 months of graduation</p>
-          </div>
-          <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-sky-300 transition-all group">
-            <div class="text-5xl font-black text-[#00AEEF] mb-4 group-hover:scale-110 transition-transform origin-left">52%</div>
-            <p class="text-slate-600 font-bold leading-tight uppercase text-xs tracking-widest">Current students are young women</p>
-          </div>
-        </div>
-
-        <div class="mt-12 bg-white p-8 rounded-[2.5rem] border border-sky-100 flex flex-col md:flex-row items-center gap-8">
-          <div class="w-16 h-16 bg-sky-50 rounded-2xl flex items-center justify-center flex-shrink-0">
-            <svg class="w-8 h-8 text-[#00AEEF]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-          </div>
-          <p class="text-lg text-slate-700 leading-relaxed">
-            With complete support for accommodation, food, equipment, and fully covered health costs, students can focus on learning and building a stable future.
-          </p>
-        </div>
-      </div>
-    </section>
+    <HomeImpact></HomeImpact>
 
     <section class="py-24 px-6 max-w-7xl mx-auto">
       <div class="grid lg:grid-cols-2 gap-16 items-center mb-24">
@@ -126,6 +91,7 @@
 
 <script setup>
 import Footer from '@/components/common/Footer.vue';
+import HomeImpact from '@/components/home/HomeImpact.vue';
 import { onMounted } from 'vue';
 
 const alumni = [
