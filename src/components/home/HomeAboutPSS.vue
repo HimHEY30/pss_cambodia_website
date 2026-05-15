@@ -3,7 +3,7 @@
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="z-10 animate-fade-in-up">
           <span class="text-sky-500 font-bold uppercase tracking-wider text-sm mb-4 block animate-slide-in-left">{{ t('about.hero.eyes_catching_title') }}</span>
-          <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-8 text-[#00AEEF]">
+          <h1 class="text-4xl lg:text-6xl font-extrabold leading-tight mb-8 text-[#00AEEF]">
             {{ t('about.hero.title_line_01') }} <br/>
             <span class="text-slate-900">{{ t('about.hero.title_line_02') }}</span>
           </h1>

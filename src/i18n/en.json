@@ -1,8 +1,8 @@
 {
   "common": {
     "pss": {
-      "short_name": "PSS Cambodia",
-      "name": "Promoting Skills for Success",
+      "short_name": "Promoting Skills for Success",
+      "name": "A Gateway for Life",
       "description": "Empowering Youth through Digital Skills and Education"
     },
     "navbar": {
@@ -20,16 +20,16 @@
       "contact": {
         "title": "Contact Information",
         "address_label": "Our Address:",
-        "address": "BP 511, Phum Tropeang Chhuk (Borey Sorla) Sangtak, Street 371, Phnom Penh, Cambodia",
+        "address": "BP511 St. 371, Orkide village, Sangkat Obaek K’am, Khan Sen Sok, Phnom Penh, CAMBODIA.",
         "phone_label": "Phone:",
         "phone": "023 99 55 00",
         "email_label": "Email:",
         "email": "psscambodia.com"
       },
-      "legal": "Legal",
+      "legal": "Documents",
       "terms_and_conditions": "Terms & Conditions",
       "privacy_policy": "Privacy Policy",
-      "copy": "© 2026 Promoting Skills for Success Cambodia. All rights reserved."
+      "copy": "Promoting Skills for Success Cambodia. All rights reserved."
     }
   },
   "home": {
@@ -39,19 +39,19 @@
       "button": "Donate Now"
     },
     "about": {
-      "eye_catching_title": "About PSS Cambodia",
+      "eye_catching_title": "About Us",
       "title": "Fighting Poverty through Digital Education",
       "subtitle": "PSS is the local operational partner of Passerelles Numériques Cambodia (PNC), which began in 2005 in Phnom Penh and offered a two-year, full-time IT training program for underprivileged youth. The program combines software development with soft skills, English, wellbeing activities, and strong employability support. PSS also provides technical support for NomadLab, an open-source solution for ICT infrastructure used as an educational tool for youth clubs, students, teachers, and prisoners in Cambodia to help expand digital access and build digital skills."
     },
     "partner": {
-      "title": "Our Trusted Partners",
+      "title": "Our Partners",
       "subtitle": "We are proud to collaborate with a diverse range of partners who share our mission of empowering youth through skills and digital education."
     },
     "impact": {
       "eye_catching_title": "Our Impact",
       "title_line1": "Real Lives,",
       "title_line2": "Real Change",
-      "description": "At PSS in partnership with PSS and others, we believe real impact is measured in real outcomes, skills gained, futures transformed, and communities strengthened. Our program empowers young people especially those from rural and disadvantaged backgrounds with the technical expertise and professional support needed to thrive in the digital economy.",
+      "description": "At PSS in partnership with PNC and others, we believe real impact is measured in real outcomes, skills gained, futures transformed, and communities strengthened. Our program empowers young people especially those from rural and disadvantaged backgrounds with the technical expertise and professional support needed to thrive in the digital economy.",
       "quote": "\"With complete support for accommodation, food, equipment, and fully covered health costs, students can focus on learning and building a stable future.\"",
       "stat1_label": "Graduates",
       "stat1_value": "1800",
@@ -60,25 +60,25 @@
       "stat2_value": "98",
       "stat2_sub": "of graduates work in the IT sector",
       "stat3_label": "Placement Rate",
-      "stat3_value": "92",
-      "stat3_sub": "plus find a job within 2 months of graduation ",
-      "stat4_label": "Young Women",
-      "stat4_value": "52",
-      "stat4_sub": "of our current students are young women, helping bridge the gender gap in tech"
+      "stat3_value": "93",
+      "stat3_sub": "find a job within 2 months of graduation ",
+      "stat4_label": "Gender and Inclusion",
+      "stat4_value": "50",
+      "stat4_sub": "At least 50% of our students are girls. All of them are underprivileged youths including ethnic minorities"
     },
     "context": {
       "eye_catching_title": "Cambodia Context",
-      "title": "The Challenges Our Youth Face.",
+      "title": "Challenges Youth Face",
       "s1_value": "75%",
       "s1_label": "of Cambodia’s population lives in rural and remote areas",
-      "s1_source": "MoP 2025",
+      "s1_source": "Source: MoP 2025",
       "s2_value": "45%",
       "s2_label": "of the population lives on less than USD 3 per day",
       "s2_source": "Source: UNDP 2023",
       "s3_value": "17.9%",
       "s3_label": "higher education enrollment rate in Cambodia",
       "s3_source": "Source: MoEYS 2023-2024",
-      "s4_eyes_catching_title": "Critical Gap Detected",
+      "s4_eyes_catching_title": "Critical Gap",
       "s4_value": "31.2%",
       "s4_label": "of higher education enrolment is in STEM programs. Men are 2.5 times more likely than women to choose STEM",
       "s4_title": "STEM Enrollment",
@@ -90,9 +90,9 @@
   },
   "about": {
     "hero":{
-      "eyes_catching_title": "About PSS Cambodia",
-      "title_line_01": "Promoting Skills for Success,",
-      "title_line_02": "Cambodia",
+      "eyes_catching_title": "About Us",
+      "title_line_01": "Promoting Skills for Success",
+      "title_line_02": "",
       "subtitle": "PSS is the local operational partner of Passerelles Numériques Cambodia (PNC), which began in 2005 in Phnom Penh and offered a two-year, full-time IT training program for underprivileged youth. The program combines software development with soft skills, English, wellbeing activities, and strong employability support. PSS also provides technical support for NomadLab, an open-source solution for ICT infrastructure used as an educational tool for youth clubs, students, teachers, and prisoners in Cambodia to help expand digital access and build digital skills.",
       "cta": "Explore our impact"
     },
@@ -141,11 +141,11 @@
       "event4_title": "Introduction of NomadLab",
       "event4": "NomadLab using tablets and computer-tracking & deployment management platform: An open-source solution for ICT infrastructure used as an educational tool for youth clubs, students, teachers, and prisoners in Cambodia to help expand digital access and build digital skills.",
       "year5": "2024-2025",
-      "event5_title": "Skill for Development Program",
-      "event5": "Skill for Development Program (SDP), Education in Prison which is an offline e-learning platform to support prisoners to access and build digital skills.",
+      "event5_title": "Skill Development Program",
+      "event5": "Skill Development Program (SDP), Education in Prison which is an offline e-learning platform to support prisoners to access and build digital skills.",
       "year6": "2025",
-      "event6_title": "PSS Cambodia Becomes an Independent Local NGO",
-      "event6": "PSS Cambodia becomes an independent local NGO, registered with the Ministry of Social Affairs, Labour and Employment."
+      "event6_title": "PSS Cambodia Becomes a Local NGO",
+      "event6": "PSS Cambodia becomes a local NGO, registered with the Ministry of Social Affairs, Labour and Employment."
     }
   },
   "ourTeam": {

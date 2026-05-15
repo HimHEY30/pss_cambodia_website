@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const { t } = useI18n();
 const sectionRef = ref(null);
-const statsContainer = ref(null);
+
 
 // Statistics Data
 const stats = [
@@ -103,11 +103,11 @@ onMounted(() => {
       
       <div class="animate-header space-y-6">
           <span
-        class="block text-sm tracking-widest uppercase text-shadow-lg text-white leading-tight mb-4"
+        class="block text-sm tracking-widest uppercase text-white leading-tight mb-4"
       >
         {{ t('home.impact.eye_catching_title') }}
       </span>
-        <h2 class="text-secondary text-shadow-lg text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+        <h2 class="text-secondary g text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
           {{ t('home.impact.title_line1') }} <br />
           <span class="text-blue-50">{{ t('home.impact.title_line2') }}</span>
         </h2>

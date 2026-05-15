@@ -14,7 +14,7 @@
                         class="absolute -left-[9px] top-2 w-4 h-4 bg-orange-400 rounded-full ring-4 ring-[#00AEEF] group-hover:scale-150 transition-transform">
                     </div>
                     <div class="flex flex-col md:flex-row gap-4 md:items-center mb-2">
-                        <span class="text-3xl font-black text-white/40">{{ t(`about.journey.year1`) }}</span>
+                        <span class="text-3xl font-black">{{ t(`about.journey.year1`) }}</span>
                         <h4 class="text-2xl font-bold">{{ t(`about.journey.event1_title`) }}</h4>
                     </div>
                     <p class="text-sky-50 text-lg max-w-3xl leading-relaxed">{{ t(`about.journey.event1`) }}</p>
@@ -26,7 +26,7 @@
                         class="absolute -left-[9px] top-2 w-4 h-4 bg-orange-400 rounded-full ring-4 ring-[#00AEEF] group-hover:scale-150 transition-transform">
                     </div>
                     <div class="flex flex-col md:flex-row gap-4 md:items-center mb-2">
-                        <span class="text-3xl font-black text-white/40">{{ t(`about.journey.year2`) }}</span>
+                        <span class="text-3xl font-black">{{ t(`about.journey.year2`) }}</span>
                         <h4 class="text-2xl font-bold">{{ t(`about.journey.event2_title`) }}</h4>
                     </div>
                     <p class="text-sky-50 text-lg max-w-3xl leading-relaxed">{{ t(`about.journey.event2`) }}</p>
@@ -38,7 +38,7 @@
                         class="absolute -left-[9px] top-2 w-4 h-4 bg-orange-400 rounded-full ring-4 ring-[#00AEEF] group-hover:scale-150 transition-transform">
                     </div>
                     <div class="flex flex-col md:flex-row gap-4 md:items-center mb-2">
-                        <span class="text-3xl font-black text-white/40">{{ t(`about.journey.year3`) }}</span>
+                        <span class="text-3xl font-black">{{ t(`about.journey.year3`) }}</span>
                         <h4 class="text-2xl font-bold underline"> <a :href="t(`about.journey.event3_link`)"
                                 target="_blank"">{{ t(`about.journey.event3_title`) }}</a></h4>
             </div>
@@ -51,8 +51,8 @@
                             class="absolute -left-[9px] top-2 w-4 h-4 bg-orange-400 rounded-full ring-4 ring-[#00AEEF] group-hover:scale-150 transition-transform">
                         </div>
                         <div class="flex flex-col md:flex-row gap-4 md:items-center mb-2">
-                            <span class="text-3xl font-black text-white/40">{{ t(`about.journey.year4`) }}</span>
-                            <h4 class="text-2xl font-bold">{{ t(`about.journey.event4_title`) }}</h4>
+                            <span class="text-3xl font-black">{{ t(`about.journey.year4`) }}</span>
+                            <h4 class="text-2xl font-bold underline"> <a href="https://drive.google.com/file/d/17CbykIL8g_1rk_NXi5t3bhQ6vJdG-_mc/view" target="_blank">{{ t(`about.journey.event4_title`) }}</a> </h4>
                         </div>
                         <p class="text-sky-50 text-lg max-w-3xl leading-relaxed">{{ t(`about.journey.event4`) }}</p>
                     </div>
@@ -63,7 +63,7 @@
                             class="absolute -left-[9px] top-2 w-4 h-4 bg-orange-400 rounded-full ring-4 ring-[#00AEEF] group-hover:scale-150 transition-transform">
                         </div>
                         <div class="flex flex-col md:flex-row gap-4 md:items-center mb-2">
-                            <span class="text-3xl font-black text-white/40">{{ t(`about.journey.year5`) }}</span>
+                            <span class="text-3xl font-black">{{ t(`about.journey.year5`) }}</span>
                             <h4 class="text-2xl font-bold">{{ t(`about.journey.event5_title`) }}</h4>
                         </div>
                         <p class="text-sky-50 text-lg max-w-3xl leading-relaxed">{{ t(`about.journey.event5`) }}</p>
@@ -75,7 +75,7 @@
                             class="absolute -left-[9px] top-2 w-4 h-4 bg-orange-400 rounded-full ring-4 ring-[#00AEEF] group-hover:scale-150 transition-transform">
                         </div>
                         <div class="flex flex-col md:flex-row gap-4 md:items-center mb-2">
-                            <span class="text-3xl font-black text-white/40">{{ t(`about.journey.year6`) }}</span>
+                            <span class="text-3xl font-black">{{ t(`about.journey.year6`) }}</span>
                             <h4 class="text-2xl font-bold"> {{ t(`about.journey.event6_title`) }}</h4>
                         </div>
                         <p class="text-sky-50 text-lg max-w-3xl leading-relaxed">{{ t(`about.journey.event6`) }}</p>

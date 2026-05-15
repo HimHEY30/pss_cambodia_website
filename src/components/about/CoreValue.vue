@@ -1,7 +1,7 @@
 <template>
     <section class="reveal py-20 max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
-            <h3 class="text-sm font-black uppercase tracking-[0.3em] text-slate-400 mb-2">{{
+            <h3 class="text-sm font-black uppercase  text-slate-400 mb-2">{{
                 t('about.core_values.eye_catching_title') }}</h3>
             <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900">
                 {{ t('about.core_values.title') }}

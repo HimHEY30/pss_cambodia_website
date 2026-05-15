@@ -10,7 +10,6 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, nextTick } from 'vue';
 import Footer from '@/components/common/Footer.vue';
 import HeroSection from '@/components/about/HeroSection.vue';
 import MissionVision from '@/components/about/Mission&Vision.vue';
@@ -18,6 +17,7 @@ import ManagerQoute from '@/components/about/ManagerQoute.vue';
 import CoreValue from '@/components/about/CoreValue.vue';
 import EvaluationOfPSS from '@/components/about/EvaluationOfPSS.vue';
 
+import { onMounted, onUnmounted, nextTick } from 'vue';
 let observer = null;
 
 onMounted(async () => {
