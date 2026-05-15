@@ -258,13 +258,6 @@ import { Users, ShieldCheck, Heart, Sparkles } from 'lucide-vue-next';
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 
-const goals = [
-  'Encourage youth to continue education',
-  'Specialization in IT opportunities',
-  'Building Cambodian human capital',
-  'Skills and foreign language training'
-];
-
 const value_icons = [
   { icon: ShieldCheck },
   { icon: Sparkles },

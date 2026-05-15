@@ -20,34 +20,34 @@
           <h3 class="text-lg font-semibold mb-6 border-b border-white/20 pb-2 inline-block text-slate-00">{{ t('common.footer.quick_links') }}</h3>
           <ul class="space-y-2">
             <li>
-              <a class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
+              <router-link to="/" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
                 {{ t("common.navbar.home")}}
-              </a>
+              </router-link>
             </li>
             <li>
-              <a class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
+              <router-link to="/about" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
                 {{ t("common.navbar.about")}}
-              </a>
+              </router-link>
             </li>
             <li>
-              <a class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
+              <router-link to="/team" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
                 {{ t("common.navbar.team")}}
-              </a>
+              </router-link>
             </li>
             <li>
-              <a class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
+              <router-link to="/programs" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
                 {{ t("common.navbar.programs")}}
-              </a>
+              </router-link>
             </li>
             <li>
-              <a class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
+              <router-link to="/impact" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
                 {{ t("common.navbar.impact")}}
-              </a>
+              </router-link>
             </li>
             <li>
-              <a class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
+              <router-link to="/get-involved" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
                 {{ t("common.navbar.get_involved")}}
-              </a>
+              </router-link>
             </li>
           </ul>
         </div>
@@ -63,9 +63,9 @@
               <component :is="Phone" class="w-5 h-5 text-white/80 group-hover:text-white transition-colors" />
               <span class="text-sm text-slate-50">{{ t('common.footer.contact.phone') }}</span>
             </li>
-            <li class="flex items-start space-x-3 group">
-              <component :is="MapPin" class="w-5 h-5 text-white/80 group-hover:text-white transition-colors" />
-              <span class="text-sm text-slate-50">{{ t('common.footer.contact.address') }}</span>
+            <li>
+              <p class="text-sm font-bold text-slate-50">{{ t('common.footer.contact.address_label') }}</p>
+              <a href="https://maps.app.goo.gl/S3Tjz2mkDaGfXCSa9" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-50">{{ t('common.footer.contact.address') }}</a>
             </li>
           </ul>
         </div>

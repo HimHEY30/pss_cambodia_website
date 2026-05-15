@@ -29,6 +29,18 @@
           <h2 class="text-3xl font-extrabold text-slate-900 mb-6">{{ t("programs.majors.major1_title") }}</h2>
           <p class="text-slate-600 mb-8 leading-relaxed">
             {{ t("programs.majors.major1_desc") }}
+            <br>
+            <a :href="WEB_PROGRAM" class="flex gap-2 px-4 py-2 border mt-4 rounded-lg" target="_blank">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </span>
+              <span class="text">{{ t("programs.majors.cta") }}</span>
+            </a>
           </p>
           <div class="space-y-3">
             <p class="text-xs font-black uppercase tracking-widest text-sky-500 mb-4">{{
@@ -50,9 +62,6 @@
                 class="px-4 py-2 bg-slate-50 rounded-full text-sm font-semibold text-slate-700 border border-slate-100">
                 {{ t("programs.majors.major1_career4") }}
               </span>
-              <a :href="WEB_PROGRAM" target="_blank"
-                class="bg-[#F6A240] mt-12 hover:bg-orange-500 text-white px-8 py-4 rounded-md font-bold transition-all shadow-lg hover:shadow-orange-200 hover:-translate-y-1 active:scale-95">WEB
-                Programming Curriculumn</a>
             </div>
           </div>
         </div>
@@ -68,7 +77,18 @@
           </div>
           <h2 class="text-3xl font-extrabold mb-6">{{ t("programs.majors.major2_title") }}</h2>
           <p class="text-sky-50 mb-8 leading-relaxed">
-            {{ t("programs.majors.major2_desc") }}
+            {{ t("programs.majors.major2_desc") }}​ <br>
+            <a :href="SNAC_PROGRAM" class="flex gap-2 px-4 py-2 border mt-4 rounded-lg" target="_blank">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </span>
+              <span class="text">{{ t("programs.majors.cta") }}</span>
+            </a>
           </p>
           <div class="space-y-3">
             <p class="text-xs font-black uppercase tracking-widest text-sky-200 mb-4">{{
@@ -98,9 +118,6 @@
                 class="px-4 py-2 bg-white/10 rounded-full text-sm font-semibold text-white border border-white/20 backdrop-blur-md">
                 {{ t("programs.majors.major2_career6") }}
               </span>
-              <a :href="SNAC_PROGRAM" target="_blank"
-                class="bg-[#F6A240] mt-12 hover:bg-orange-500 text-white px-8 py-4 rounded-md font-bold transition-all shadow-lg hover:shadow-orange-200 hover:-translate-y-1 active:scale-95">WEB
-                Programming Curriculumn</a>
             </div>
           </div>
         </div>

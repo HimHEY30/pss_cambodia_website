@@ -14,12 +14,12 @@
         <div class="hero-content space-y-6 text-white z-10">
           
           <div class="overflow-hidden">
-            <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl font-bold leading-tight opacity-0 translate-y-12">
+            <h1 class="hero-title text-shadow-lg text-5xl lg:text-7xl font-bold leading-tight opacity-0 translate-y-12">
               {{ t('home.hero.title') }}
             </h1>
           </div>
 
-          <p class="hero-subtitle text-base sm:text-md md:text-lg leading-relaxed max-w-xl opacity-0 translate-y-8">
+          <p class="hero-subtitle text-base sm:text-md md:text-lg leading-relaxed max-w-2xl opacity-0 translate-y-8">
             {{ t('home.hero.subtitle') }}
           </p>
 

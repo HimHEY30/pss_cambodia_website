@@ -1,54 +1,23 @@
 <template>
   <div class="bg-white text-slate-800 font-sans selection:bg-sky-100 selection:text-sky-900 overflow-x-hidden">
-    
-    <section class="relative px-6 py-16 lg:py-32 max-w-7xl mx-auto overflow-hidden">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="z-10 animate-fade-in-up">
-          <span class="text-sky-500 font-bold uppercase tracking-[0.3em] text-xs mb-4 block animate-slide-in-left">Impact & Outcomes</span>
-          <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-8 text-slate-900">
-            Real Lives,<br/>
-            <span class="text-[#00AEEF]">Real Change.</span>
-          </h1>
-          <p class="text-xl text-slate-600 max-w-xl leading-relaxed mb-8">
-            At PSS in partnership with PSS and others, we believe real impact is measured in real outcomes, skills gained, futures transformed, and communities strengthened.
-          </p>
-          <p class="text-slate-500 max-w-lg">
-            Our program empowers young people especially those from rural and disadvantaged backgrounds with the technical expertise and professional support needed to thrive in the digital economy.
-          </p>
-        </div>
-        <div class="relative animate-fade-in" style="animation-delay: 0.2s">
-          <div class="rounded-[3rem] overflow-hidden shadow-2xl relative group">
-            <img 
-              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop" 
-              alt="Impact" 
-              class="w-full h-full object-cover aspect-[4/5] group-hover:scale-110 transition-transform duration-1000"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-[#00AEEF]/40 to-transparent"></div>
-          </div>
-          <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-sky-50 rounded-full -z-10 animate-float"></div>
-          <div class="absolute top-10 -right-10 w-20 h-20 bg-orange-100 rounded-full -z-10 animate-float-delayed"></div>
-        </div>
-      </div>
-    </section>
-
     <HomeImpact></HomeImpact>
 
     <section class="py-24 px-6 max-w-7xl mx-auto">
       <div class="grid lg:grid-cols-2 gap-16 items-center mb-24">
         <div class="reveal">
-          <h2 class="text-4xl font-extrabold text-slate-900 mb-6">Stories that show what’s possible</h2>
-          <p class="text-sky-500 font-bold mb-6">Built on 20 years of PNC experience:</p>
+          <h2 class="text-4xl font-extrabold text-slate-900 mb-6">{{ t("impact.stories.title")}}</h2>
+          <p class="text-sky-500 font-bold mb-6">{{ t("impact.stories.subtitle") }}</p>
           <p class="text-lg text-slate-600 leading-relaxed mb-6">
-            Every cohort brings new momentum. From students who begin with little to no experience, to graduates building real careers in web and software development—our impact is reflected in the daily progress of individuals and the long-term benefits for their families.
+            {{ t("impact.stories.desc_1") }}
           </p>
           <p class="text-slate-600 leading-relaxed italic">
-            Discover firsthand testimonies and updates from across PNC: training achievements, graduation moments, and milestones that demonstrate how education and opportunity create lasting change.
+            {{ t("impact.stories.desc_2") }}
           </p>
         </div>
         <div class="reveal relative">
           <div class="aspect-video rounded-[3rem] bg-slate-200 overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
             <img 
-              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop" 
+              src="@/assets/images/IMPACT_PIC.jpg" 
               alt="Testimony" 
               class="w-full h-full object-cover"
             />
@@ -58,26 +27,105 @@
 
       <div class="mt-32">
         <div class="text-center mb-16">
-          <h3 class="text-sm font-black uppercase tracking-[0.3em] text-slate-400 mb-2">Voice of our Alumni</h3>
-          <h2 class="text-4xl font-extrabold text-slate-900">Success Stories</h2>
+          <h3 class="text-sm font-black uppercase tracking-[0.3em] text-slate-400 mb-2">{{ t("impact.alumini.subtitle") }}</h3>
+          <h2 class="text-4xl font-extrabold text-slate-900">{{ t("impact.alumini.title") }}</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div v-for="(testimonial, i) in alumni" :key="testimonial.name" 
-               class="reveal bg-white p-10 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-2xl transition-all duration-500 group"
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="reveal bg-white p-10 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-2xl transition-all duration-500 group"
                :style="{ transitionDelay: `${i * 100}ms` }">
             <div class="flex items-center gap-4 mb-8">
               <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
-                <img :src="testimonial.image" :alt="testimonial.name" class="w-full h-full object-cover" />
+                <img src="@/assets/images/students/CHANUT.jpg" alt="" class="w-full h-full object-cover" />
               </div>
               <div>
-                <h4 class="font-bold text-slate-900">{{ testimonial.name }}</h4>
-                <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ testimonial.role }}</p>
+                <h4 class="font-bold text-slate-900">{{ t("impact.alumini.alumini_1.name") }}</h4>
+                <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.alumini_1.location") }}</p>
               </div>
             </div>
-            <p class="text-slate-600 italic leading-relaxed">"{{ testimonial.quote }}"</p>
+            <h3 class="text-2xl font-bold italic">"{{ t("impact.alumini.alumini_1.title") }}"</h3>
+            <p class="text-slate-600 leading-relaxed mt-3">{{ t("impact.alumini.alumini_1.intro") }}</p>
+            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_1.quote_1") }}"</p>
+            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_1.body_1") }}</p>
+            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_1.quote_2") }}"</p>
+            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_1.body_2") }}</p>
+            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_1.impact") }}</p>
+            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_1.closing_quote") }}"</p>
             <div class="mt-6 pt-6 border-t border-slate-50 flex items-center justify-between">
-              <span class="text-[10px] font-bold text-slate-300">CLASS OF {{ testimonial.year }}</span>
+              <span class="text-[10px] font-bold text-slate-300">{{ t("impact.alumini.alumini_1.class") }}</span>
+              <svg class="w-5 h-5 text-sky-100 group-hover:text-[#00AEEF] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L21.017 3V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V3L10.017 3V15C10.017 18.3137 7.3307 21 4.017 21H3.017Z" /></svg>
+            </div>
+          </div>
+          <div class="reveal bg-white p-10 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-2xl transition-all duration-500 group"
+               :style="{ transitionDelay: `${i * 100}ms` }">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
+                <img src="@/assets/images/students/PISETH.jpg" alt="" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900">{{ t("impact.alumini.alumini_2.name") }}</h4>
+                <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.alumini_2.location") }}</p>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold italic">"{{ t("impact.alumini.alumini_2.title") }}"</h3>
+            <p class="text-slate-600 leading-relaxed mt-3">{{ t("impact.alumini.alumini_2.intro") }}</p>
+            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_2.quote_1") }}"</p>
+            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_2.body_1") }}</p>
+            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_2.quote_2") }}"</p>
+            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_2.body_2") }}</p>
+            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_2.impact") }}</p>
+            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_2.closing_quote") }}"</p>
+            <div class="mt-6 pt-6 border-t border-slate-50 flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-300">{{ t("impact.alumini.alumini_2.class") }}</span>
+              <svg class="w-5 h-5 text-sky-100 group-hover:text-[#00AEEF] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L21.017 3V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V3L10.017 3V15C10.017 18.3137 7.3307 21 4.017 21H3.017Z" /></svg>
+            </div>
+          </div>
+          <div class="reveal bg-white p-10 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-2xl transition-all duration-500 group"
+               :style="{ transitionDelay: `${i * 100}ms` }">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
+                <img src="@/assets/images/students/KUNTHEA.jpg" alt="" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900">{{ t("impact.alumini.alumini_3.name") }}</h4>
+                <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.alumini_3.position") }} | {{ t("impact.alumini.alumini_3.work_at") }}</p>
+              </div>
+            </div>
+            <p class="text-slate-600 italic leading-relaxed">
+              "{{ t("impact.alumini.alumini_3.qoute_1") }}
+            </p>
+            <p class="text-slate-600 italic leading-relaxed mt-4">
+              {{ t("impact.alumini.alumini_3.qoute_2") }}
+            </p>
+            <p class="text-slate-600 italic leading-relaxed mt-4">
+              {{ t("impact.alumini.alumini_3.qoute_3") }}"
+            </p>
+            <div class="mt-6 pt-6 border-t border-slate-50 flex items-center justify-between">
+              <span class="text-[10px] font-bold text-slate-300">{{ t("impact.alumini.alumini_3.class") }}</span>
+              <svg class="w-5 h-5 text-sky-100 group-hover:text-[#00AEEF] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L21.017 3V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V3L10.017 3V15C10.017 18.3137 7.3307 21 4.017 21H3.017Z" /></svg>
+            </div>
+          </div>
+          <div class="reveal bg-white p-10 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-2xl transition-all duration-500 group"
+               :style="{ transitionDelay: `${i * 100}ms` }">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
+                <img src="@/assets/images/dlkh-logo.jpeg" alt="" class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900">{{ t("impact.alumini.partner.name") }}</h4>
+                <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.partner.position") }} | {{ t("impact.alumini.partner.work_at") }}</p>
+              </div>
+            </div>
+            <p class="text-slate-600 italic leading-relaxed">
+              "{{ t("impact.alumini.partner.qoute_1") }}
+            </p>
+            <p class="text-slate-600 italic leading-relaxed mt-4">
+              {{ t("impact.alumini.partner.qoute_2") }}
+            </p>
+            <p class="text-slate-600 italic leading-relaxed mt-4">
+              {{ t("impact.alumini.partner.qoute_3") }}"
+            </p>
+            <div class="mt-6 pt-6 border-t border-slate-50 flex items-center justify-between">
               <svg class="w-5 h-5 text-sky-100 group-hover:text-[#00AEEF] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L21.017 3V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V3L10.017 3V15C10.017 18.3137 7.3307 21 4.017 21H3.017Z" /></svg>
             </div>
           </div>
@@ -93,6 +141,8 @@
 import Footer from '@/components/common/Footer.vue';
 import HomeImpact from '@/components/home/HomeImpact.vue';
 import { onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 
 const alumni = [
   {

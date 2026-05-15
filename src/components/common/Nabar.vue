@@ -184,11 +184,11 @@ const languages = [
         name: 'ភាសាខ្មែរ',
         icon: khFlag
     },
-    {
-        code: 'fr',
-        name: 'Français',
-        icon: frFlag
-    }
+    // {
+    //     code: 'fr',
+    //     name: 'Français',
+    //     icon: frFlag
+    // }
 ];
 
 const currentLanguageName = computed(() => {

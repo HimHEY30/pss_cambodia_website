@@ -19,8 +19,11 @@
       "quick_links": "Quick Links",
       "contact": {
         "title": "Contact Information",
-        "address": "123 Main Street, Phnom Penh, Cambodia",
-        "phone": "+855 123 456 789",
+        "address_label": "Our Address:",
+        "address": "BP 511, Phum Tropeang Chhuk (Borey Sorla) Sangtak, Street 371, Phnom Penh, Cambodia",
+        "phone_label": "Phone:",
+        "phone": "023 99 55 00",
+        "email_label": "Email:",
         "email": "psscambodia.com"
       },
       "legal": "Legal",
@@ -188,6 +191,7 @@
     "majors": {
       "major1_title": "Web Programming",
       "major1_desc": "The graduate will have strong front- and back-end skills, database management, and deployment capabilities. They are ready to step into roles as Web Programmers, Quality Assurance, Junior Data Analytics, database administrator etc.",
+      "cta": "Check Detail Curriculumn",
       "major1_career_path": "Career Pathways",
       "major1_career1": "Web Programmers",
       "major1_career2": "Quality Assurance",
@@ -240,6 +244,135 @@
       "title": "Join our community",
       "desc": "Whether as a student, mentor, or partner, there's a place for you.",
       "cta": "Contact us"
+    }
+  },
+  "impact": {
+    "stories": {
+      "title": "Stories that show what’s possible",
+      "subtitle": "Built on 20 years of PNC experience:",
+      "desc_1": "Every cohort brings new momentum. From students who begin with little to no experience, to graduates building real careers in web and software development—our impact is reflected in the daily progress of individuals and the long-term benefits for their families.",
+      "desc_2": "Discover firsthand testimonies and updates from across PNC: training achievements, graduation moments, and milestones that demonstrate how education and opportunity create lasting change."
+    },
+    "alumini": {
+      "title": "Success Stories",
+      "subtitle": "Voice of our Alumni & Partner",
+      "alumini_1":{
+        "title": "A Second Chance at Life",
+        "name": "Nang Chhitchhanut",
+        "class": "ClASS OF 2026",
+        "location": "From Battambang Province",
+        "intro": "At just 17 years old, Nang Chhitchhanut from Battambang Province has already experienced more struggle than most. Her family fell deep into debt, and constant arguments at home made it difficult for her to focus on school.",
+        "quote_1": "I often felt hopeless. I didn’t think I could study further after high school. We had no money, and my grades were not good.",
+        "body_1": "Her life began to change when she attended an information session by Passerelles Numériques Cambodia (PNC). Learning about the scholarship program opened a small window of hope. At first, she hesitated as she was afraid it might be too good to be true. But when she discovered that several students from her own school had received the same scholarship and were now working in good jobs, both she and her family felt confident that PNC could offer her a brighter future.",
+        "quote_2": "PNC didn’t just give me education; it gave me confidence, discipline, and purpose.",
+        "body_2": "At PNC, Chhitchhanut found herself in a completely different learning environment. She realized that her poor high school grades did not define her potential. The teachers supported her every step of the way, not just with technical lessons but with life skills and confidence-building. For her family, the scholarship meant relief. Coming from a poor household, PNC’s full support eased their worries. Now her parents no longer have to struggle to pay for her schooling and can focus on her younger siblings.",
+        "impact": "Through SDF’s support, Chhitchhanut can study without financial hardship. She dreams of becoming a full-stack developer and is already eyeing companies for her internship next year.",
+        "closing_quote": "SDF and PNC changed my life. Without them, I would still be trapped in fear and poverty. Now, I can see my future clearly."
+      },
+      "alumini_2": {
+        "title": "Becoming the Man of His Own Future",
+        "name": "Nea Piset",
+        "class": "ClASS OF 2026",
+        "location": "From Pursat Province",
+        "intro": "Nea Piset lost his father when he was only six years old. Raised by a single mother who struggled to provide, Piset’s early life was filled with uncertainty.",
+        "quote_1": "Sometimes I thought I should stop studying and just find work to help my mom.",
+        "body_1": "Fate took a turn when he was introduced to PNC and the scholarship program supported by the Skills Development Fund (SDF). Moving to the city was a challenge; he was scared, knew no one, and lacked confidence in speaking.",
+        "quote_2": "The teachers always motivated us. They didn’t just teach us lessons; they guided us in life.",
+        "body_2": "PNC’s unique approach helped him open up. Once shy and quiet, Piset became a leader among his classmates—proactive, well-mannered, and dependable. He now takes every opportunity to build relationships with alumni and connect with companies during career events.",
+        "impact": "He has already started exploring potential internship placements for his second year, aiming to put his IT knowledge into practice.",
+        "closing_quote": "Without PNC and SDF, there would be no today’s Piset. They didn’t just give me education; they gave me a chance to believe in myself."
+      },
+      "alumini_3": {
+        "name": "Poeun Sokunthea",
+        "class":"CLASS OF 2024",
+        "work_at": "Borey Golden Park",
+        "position": "IT Programme",
+        "qoute_1": "PNC means growth, opportunity, and preparation for my future career. It has given me the technical knowledge and practical skills needed to succeed in the IT industry.The supportive learning environment, hands-on projects, and professional development activities have helped me build confidence and adapt to real-worldchallenges. Beyond academics, PNC has encouraged me to think critically,collaborate effectively, and communicate clearly—skills that are essential in anycareer. The mentoring from my instructors and the teamwork with my classmateshave pushed me to the limit and constantly improved.",
+        "qoute_2": "Most importantly, PNC has defined not only my career path, but also my mindset. I now see challenges as opportunities to grow. I am proud to be part of a community that believes in empowering students and making a lasting impact on them.",
+        "qoute_3": "Thank you so much for supporting me and giving me this part of my life."
+      },
+      "partner": {
+        "name": "Peng Chanmony",
+        "work_at": "Daiichi Life",
+        "position": "Senior Manager, HRBP talent Acquisition",
+        "qoute_1": "On behalf of Daiichi Life, we proudly acknowledge our partnership with PNC in developing  future talent. Over the past three consecutive years, Daiichi Life has provided internship opportunities to PNC students, enabling them to gain valuable industry exposure and practical skills.",
+        "qoute_2": "This initiative reflects our commitment to corporate social responsibility and talent development. We are pleased to see PNC students grow through this program, with some progressing into full-time roles.",
+        "qoute_3": "We look forward to continuing this meaningful collaboration."
+      }
+    }
+  },
+  "getInvolved": {
+    "hero": {
+      "eyes_catching_title": "Support Our Mission",
+      "title_line1": "Help Change",
+      "title_line2": "a Life Today",
+      "subtitle": "Whether you donate, volunteer, or partner with us — every contribution creates lasting change for Cambodian youth."
+    },
+    "qr": {
+      "title": "Donate via KHQR",
+      "subtitle": "Scan the QR code with your mobile banking app to make a direct contribution. Every riel goes directly toward student scholarships and subsistence.",
+      "confirm": {
+        "option_1": "Safe & Instant Transfer",
+        "option_2": "No Transaction Fees"
+      },
+      "bank_name": "PSS Cambodia KHQR",
+      "pss_name": "PSS Cambodia Bank Account",
+      "account_number": ""
+    },
+    "path_of_donation": {
+      "title": "Where Your Donation Goes",
+      "subtitle": "Your support directly impacts our students' lives. Here's how your contribution is allocated:",
+      "total_budget": "The total cost for one student is roughly $2,500 per year, covering everything from professional IT instruction to their daily three meals and healthcare.",
+      "training": {
+        "label": "IT & Soft Skills",
+        "desc": "High-quality instruction, curriculum development, and English training.",
+        "value": "45%",
+        "value_desc": "OF BUDGET"
+      },
+      "food_house": {
+        "label": "Food & Housing",
+        "desc": "Secure dormitory living and three nutritious warm meals every day.",
+        "value": "30%",
+        "value_desc": "OF BUDGET"
+      },
+      "health_support": {
+        "label": "Healthcare & Prep",
+        "desc": "Fully covered medical costs and professional career orientation.",
+        "value": "10%",
+        "value_desc": "OF BUDGET"
+      },
+      "tech_tools": {
+        "label": "Tools & Tech",
+        "desc": "Laptops, networking equipment, and high-speed campus internet.",
+        "value": "15%",
+        "value_desc": "OF BUDGET"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "eye_catching_title": "Get in Touch",
+      "title_line1": "We'd Love to Hear",
+      "title_line2": "From You.",
+      "subtitle": "Whether you have questions, want to volunteer, or are interested in partnering with us, we're here to connect."
+    },
+    "contact_info": {
+      "title": "Visit Us",
+      "address_title": "Our Address:",
+      "address": "BP 511, Phum Tropeang Chhuk (Borey Sorla) Sangtak, Street 371, Phnom Penh, Cambodia",
+      "phone": "+855 123 456 789",
+      "email": "psscambodia.com"
+    },
+    "form": {
+      "name_label": "Your Name",
+      "email_label": "Your Email",
+      "message_label": "Your Message",
+      "submit_button": "Send Message",
+      "subject_label": "Subject",
+      "subject_option_1": "General Inquiry",
+      "subject_option_2": "Volunteer Opportunities",
+      "subject_option_3": "Partnership Opportunities",
+      "subject_option_4": "Donation Questions"
     }
   }
 }
