@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white text-slate-800 font-sans selection:bg-sky-100 selection:text-sky-900 overflow-x-hidden">
+  <div class="bg-white text-slate-800 font-sans selection:bg-sky-100 selection:text-sky-900 overflow-x-hidden min-h-screen">
     <HeroSection class="reveal" />
     <MissionVision class="reveal" />
     <ManagerQoute class="reveal" />
@@ -10,106 +10,65 @@
 </template>
 
 <script setup>
+import { onMounted, onUnmounted, nextTick } from 'vue';
 import Footer from '@/components/common/Footer.vue';
-import { onMounted } from 'vue';
 import HeroSection from '@/components/about/HeroSection.vue';
 import MissionVision from '@/components/about/Mission&Vision.vue';
 import ManagerQoute from '@/components/about/ManagerQoute.vue';
 import CoreValue from '@/components/about/CoreValue.vue';
 import EvaluationOfPSS from '@/components/about/EvaluationOfPSS.vue';
 
-// Simple Intersection Observer for scroll animations
-onMounted(() => {
+let observer = null;
+
+onMounted(async () => {
+  // nextTick ensures the child components are fully rendered in the DOM
+  await nextTick();
+
   const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.15, // Trigger when 15% of the component is visible
+    rootMargin: '0px 0px -100px 0px' // Offset to trigger slightly before it hits the bottom
   };
 
-  const observer = new IntersectionObserver((entries) => {
+  observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
+      } else {
+        // OPTIONAL: Remove the comment below if you want the animation 
+        // to repeat every time you scroll back up and down.
+        entry.target.classList.remove('active');
       }
     });
   }, observerOptions);
 
-  document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  const targets = document.querySelectorAll('.reveal');
+  targets.forEach((el) => observer.observe(el));
+});
+
+onUnmounted(() => {
+  if (observer) observer.disconnect();
 });
 </script>
 
 <style scoped>
-/* Scroll Animation Styles */
+/* Base state: Hidden and shifted down */
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateY(40px);
+  /* Specify exact properties for better performance on mobile */
+  transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1), 
+              transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform; /* Tells browser to optimize these */
 }
 
+/* Active state: Visible and at original position */
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Keyframe Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(0);
-  }
-
-  50% {
-    transform: translateY(-20px) rotate(5deg);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 1s ease-out forwards;
-}
-
-.animate-fade-in {
-  animation: fadeInUp 1.2s ease-out forwards;
-  opacity: 0;
-}
-
-.animate-slide-in-left {
-  animation: slideInLeft 0.8s ease-out forwards;
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-float-delayed {
-  animation: float 8s ease-in-out infinite 1s;
-}
-
-/* Custom smooth scroll behavior */
-html {
+/* Custom smooth scroll behavior for the whole page */
+:global(html) {
   scroll-behavior: smooth;
 }
 </style>
