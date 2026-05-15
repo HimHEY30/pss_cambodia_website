@@ -1,26 +1,4 @@
 <script setup>
-import APD from '@/assets/images/partnership_logo/apd.jpg';
-import Amret from '@/assets/images/partnership_logo/amret.png';
-import ANZ from '@/assets/images/partnership_logo/jtrust.png';
-import Bred from '@/assets/images/partnership_logo/bred.webp';
-import NTC from '@/assets/images/partnership_logo/ntc-logo.png';
-import Sourcemax from '@/assets/images/partnership_logo/Sourceamax-Asia.jpg';
-import FIRSTCAMBODIA from '@/assets/images/partnership_logo/firstcambodia_logo.jpg';
-import HRInc from '@/assets/images/partnership_logo/hrinc_sq_logo.png';
-import DaiIchi from '@/assets/images/partnership_logo/daiichi.jpeg';
-import BizSolutions from '@/assets/images/partnership_logo/biz.png';
-import Udaya from '@/assets/images/partnership_logo/udaya.png';
-import Codinggate from '@/assets/images/partnership_logo/codinggate.png';
-import Confluence from '@/assets/images/partnership_logo/confluences.png';
-import theNGO from '@/assets/images/partnership_logo/thengo.png';
-import Niyda from '@/assets/images/partnership_logo/niyda.jpg';
-import bikay from '@/assets/images/partnership_logo/bikay.jpg';
-import itSolution from '@/assets/images/partnership_logo/it_solution.png';
-import idealink from '@/assets/images/partnership_logo/idealink.png';
-import endeavour from '@/assets/images/partnership_logo/endeavour.webp';
-import thalias from '@/assets/images/partnership_logo/thalias.webp';
-import BondosKomar from '@/assets/images/partnership_logo/bondoskoma.png';
-
 import partner_1 from "@/assets/images/partners/1.png";
 import partner_2 from "@/assets/images/partners/2.jpg";
 import partner_3 from "@/assets/images/partners/3.png";
@@ -38,11 +16,9 @@ import partner_14 from "@/assets/images/partners/14.jpg";
 import partner_15 from "@/assets/images/partners/15.png";
 import partner_16 from "@/assets/images/partners/16.jpg";
 import partner_17 from "@/assets/images/partners/17.png";
-import partner_18 from "@/assets/images/partners/18.jpg";
 import partner_19 from "@/assets/images/partners/19.png";
 import partner_20 from "@/assets/images/partners/20.png";
 import partner_21 from "@/assets/images/partners/21.png";
-import partner_22 from "@/assets/images/partners/22.jpg";
 import partner_23 from "@/assets/images/partners/23.png";
 import partner_24 from "@/assets/images/partners/24.png";
 import partner_25 from "@/assets/images/partners/25.jpg";
@@ -73,6 +49,8 @@ import partner_49 from "@/assets/images/partners/49.png";
 import partner_50 from "@/assets/images/partners/50.png";
 import partner_51 from "@/assets/images/partners/51.jpeg";
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 
 // Simple Data Structure: Array of 20 Partner Objects
 const partners = ref(
@@ -136,10 +114,10 @@ const partners = ref(
       
       <div class="text-center mb-12">
         <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-          Our Partners
+          {{ t('home.partner.title') }}
         </h2>
         <p class="mt-3 text-lg text-gray-500">
-          Working together with world-class organizations.
+          {{ t('home.partner.subtitle') }}
         </p>
       </div>
 

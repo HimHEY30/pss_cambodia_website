@@ -11,9 +11,9 @@
            {{ t('about.hero.subtitle') }}
           </p>
           <div class="flex gap-4">
-            <button class="bg-[#F6A240] hover:bg-orange-500 text-white px-8 py-4 rounded-md font-bold transition-all shadow-lg hover:shadow-orange-200 hover:-translate-y-1 active:scale-95">
+            <router-link to="/impact" class="bg-[#F6A240] hover:bg-orange-500 text-white px-8 py-4 rounded-md font-bold transition-all shadow-lg hover:shadow-orange-200 hover:-translate-y-1 active:scale-95">
               {{ t('about.hero.cta') }}
-            </button>
+            </router-link>
           </div>
         </div>
         <div class="relative animate-fade-in" style="animation-delay: 0.3s">

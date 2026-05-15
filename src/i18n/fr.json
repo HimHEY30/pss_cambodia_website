@@ -3,42 +3,49 @@
     "pss": {
       "short_name": "PSS Cambodia",
       "name": "Promoting Skills for Success",
-      "description": "L'autonomisation des jeunes par les compétences et l'éducation numérique"
+      "description": "Empowering Youth through Digital Skills and Education"
     },
     "navbar": {
-      "home": "Accueil",
-      "about": "À propos de nous",
-      "team": "Notre équipe",
-      "programs": "Programmes",
+      "home": "Home",
+      "about": "About Us",
+      "team": "Our Team",
+      "programs": "Programs",
       "impact": "Impact",
-      "get_involved": "S'impliquer",
+      "get_involved": "Get Involved",
       "contact": "Contact",
-      "donate": "Faire un don"
+      "donate": "Donate Now"
     },
     "footer": {
-      "quick_links": "Liens rapides",
+      "quick_links": "Quick Links",
       "contact": {
-        "title": "Informations de contact",
-        "address": "123 Main Street, Phnom Penh, Cambodge",
-        "phone": "+855 123 456 789",
+        "title": "Contact Information",
+        "address_label": "Our Address:",
+        "address": "BP 511, Phum Tropeang Chhuk (Borey Sorla) Sangtak, Street 371, Phnom Penh, Cambodia",
+        "phone_label": "Phone:",
+        "phone": "023 99 55 00",
+        "email_label": "Email:",
         "email": "psscambodia.com"
       },
-      "legal": "Mentions légales",
-      "terms_and_conditions": "Conditions générales",
-      "privacy_policy": "Politique de confidentialité",
-      "copy": "© 2026 Promoting Skills for Success Cambodia. Tous droits réservés."
+      "legal": "Legal",
+      "terms_and_conditions": "Terms & Conditions",
+      "privacy_policy": "Privacy Policy",
+      "copy": "© 2026 Promoting Skills for Success Cambodia. All rights reserved."
     }
   },
   "home": {
     "hero": {
       "title": "Empowering Cambodian Youth through Skills and Education",
-      "subtitle": "Promoting Skills for Success (PSS) est une ONG locale enregistrée auprès du Ministère de l’Intérieur du Cambodge. Elle lutte contre la pauvreté en révélant le potentiel des jeunes défavorisés grâce à l’accès à l’éducation numérique.",
-      "button": "Faire un don"
+      "subtitle": "Promoting Skills for Success (PSS) is a local NGO registered with Cambodia’s Ministry of Interior. It fights poverty by unlocking the potential of disadvantaged youth through access to digital education.",
+      "button": "Donate Now"
     },
     "about": {
       "eye_catching_title": "About PSS Cambodia",
-      "title": "Lutter contre la pauvreté grâce à l'éducation numérique",
+      "title": "Fighting Poverty through Digital Education",
       "subtitle": "PSS is the local operational partner of Passerelles Numériques Cambodia (PNC), which began in 2005 in Phnom Penh and offered a two-year, full-time IT training program for underprivileged youth. The program combines software development with soft skills, English, wellbeing activities, and strong employability support. PSS also provides technical support for NomadLab, an open-source solution for ICT infrastructure used as an educational tool for youth clubs, students, teachers, and prisoners in Cambodia to help expand digital access and build digital skills."
+    },
+    "partner": {
+      "title": "Our Trusted Partners",
+      "subtitle": "We are proud to collaborate with a diverse range of partners who share our mission of empowering youth through skills and digital education."
     },
     "impact": {
       "eye_catching_title": "Our Impact",
@@ -79,6 +86,297 @@
       "s4_men": "Men",
       "s4_women": "Women",
       "s4_source": "Source: MoEYS 2023-2024"
+    }
+  },
+  "about": {
+    "hero":{
+      "eyes_catching_title": "About PSS Cambodia",
+      "title_line_01": "Promoting Skills for Success,",
+      "title_line_02": "Cambodia",
+      "subtitle": "PSS is the local operational partner of Passerelles Numériques Cambodia (PNC), which began in 2005 in Phnom Penh and offered a two-year, full-time IT training program for underprivileged youth. The program combines software development with soft skills, English, wellbeing activities, and strong employability support. PSS also provides technical support for NomadLab, an open-source solution for ICT infrastructure used as an educational tool for youth clubs, students, teachers, and prisoners in Cambodia to help expand digital access and build digital skills.",
+      "cta": "Explore our impact"
+    },
+    "mission_vision": {
+      "eye_catching_title": "Our Mission & Vision",
+      "mission_title": "Our Mission",
+      "mission_desc": "To provide high-quality IT training, professional skills, and employment support to underprivileged Cambodian youth, enabling them to access quality employment and build sustainable livelihoods.",
+      "mission_point1": "Encourage and motivate youth to continue their education",
+      "mission_point2": "Provide opportunities for youth to pursue higher education and specialization in Information Technology (IT)",
+      "mission_point3": "Contribute to the Royal Government’s efforts to build and develop human capital",
+      "mission_point4": "Support the delivery of skills training and foreign language training",
+      "vision_title": "Our Vision",
+      "vision_desc": "PSS envisions a Cambodia where all youth, regardless of background, have access to quality education and the opportunities to fulfil their potential in the digital economy."
+    },
+    "director_message": {
+      "eye_catching_title": "Message from Our Director",
+      "message": "We don’t just teach code; we foster a sense of belonging. At PSS, responsibility and solidarity are the tools our youth use to build sustainable livelihoods.",
+      "signature": "Director of PSS Cambodia",
+      "director_name": "Mr. Hang Hybunna"
+    },
+    "core_values": {
+      "eye_catching_title": "We strive to employ and pass on these values to our beneficiaries",
+      "title": "Our Core Values",
+      "value1_title": "Trust",
+      "value1_desc": "We build trust through open communication and reliability, ensuring that our students and stakeholders feel secure in their relationships with us",
+      "value2_title": "Responsibility",
+      "value2_desc": "We instill a sense of responsibility in our students, encouraging them to take ownership of their learning and future, while also being accountable to their community",
+      "value3_title": "Solidarity",
+      "value3_desc": "We promote solidarity by fostering a sense of belonging and support among our students, encouraging them to uplift one another and collaborate towards common goals",
+      "value4_title": "Respect",
+      "value4_desc": "We create an environment of mutual respect, valuing each individual's unique background and contributions, which enhances the learning experience and community spirit."
+    },
+    "journey": {
+      "title": "Our Evolution Since 2005",
+      "year1": "2005",
+      "event1_title": "Foundation and First Program Launch",
+      "event1": "Center for Information System Training (CIST) and Passerelles Numériques Cambodia founded; launches its first 2-year IT training program with 25 students.",
+      "year2": "2009–2014",
+      "event2_title": "Expansion of Training Programs",
+      "event2": "Runs a 6-month Data Management Program, reaching more than 400 graduates, who pursued further studies and work with Digital Divide Data.",
+      "year3": "2015",
+      "event3_title": "Launch of Khmer Typing Tool",
+      "event3": "Khmer Typing Tool (National Digital Learning Platform): A proven, long-running national digital product supporting Khmer literacy and digital skills",
+      "event3_link": "https://khmer-typing.passerellesnumeriques.org",
+      "year4": "2019-2025",
+      "event4_title": "Introduction of NomadLab",
+      "event4": "NomadLab using tablets and computer-tracking & deployment management platform: An open-source solution for ICT infrastructure used as an educational tool for youth clubs, students, teachers, and prisoners in Cambodia to help expand digital access and build digital skills.",
+      "year5": "2024-2025",
+      "event5_title": "Skill for Development Program",
+      "event5": "Skill for Development Program (SDP), Education in Prison which is an offline e-learning platform to support prisoners to access and build digital skills.",
+      "year6": "2025",
+      "event6_title": "PSS Cambodia Becomes an Independent Local NGO",
+      "event6": "PSS Cambodia becomes an independent local NGO, registered with the Ministry of Social Affairs, Labour and Employment."
+    }
+  },
+  "ourTeam": {
+    "hero": {
+      "eye_catching_title": "Leadership & Governance",
+      "title_line1": "The People",
+      "title_line2": "Behind PSS.",
+      "subtitle": "Our team combines decades of experience in education, technology, and social impact to ensure every student has the support they need to succeed."
+    },
+    "executive_team": {
+      "title": "Meet Our Executive Team",
+      "director_name": "Mr. Hang Hybunna",
+      "director_role": "Director",
+      "ero_director_name": "Ms. Leng Sreynich",
+      "ero_director_role": "Director of External Relation",
+      "admin_director_name": "Mrs. Sok Sreysros",
+      "admin_director_role": "Director of Administration and Finance",
+      "selection_director_name": "Mr. Seang Thaina",
+      "selection_director_role": "Director of Student Selection and Career Guidance",
+      "training_director_name": "Ms. Hok Lihuy",
+      "training_director_role": "Director of Training",
+      "edu_director_name": "Mr. Hul Sim",
+      "edu_director_role": "Director of Education"
+    },
+    "board": {
+      "title": "Our Board of Directors",
+      "desc": "Providing strategic oversight and ensuring the long-term sustainability of our mission.",
+      "member1_name": "Mr. Phou Sophorn",
+      "member1_role": "Chairman",
+      "member2_name": "Mr. Oun Soursdey",
+      "member2_role": "Member",
+      "member3_name": "Mrs. Va Vannakserreyraksmey",
+      "member3_role": "Member",
+      "member4_name": "Mrs. Heang Oumoy",
+      "member4_role": "Member",
+      "member5_name": "Mr. Thun Chantha",
+      "member5_role": "Member"
+    }
+  },
+  "programs": {
+    "hero": {
+      "eye_catching_title": "Our Curriculum",
+      "title_line1": "2-Year",
+      "title_line2": "IT Training Program",
+      "subtitle": "Built on 20 years of PNC experience, the program is aligned with market needs and combines IT training with professional development, soft skills, English, wellbeing activities, and strong employability support. It helps motivated students progress from zero to job-ready."
+    },
+    "majors": {
+      "major1_title": "Web Programming",
+      "major1_desc": "The graduate will have strong front- and back-end skills, database management, and deployment capabilities. They are ready to step into roles as Web Programmers, Quality Assurance, Junior Data Analytics, database administrator etc.",
+      "cta": "Check Detail Curriculumn",
+      "major1_career_path": "Career Pathways",
+      "major1_career1": "Web Programmers",
+      "major1_career2": "Quality Assurance",
+      "major1_career3": "Junior Data Analytics",
+      "major1_career4": "Database Administrator",
+      "major2_title": "System, Network Administration and Cybersecurity",
+      "major2_desc": "The graduates will possess strong technical and hands-on skills in IT support, networking, system administration, and cybersecurity. Their potential job roles include System Administrator, Network Engineer, Cloud Administrator, Cybersecurity Analyst,  DevOps engineer, IT Support Specialist etc. ",
+      "major2_career_path": "Career Pathways",
+      "major2_career1": "System Administrator",
+      "major2_career2": "Network Engineer",
+      "major2_career3": "Cloud Administrator",
+      "major2_career4": "Cybersecurity Analyst",
+      "major2_career5": "DevOps engineer",
+      "major2_career6": "IT Support Specialist"
+    },
+    "subject_support": {
+      "english_pl": "English & Professional Readiness",
+      "english_pl_desc": "Technical skills open the door, but professional skills build the career. We integrate language training and soft-skill workshops daily to ensure students are ready for international workplace standards.",
+      "english_bage_title": "English Immersion",
+      "english_bage_desc": "Business communication and technical English for IT documentation.",
+      "pl_bage_title": "Soft Skills",
+      "pl_bage_desc": "Critical thinking, problem-solving, and emotional intelligence.",
+      "metoring_title": "Professional Mentoring",
+      "metoring_desc": "Every student is paired with a mentor, providing guidance on career paths, interview preparation, and workplace etiquette.", 
+      "metoring_highlight": "Industry Network",
+      "employment_title": "Employability Support",
+      "employment_desc": "From CV workshops to mock interviews, our team provides ongoing support until the student secures their first quality job."
+    },
+    "selection":{
+      "process_title": "Selection Process",
+      "process_desc": "Every year from Jan to Oct, we select 75-100 youth from disadvantaged backgrounds who are motivated to bridge the digital gap.",
+      "target_value": "50%",
+      "target_label": "Target for Female Students in Tech",
+      "step1": "Outreach across Cambodia",
+      "step2": "Written Examination",
+      "step3": "Individual Interviews",
+      "step4": "Social Background Assessment"
+    },
+    "life_support": {
+      "title": "Life Skills & Wellbeing",
+      "desc": "A holistic approach to education",
+      "extra_course_title": "Clubs & Extracurriculars",
+      "extra_course_desc": "Personal development through Music, Sports, and specialized clubs like Photography and Reading.",
+      "subsistence_title": "Full Subsistence",
+      "subsistence_desc": "Secure accommodation, healthy meals, and a monthly allowance to cover all student needs.",
+      "health_title": "Health & Support",
+      "health_desc": "Coverage for health costs and socio-educational guidance from our team of dedicated educators."
+    },
+    "join_us": {
+      "title": "Join our community",
+      "desc": "Whether as a student, mentor, or partner, there's a place for you.",
+      "cta": "Contact us"
+    }
+  },
+  "impact": {
+    "stories": {
+      "title": "Stories that show what’s possible",
+      "subtitle": "Built on 20 years of PNC experience:",
+      "desc_1": "Every cohort brings new momentum. From students who begin with little to no experience, to graduates building real careers in web and software development—our impact is reflected in the daily progress of individuals and the long-term benefits for their families.",
+      "desc_2": "Discover firsthand testimonies and updates from across PNC: training achievements, graduation moments, and milestones that demonstrate how education and opportunity create lasting change."
+    },
+    "alumini": {
+      "title": "Success Stories",
+      "subtitle": "Voice of our Alumni & Partner",
+      "alumini_1":{
+        "title": "A Second Chance at Life",
+        "name": "Nang Chhitchhanut",
+        "class": "ClASS OF 2026",
+        "location": "From Battambang Province",
+        "intro": "At just 17 years old, Nang Chhitchhanut from Battambang Province has already experienced more struggle than most. Her family fell deep into debt, and constant arguments at home made it difficult for her to focus on school.",
+        "quote_1": "I often felt hopeless. I didn’t think I could study further after high school. We had no money, and my grades were not good.",
+        "body_1": "Her life began to change when she attended an information session by Passerelles Numériques Cambodia (PNC). Learning about the scholarship program opened a small window of hope. At first, she hesitated as she was afraid it might be too good to be true. But when she discovered that several students from her own school had received the same scholarship and were now working in good jobs, both she and her family felt confident that PNC could offer her a brighter future.",
+        "quote_2": "PNC didn’t just give me education; it gave me confidence, discipline, and purpose.",
+        "body_2": "At PNC, Chhitchhanut found herself in a completely different learning environment. She realized that her poor high school grades did not define her potential. The teachers supported her every step of the way, not just with technical lessons but with life skills and confidence-building. For her family, the scholarship meant relief. Coming from a poor household, PNC’s full support eased their worries. Now her parents no longer have to struggle to pay for her schooling and can focus on her younger siblings.",
+        "impact": "Through SDF’s support, Chhitchhanut can study without financial hardship. She dreams of becoming a full-stack developer and is already eyeing companies for her internship next year.",
+        "closing_quote": "SDF and PNC changed my life. Without them, I would still be trapped in fear and poverty. Now, I can see my future clearly."
+      },
+      "alumini_2": {
+        "title": "Becoming the Man of His Own Future",
+        "name": "Nea Piset",
+        "class": "ClASS OF 2026",
+        "location": "From Pursat Province",
+        "intro": "Nea Piset lost his father when he was only six years old. Raised by a single mother who struggled to provide, Piset’s early life was filled with uncertainty.",
+        "quote_1": "Sometimes I thought I should stop studying and just find work to help my mom.",
+        "body_1": "Fate took a turn when he was introduced to PNC and the scholarship program supported by the Skills Development Fund (SDF). Moving to the city was a challenge; he was scared, knew no one, and lacked confidence in speaking.",
+        "quote_2": "The teachers always motivated us. They didn’t just teach us lessons; they guided us in life.",
+        "body_2": "PNC’s unique approach helped him open up. Once shy and quiet, Piset became a leader among his classmates—proactive, well-mannered, and dependable. He now takes every opportunity to build relationships with alumni and connect with companies during career events.",
+        "impact": "He has already started exploring potential internship placements for his second year, aiming to put his IT knowledge into practice.",
+        "closing_quote": "Without PNC and SDF, there would be no today’s Piset. They didn’t just give me education; they gave me a chance to believe in myself."
+      },
+      "alumini_3": {
+        "name": "Poeun Sokunthea",
+        "class":"CLASS OF 2024",
+        "work_at": "Borey Golden Park",
+        "position": "IT Programme",
+        "qoute_1": "PNC means growth, opportunity, and preparation for my future career. It has given me the technical knowledge and practical skills needed to succeed in the IT industry.The supportive learning environment, hands-on projects, and professional development activities have helped me build confidence and adapt to real-worldchallenges. Beyond academics, PNC has encouraged me to think critically,collaborate effectively, and communicate clearly—skills that are essential in anycareer. The mentoring from my instructors and the teamwork with my classmateshave pushed me to the limit and constantly improved.",
+        "qoute_2": "Most importantly, PNC has defined not only my career path, but also my mindset. I now see challenges as opportunities to grow. I am proud to be part of a community that believes in empowering students and making a lasting impact on them.",
+        "qoute_3": "Thank you so much for supporting me and giving me this part of my life."
+      },
+      "partner": {
+        "name": "Peng Chanmony",
+        "work_at": "Daiichi Life",
+        "position": "Senior Manager, HRBP talent Acquisition",
+        "qoute_1": "On behalf of Daiichi Life, we proudly acknowledge our partnership with PNC in developing  future talent. Over the past three consecutive years, Daiichi Life has provided internship opportunities to PNC students, enabling them to gain valuable industry exposure and practical skills.",
+        "qoute_2": "This initiative reflects our commitment to corporate social responsibility and talent development. We are pleased to see PNC students grow through this program, with some progressing into full-time roles.",
+        "qoute_3": "We look forward to continuing this meaningful collaboration."
+      }
+    }
+  },
+  "getInvolved": {
+    "hero": {
+      "eyes_catching_title": "Support Our Mission",
+      "title_line1": "Help Change",
+      "title_line2": "a Life Today",
+      "subtitle": "Whether you donate, volunteer, or partner with us — every contribution creates lasting change for Cambodian youth."
+    },
+    "qr": {
+      "title": "Donate via KHQR",
+      "subtitle": "Scan the QR code with your mobile banking app to make a direct contribution. Every riel goes directly toward student scholarships and subsistence.",
+      "confirm": {
+        "option_1": "Safe & Instant Transfer",
+        "option_2": "No Transaction Fees"
+      },
+      "bank_name": "PSS Cambodia KHQR",
+      "pss_name": "PSS Cambodia Bank Account",
+      "account_number": ""
+    },
+    "path_of_donation": {
+      "title": "Where Your Donation Goes",
+      "subtitle": "Your support directly impacts our students' lives. Here's how your contribution is allocated:",
+      "total_budget": "The total cost for one student is roughly $2,500 per year, covering everything from professional IT instruction to their daily three meals and healthcare.",
+      "training": {
+        "label": "IT & Soft Skills",
+        "desc": "High-quality instruction, curriculum development, and English training.",
+        "value": "45%",
+        "value_desc": "OF BUDGET"
+      },
+      "food_house": {
+        "label": "Food & Housing",
+        "desc": "Secure dormitory living and three nutritious warm meals every day.",
+        "value": "30%",
+        "value_desc": "OF BUDGET"
+      },
+      "health_support": {
+        "label": "Healthcare & Prep",
+        "desc": "Fully covered medical costs and professional career orientation.",
+        "value": "10%",
+        "value_desc": "OF BUDGET"
+      },
+      "tech_tools": {
+        "label": "Tools & Tech",
+        "desc": "Laptops, networking equipment, and high-speed campus internet.",
+        "value": "15%",
+        "value_desc": "OF BUDGET"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "eye_catching_title": "Get in Touch",
+      "title_line1": "We'd Love to Hear",
+      "title_line2": "From You.",
+      "subtitle": "Whether you have questions, want to volunteer, or are interested in partnering with us, we're here to connect."
+    },
+    "contact_info": {
+      "title": "Visit Us",
+      "address_title": "Our Address:",
+      "address": "BP 511, Phum Tropeang Chhuk (Borey Sorla) Sangtak, Street 371, Phnom Penh, Cambodia",
+      "phone": "+855 123 456 789",
+      "email": "psscambodia.com"
+    },
+    "form": {
+      "name_label": "Your Name",
+      "email_label": "Your Email",
+      "message_label": "Your Message",
+      "submit_button": "Send Message",
+      "subject_label": "Subject",
+      "subject_option_1": "General Inquiry",
+      "subject_option_2": "Volunteer Opportunities",
+      "subject_option_3": "Partnership Opportunities",
+      "subject_option_4": "Donation Questions"
     }
   }
 }

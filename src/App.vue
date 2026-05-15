@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-white">
     
     <header class="fixed w-full top-0 z-50 bg-primary shadow-md">
-      <Nabar />
+      <Navbar />
     </header>
 
     <main>
@@ -33,7 +33,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import Nabar from './components/common/Nabar.vue';
+import Navbar from './components/common/Navbar.vue';
 
 const showButton = ref(false);
 
