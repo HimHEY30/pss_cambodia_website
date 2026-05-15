@@ -77,9 +77,9 @@
                 </div>
             </div>
 
-            <button
+            <router-link to="/get-involved"
                 class="px-3 py-2 text-sm bg-secondary rounded-xl hover:bg-secondary-light transition-colors duration-300">{{
-                    t('common.navbar.donate') }}</button>
+                    t('common.navbar.donate') }}</router-link>
         </div>
 
         <!-- Mobile/Tablet Menu Button -->
@@ -154,9 +154,9 @@
                 </div>
             </div>
 
-            <button
+            <router-link to="/get-involved" @click="closeMenu"
                 class="w-full px-4 py-2 bg-secondary rounded-xl hover:bg-secondary-light transition-colors duration-300 text-sm">{{
-                    t('common.navbar.donate') }}</button>
+                    t('common.navbar.donate') }}</router-link>
         </div>
     </div>
 </template>
@@ -167,6 +167,7 @@ import { ref, computed } from 'vue';
 import engFlag from '@/assets/images/icons/eng_flag.png';
 import khFlag from '@/assets/images/icons/kh_flag.png';
 import frFlag from '@/assets/images/icons/french_flag.png';
+import router from '@/router';
 
 const { t, locale } = useI18n();
 const isMenuOpen = ref(false);
