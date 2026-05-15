@@ -82,7 +82,7 @@
     </div>
 
     <div class="bg-[#22bbea] brightness-90 py-6 px-6 border-t border-white/10">
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs text-slate-100/80">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs text-white">
         <p>&copy; {{ currentYear }} {{ t('common.footer.copy') }}</p>
         <div class="mt-4 md:mt-0 flex space-x-6">
           <span>{{ t('common.footer.privacy_policy') }}</span>
