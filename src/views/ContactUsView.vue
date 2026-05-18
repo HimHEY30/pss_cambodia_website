@@ -30,7 +30,7 @@
               <p class="text-orange-50 leading-relaxed text-sm md:text-base">
                 <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
                   <strong class="block mb-1">{{ t("contact.contact_info.address_title") }}</strong>
-                  BP {{ t("contact.contact_info.address") }}
+                   {{ t("contact.contact_info.address") }}
                 </a>
               </p>
             </div>

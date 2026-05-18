@@ -57,7 +57,7 @@
           <ul class="space-y-4">
             <li class="flex items-start space-x-3 group">
               <component :is="Mail" class="w-5 h-5 text-white/80 group-hover:text-white transition-colors" />
-              <span class="text-sm text-slate-50">{{ t('common.footer.contact.email') }}</span>
+              <span class="text-sm text-slate-50">{{ $t('common.footer.contact.email') }}</span>
             </li>
             <li class="flex items-start space-x-3 group">
               <component :is="Phone" class="w-5 h-5 text-white/80 group-hover:text-white transition-colors" />

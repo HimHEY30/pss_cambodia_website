@@ -24,7 +24,7 @@
         "phone_label": "Phone:",
         "phone": "023 99 55 00",
         "email_label": "Email:",
-        "email": "psscambodia.com"
+        "email": "{'info@promotingskillsforsucssess.org'}"
       },
       "legal": "Documents",
       "terms_and_conditions": "Terms & Conditions",
@@ -309,7 +309,7 @@
     "hero": {
       "eyes_catching_title": "Support Our Mission",
       "title_line1": "Help Change",
-      "title_line2": "a Life Today",
+      "title_line2": "a Youth's Life",
       "subtitle": "Whether you donate, volunteer, or partner with us — every contribution creates lasting change for Cambodian youth."
     },
     "qr": {
