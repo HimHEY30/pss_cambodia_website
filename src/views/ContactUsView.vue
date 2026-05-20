@@ -57,12 +57,6 @@
               </div>
             </div>
           </div>
-
-          <div class="flex justify-center lg:justify-start gap-4 pt-8 lg:pt-4">
-            <a href="#" v-for="i in 4" :key="i" class="w-12 h-12 rounded-full border border-slate-100 flex items-center justify-center text-slate-400 hover:text-[#00AEEF] hover:border-[#00AEEF] transition-all">
-              <component :is="socialIcons[i-1]" class="w-5 h-5" />
-            </a>
-          </div>
         </div>
 
         <div class="lg:col-span-3 h-[400px] md:h-[500px] lg:h-full">
@@ -88,12 +82,8 @@
 <script setup>
 import Footer from '@/components/common/Footer.vue';
 import { onMounted } from 'vue';
-import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-vue-next';
-
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
-
-const socialIcons = [Facebook, Instagram, Linkedin, Youtube];
 
 onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
@@ -109,7 +99,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
 .reveal {
   opacity: 0;
   transform: translateY(30px);

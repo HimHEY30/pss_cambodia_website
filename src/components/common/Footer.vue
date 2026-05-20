@@ -1,13 +1,13 @@
 <template>
   <footer class="w-full text-white font-sans">
     <div class="bg-primary py-12 px-6 lg:px-8">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-12">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_2fr] gap-12">
         
         <div class="space-y-4">
           <div class="flex items-center space-x-2">
             <img src="@/assets/images/pss_logo.png" alt="PSS Logo" class="w-16 h-16">
             <div class="text-white">
-                <p class="text-2xl font-bold leading-none">{{ t('common.pss.short_name') }}</p>
+                <p class="text-lg font-bold leading-none">{{ t('common.pss.short_name') }}</p>
                 <p class="text-sm"> {{ t('common.pss.name') }}</p>
             </div>
           </div>
@@ -73,8 +73,10 @@
         <div>
           <h3 class="text-lg font-semibold mb-6 border-b border-white/20 pb-2 inline-block">{{ t('common.footer.legal') }}</h3>
           <ul class="space-y-3">
-            <li><a href="#">{{ t('common.footer.terms_and_conditions') }}</a></li>
-            <li><a href="#">{{ t('common.footer.privacy_policy') }}</a></li>
+            <li><a class="hover:font-bold" :href="SAFETY_WORKPLACE_DOC" target="_blank">>> {{ t("about.policies.policy1_title") }}</a></li>
+            <li><a class="hover:font-bold" :href="ANTI_FRAUD_DOC" target="_blank">>> {{ t("about.policies.policy2_title") }}</a></li>
+            <li><a class="hover:font-bold" :href="DONOR_PRIVACY_DOC" target="_blank">>> {{ t("about.policies.policy3_title") }}</a></li>
+            <li><a class="hover:font-bold" :href="CHILD_SAFETY_DOC" target="_blank">>> {{ t("about.policies.policy4_title") }}</a></li>
           </ul>
         </div>
 
@@ -82,12 +84,8 @@
     </div>
 
     <div class="bg-[#22bbea] brightness-90 py-6 px-6 border-t border-white/10">
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs text-white">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center text-xs text-white">
         <p>&copy; {{ currentYear }} {{ t('common.footer.copy') }}</p>
-        <div class="mt-4 md:mt-0 flex space-x-6">
-          <span>{{ t('common.footer.privacy_policy') }}</span>
-          <span>{{ t('common.footer.terms_and_conditions') }}</span>
-        </div>
       </div>
     </div>
   </footer>
@@ -95,12 +93,18 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n';
+
+
+import SAFETY_WORKPLACE_DOC from '@/assets/doc/policies/PSS POLICY ON THE PREVENTION OF DISCRIMINATION AND HARASSMENT AT WORK.pdf';
+import ANTI_FRAUD_DOC from '@/assets/doc/policies/PSS POLICY ANTI FRAUD, CORRUPTION AND CONFLICTS OF INTEREST.pdf';
+import DONOR_PRIVACY_DOC from '@/assets/doc/policies/PSS Donation Acceptance and Donor Safety & Privacy Policy.pdf';
+import CHILD_SAFETY_DOC from '@/assets/doc/policies/PSS Child and young people safety policy.pdf';
+
 const { t } = useI18n();
 import { computed } from 'vue';
 import { 
   Mail, 
-  Phone, 
-  MapPin 
+  Phone
 } from 'lucide-vue-next';
 
 

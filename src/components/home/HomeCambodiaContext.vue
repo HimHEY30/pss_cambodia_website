@@ -45,7 +45,7 @@
                {{t('home.context.s4_eyes_catching_title')}}
             </div>
             <div class="text-6xl font-black text-white tracking-tighter mb-2">{{ t('home.context.s4_value') }}</div>
-            <div class="text-sm font-bold text-blue-400 uppercase tracking-widest mb-4">{{ t('home.context.s4_title') }}</div>
+            <div class="text-sm font-bold text-primary uppercase tracking-widest mb-4">{{ t('home.context.s4_title') }}</div>
             <p class="text-sm text-slate-400 max-w-[280px] leading-relaxed">
               {{ t('home.context.s4_label') }}
             </p>
@@ -76,7 +76,7 @@
                   <span class="text-xl font-black text-white">29%</span>
                 </div>
                 <div class="h-4 w-full bg-slate-700/50 rounded-full overflow-hidden">
-                  <div class="h-full bg-blue-500 stem-bar-grow shadow-[0_0_20px_rgba(59,130,246,0.3)]" style="width: 29%"></div>
+                  <div class="h-full bg-primary stem-bar-grow shadow-[0_0_20px_rgba(59,130,246,0.3)]" style="width: 29%"></div>
                 </div>
               </div>
 
@@ -115,17 +115,17 @@ const standardStats = [
 onMounted(() => {
   const ctx = gsap.context(() => {
     gsap.to('.animate-item', {
-      opacity: 1, y: 0, duration: 0.8,
+      opacity: 1, y: 0, duration: 0.3,
       scrollTrigger: { trigger: '.animate-item', start: 'top 90%' }
     });
 
     gsap.to('.stat-card', {
-      opacity: 1, duration: 0.8, stagger: 0.15, ease: 'power3.out',
+      opacity: 1, duration: 0.3, stagger: 0.15, ease: 'power3.out',
       scrollTrigger: { trigger: '.stat-card', start: 'top 85%' }
     });
 
     gsap.from('.stem-bar-grow', {
-      width: 0, duration: 1.5, stagger: 0.3, ease: 'expo.out',
+      width: 0, duration: 0.5, stagger: 0.3, ease: 'expo.out',
       scrollTrigger: { trigger: '.stat-card', start: 'top 80%' }
     });
   }, contextSection.value);

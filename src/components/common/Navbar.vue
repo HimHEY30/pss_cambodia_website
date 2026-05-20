@@ -211,7 +211,7 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
 }
 
 .router-link-exact-active {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffca67;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
 }
 </style>

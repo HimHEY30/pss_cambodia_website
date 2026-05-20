@@ -6,12 +6,13 @@
       <div class="grid lg:grid-cols-2 gap-16 items-center mb-24">
         <div class="reveal">
           <h2 class="text-4xl font-extrabold text-slate-900 mb-6">{{ t("impact.stories.title")}}</h2>
-          <p class="text-sky-500 font-bold mb-6">{{ t("impact.stories.subtitle") }}</p>
+          <p class="text-primary font-bold mb-6">{{ t("impact.stories.subtitle") }}</p>
           <p class="text-lg text-slate-600 leading-relaxed mb-6">
             {{ t("impact.stories.desc_1") }}
           </p>
           <p class="text-slate-600 leading-relaxed italic">
-            {{ t("impact.stories.desc_2") }}
+            <strong class="text-primary">{{ t("impact.stories.desc_2_line_1") }}</strong>
+            {{ t("impact.stories.desc_2_line_2") }}
           </p>
         </div>
         <div class="reveal relative">

@@ -271,7 +271,8 @@
       "title": "Stories that show what’s possible",
       "subtitle": "Built on 20 years of PNC experience:",
       "desc_1": "Every cohort brings new momentum. From students who begin with little to no experience, to graduates building real careers in web and software development—our impact is reflected in the daily progress of individuals and the long-term benefits for their families.",
-      "desc_2": "Discover firsthand testimonies and updates from across PNC: training achievements, graduation moments, and milestones that demonstrate how education and opportunity create lasting change."
+      "desc_2_line_1": "Discover firsthand testimonies and updates from across PNC:",
+      "desc_2_line_2": "training achievements, graduation moments, and milestones that demonstrate how education and opportunity create lasting change."
     },
     "alumini": {
       "title": "Success Stories",
@@ -336,10 +337,7 @@
       "confirm": {
         "option_1": "Safe & Instant Transfer",
         "option_2": "No Transaction Fees"
-      },
-      "bank_name": "PSS Cambodia KHQR",
-      "pss_name": "PSS Cambodia Bank Account",
-      "account_number": ""
+      }
     },
     "path_of_donation": {
       "title": "Where Your Donation Goes",

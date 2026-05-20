@@ -55,12 +55,9 @@
               <img src="@/assets/images/QR.png" alt="KHQR Code" class="w-full h-full opacity-80" />
             </div>
             <div class="mt-4 flex justify-center">
-              <span class="text-slate-900 font-black tracking-tighter text-xl">PSS Cambodia KH<span
-                  class="text-red-600">QR</span></span>
+              <span class="text-slate-900 font-black tracking-24 text-sm uppercase">($) Promotting Skills <br> for Success Organization</span>
             </div>
           </div>
-          <p class="text-slate-500 text-xs mt-6 uppercase font-bold tracking-widest">{{
-            t("getInvolved.qr.account_number") }}</p>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 <template>
     <section class="reveal py-24 px-6 overflow-hidden">
         <div
-        class="max-w-4xl mx-auto bg-white p-10 lg:p-20 rounded-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-sky-50 relative overflow-hidden">
+        class="max-w-7xl mx-auto bg-white p-10 lg:p-20 rounded-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-sky-50 relative overflow-hidden">
         <div class="absolute top-0 right-0 w-32 h-32 bg-sky-50 rounded-bl-[5rem] -z-0"></div>
         
         <div class="relative z-10">
