@@ -2,7 +2,7 @@
   <section ref="heroSection" class="relative w-full h-screen overflow-hidden bg-[#003366]">
     <img 
       ref="heroBg"
-      src="@/assets/images/home_hero_bg.png" 
+      src="@/assets/images/bg_hero.jpg" 
       alt="Home Hero Background"
       class="absolute inset-0 w-full h-full object-cover scale-110"
     >

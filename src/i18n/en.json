@@ -109,7 +109,9 @@
     },
     "director_message": {
       "eye_catching_title": "Message from Our Director",
-      "message": "We don’t just teach code; we foster a sense of belonging. At PSS, responsibility and solidarity are the tools our youth use to build sustainable livelihoods.",
+      "message_line1": "I am honored to join Promoting Skills for Success (PSS) as the Executive Director. Today in Cambodia, only about 1 in 3 young people have a job that matches their education. For young women, the struggle is even harder. Between the lasting effects of the Covid-19 pandemic, global economic and the lack of equal opportunities, too many are being left behind.",
+      "message_line2": "At PSS, we believe digital education is the ultimate equalizer and a gateway for a better life. Our programs are built on excellence, combining high-level IT training with the real-world skills that modern employers demand. By maintaining the highest standards in our classrooms, we ensure our graduates don't just find jobs—they become leaders in their fields.",
+      "message_line3": "I look forward to collaborating with all our stakeholders, including local partners and communities, to grow our impact. Your support allows us to provide the quality training necessary to transform lives, ensuring every young woman in Cambodia has the opportunity to thrive in the digital age. Let’s build this future together!",
       "signature": "Director of PSS Cambodia",
       "director_name": "Mr. Hang Hybunna"
     },
@@ -146,6 +148,20 @@
       "year6": "2025",
       "event6_title": "PSS Cambodia Becomes a Local NGO",
       "event6": "PSS Cambodia becomes a local NGO, registered with the Ministry of Social Affairs, Labour and Employment."
+    },
+    "policies": {
+      "eyes_catching_title": "Accountability & Trust",
+      "title": "Our Policies & Commitment",
+      "subtitle": "We are dedicated to the highest standards of ethical practice, safety, and absolute transparency. Our core policies ensure the protection of the communities we serve, our staff, and the generous supporters who make our mission possible.",
+      "policy1_title": "Child Safety Policy",
+      "policy1_desc": "Our Child Safety policy at PSS prioritizes the protection and well-being of youths in all aspects of our operation. We enforce strict guidelines to ensure a safe environment, aligned with international standards and best practices....",
+      "policy2_title": "Safety Workplace Policy",
+      "policy2_desc": "We are committed to promote the well-being of our employees by creating a safe, inclusive and supportive work environment. This includes not only implementing strict workplace safety policies but also promoting an organizational culture that values the physical and mental health of employees.",
+      "policy3_title": "Global Anti-Fraud, Anti-Bribery and Corruption Policy",
+      "policy3_desc": "Our global anti-fraud, anti-bribery and corruption policy at PSS ensures stringent measures are in place to prevent unethical practices. We enforce strict guidelines and conduct regular audits to uphold integrity across all operations and engagements.",
+      "policy4_title": "Donor Safety, Donation Acceptance & Privacy Policy",
+      "policy4_desc": "Our donor safety, donation acceptance & privacy policy ensures the secure and ethical handling of financial transactions and donor information. We adhere to strict protocols to ensure transparency, protect donor privacy, and maintain the trust of our partners and stakeholders.",
+      "cta": "Read Full Policies"
     }
   },
   "ourTeam": {
@@ -302,7 +318,9 @@
         "qoute_1": "On behalf of Daiichi Life, we proudly acknowledge our partnership with PNC in developing  future talent. Over the past three consecutive years, Daiichi Life has provided internship opportunities to PNC students, enabling them to gain valuable industry exposure and practical skills.",
         "qoute_2": "This initiative reflects our commitment to corporate social responsibility and talent development. We are pleased to see PNC students grow through this program, with some progressing into full-time roles.",
         "qoute_3": "We look forward to continuing this meaningful collaboration."
-      }
+      },
+      "cta_read_more": "Read More",
+      "cta_read_less": "Read Less"
     }
   },
   "getInvolved": {

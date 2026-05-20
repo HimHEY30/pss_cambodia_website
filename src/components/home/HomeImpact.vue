@@ -3,6 +3,10 @@ import { onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import GRADUATE from "@/assets/images/impact/1.jpg";
+import WORK from "@/assets/images/impact/2.jpg";
+import VOLUNTEER from "@/assets/images/impact/3.PNG";
+import GENDER from "@/assets/images/impact/4.JPG";
 import { 
   GraduationCap, 
   Briefcase, 
@@ -15,38 +19,64 @@ gsap.registerPlugin(ScrollTrigger);
 const { t } = useI18n();
 const sectionRef = ref(null);
 
-
-// Statistics Data
+// Statistics Data with image URLs
 const stats = [
   { 
     value: t('home.impact.stat1_value'), 
     suffix: '+', 
     labelKey: 'home.impact.stat1_label', 
     subKey: 'home.impact.stat1_sub',
-    icon: GraduationCap 
+    icon: GraduationCap,
+    image: GRADUATE
   },
   { 
     value: t('home.impact.stat2_value'), 
     suffix: '%', 
     labelKey: 'home.impact.stat2_label', 
     subKey: 'home.impact.stat2_sub',
-    icon: Briefcase 
+    icon: Briefcase,
+    image: WORK
   },
   { 
     value: t('home.impact.stat3_value'), 
     suffix: '%', 
     labelKey: 'home.impact.stat3_label', 
     subKey: 'home.impact.stat3_sub',
-    icon: Clock 
+    icon: Clock,
+    image: VOLUNTEER
   },
   { 
     value: t('home.impact.stat4_value'), 
     suffix: '%', 
     labelKey: 'home.impact.stat4_label', 
     subKey: 'home.impact.stat4_sub',
-    icon: Users 
+    icon: Users,
+    image: GENDER
   }
 ];
+
+// Reusable function to handle the count-up animation on hover
+const handleCardHover = (event, targetValue) => {
+  const counterElement = event.currentTarget.querySelector('.counter');
+  if (!counterElement) return;
+
+  const parsedValue = parseFloat(targetValue) || 0;
+
+  // Kill any active count animations on this element to prevent overlapping
+  gsap.killTweensOf(counterElement);
+
+  // Reset to 0 right before animating
+  counterElement.innerText = "0";
+
+  // Run the counting animation with a slight delay so it syncs with the mid-flip rotation
+  gsap.to(counterElement, {
+    innerText: parsedValue,
+    duration: 1.5,
+    delay: 0.15, 
+    snap: { innerText: 1 },
+    ease: "power2.out"
+  });
+};
 
 onMounted(() => {
   const ctx = gsap.context(() => {
@@ -62,32 +92,17 @@ onMounted(() => {
       }
     });
 
-    // Stats Card Stagger + Count-up
-    const cards = gsap.utils.toArray(".stat-card");
-    
-    cards.forEach((card, index) => {
-      const counter = card.querySelector(".counter");
-      const targetValue = stats[index].value;
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: card,
-          start: "top 85%",
-        }
-      });
-
-      tl.from(card, {
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        ease: "back.out(1.7)"
-      })
-      .to(counter, {
-        innerText: targetValue,
-        duration: 2,
-        snap: { innerText: 1 },
-        ease: "power2.out"
-      }, "-=0.4");
+    // Handle overall entry animation of the card wrappers (without triggering counter yet)
+    gsap.from(".flip-card-perspective", {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.15,
+      ease: "back.out(1.5)",
+      scrollTrigger: {
+        trigger: sectionRef.value,
+        start: "top 75%",
+      }
     });
   }, sectionRef.value);
 });
@@ -102,12 +117,10 @@ onMounted(() => {
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       
       <div class="animate-header space-y-6">
-          <span
-        class="block text-sm tracking-widest uppercase text-white leading-tight mb-4"
-      >
-        {{ t('home.impact.eye_catching_title') }}
-      </span>
-        <h2 class="text-secondary g text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+        <span class="block text-sm tracking-widest uppercase text-white leading-tight mb-4">
+          {{ t('home.impact.eye_catching_title') }}
+        </span>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
           {{ t('home.impact.title_line1') }} <br />
           <span class="text-blue-50">{{ t('home.impact.title_line2') }}</span>
         </h2>
@@ -125,25 +138,51 @@ onMounted(() => {
         </div>
       </div>
 
-      <div ref="statsContainer" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div 
           v-for="(stat, index) in stats" 
           :key="index"
-          class="stat-card group bg-white p-8 rounded-2xl shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-default"
+          class="flip-card-perspective h-72 w-full group cursor-pointer"
+          @mouseenter="handleCardHover($event, stat.value)"
         >
-          <div class="mb-4 inline-block p-3 bg-blue-50 rounded-lg text-[#22bbea] group-hover:bg-[#22bbea] group-hover:text-white transition-colors duration-300">
-            <component :is="stat.icon" :size="28" />
+          <div class="flip-card-inner relative w-full h-full duration-500 structures-3d group-hover:rotate-y-180">
+            
+            <div class="flip-card-front absolute inset-0 backface-hidden rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                :src="stat.image" 
+                :alt="t(stat.labelKey)" 
+                class="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                <div class="flex items-center space-x-3 text-white">
+                  <div class="p-2 bg-white/20 backdrop-blur-md rounded-lg">
+                    <component :is="stat.icon" :size="22" />
+                  </div>
+                  <h4 class="text-lg font-bold tracking-wide">{{ t(stat.labelKey) }}</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card-back absolute inset-0 backface-hidden bg-white p-8 rounded-2xl shadow-lg flex flex-col justify-between rotate-y-180">
+              <div>
+                <div class="mb-4 inline-block p-3 bg-blue-50 rounded-lg text-[#22bbea]">
+                  <component :is="stat.icon" :size="28" />
+                </div>
+                
+                <div class="flex items-baseline space-x-1">
+                  <span class="counter text-4xl font-extrabold text-gray-900">0</span>
+                  <span class="text-3xl font-bold text-gray-900">{{ stat.suffix }}</span>
+                </div>
+                
+                <h4 class="text-xl font-bold text-gray-800 mt-2">{{ t(stat.labelKey) }}</h4>
+              </div>
+              
+              <p class="text-gray-500 text-sm leading-snug">
+                {{ t(stat.subKey) }}
+              </p>
+            </div>
+
           </div>
-          
-          <div class="flex items-baseline space-x-1">
-            <span class="counter text-4xl font-extrabold text-gray-900">0</span>
-            <span class="text-3xl font-bold text-gray-900">{{ stat.suffix }}</span>
-          </div>
-          
-          <h4 class="text-xl font-bold text-gray-800 mt-1">{{ t(stat.labelKey) }}</h4>
-          <p class="text-gray-500 text-sm mt-2 leading-snug">
-            {{ t(stat.subKey) }}
-          </p>
         </div>
       </div>
 
@@ -152,8 +191,30 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* Ensure GSAP uses the raw text for number counting */
 .counter {
   font-variant-numeric: tabular-nums;
+}
+
+/* 3D Flip Mechanics */
+.flip-card-perspective {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.structures-3d {
+  transform-style: preserve-3d;
 }
 </style>

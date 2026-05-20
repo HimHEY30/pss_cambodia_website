@@ -5,6 +5,7 @@
     <ManagerQoute class="reveal" />
     <CoreValue class="reveal"/>
     <EvaluationOfPSS class="reveal" />
+    <Policy class="reveal" />
     <Footer></Footer>
   </div>
 </template>
@@ -16,6 +17,7 @@ import MissionVision from '@/components/about/Mission&Vision.vue';
 import ManagerQoute from '@/components/about/ManagerQoute.vue';
 import CoreValue from '@/components/about/CoreValue.vue';
 import EvaluationOfPSS from '@/components/about/EvaluationOfPSS.vue';
+import Policy from '@/components/about/Policy.vue';
 
 import { onMounted, onUnmounted, nextTick } from 'vue';
 let observer = null;

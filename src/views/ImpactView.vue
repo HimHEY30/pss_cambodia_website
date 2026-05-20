@@ -32,103 +32,148 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="reveal bg-white p-10 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-2xl transition-all duration-500 group"
-               :style="{ transitionDelay: `${i * 100}ms` }">
-            <div class="flex items-center gap-4 mb-8">
-              <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
-                <img src="@/assets/images/students/CHANUT.jpg" alt="" class="w-full h-full object-cover" />
+          
+          <div class="reveal bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-xl transition-all duration-500 group flex flex-col justify-between h-full">
+            <div>
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
+                  <img src="@/assets/images/students/CHANUT.jpg" alt="" class="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900">{{ t("impact.alumini.alumini_1.name") }}</h4>
+                  <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.alumini_1.location") }}</p>
+                </div>
               </div>
-              <div>
-                <h4 class="font-bold text-slate-900">{{ t("impact.alumini.alumini_1.name") }}</h4>
-                <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.alumini_1.location") }}</p>
+              
+              <h3 class="text-xl font-bold italic mb-3">"{{ t("impact.alumini.alumini_1.title") }}"</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-2">{{ t("impact.alumini.alumini_1.intro") }}</p>
+              <p class="text-slate-600 text-sm italic leading-relaxed">"{{ t("impact.alumini.alumini_1.quote_1") }}"</p>
+              
+              <div class="grid transition-all duration-500 ease-in-out" :class="expandedCards.chanut ? 'grid-rows-[1fr] opacity-100 mt-4' : 'grid-rows-[0fr] opacity-0'">
+                <div class="overflow-hidden space-y-4 text-sm text-slate-600 leading-relaxed">
+                  <p>{{ t("impact.alumini.alumini_1.body_1") }}</p>
+                  <p class="italic">"{{ t("impact.alumini.alumini_1.quote_2") }}"</p>
+                  <p>{{ t("impact.alumini.alumini_1.body_2") }}</p>
+                  <p>{{ t("impact.alumini.alumini_1.impact") }}</p>
+                  <p class="italic">"{{ t("impact.alumini.alumini_1.closing_quote") }}"</p>
+                </div>
               </div>
+
+              <button @click="expandedCards.chanut = !expandedCards.chanut" class="mt-4 text-xs font-bold text-[#00AEEF] hover:text-sky-600 inline-flex items-center gap-1 transition-colors">
+                {{ expandedCards.chanut ? t("impact.alumini.cta_read_less") : t("impact.alumini.cta_read_more") }}
+                <svg class="w-3 h-3 transition-transform duration-300" :class="{ 'rotate-180': expandedCards.chanut }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              </button>
             </div>
-            <h3 class="text-2xl font-bold italic">"{{ t("impact.alumini.alumini_1.title") }}"</h3>
-            <p class="text-slate-600 leading-relaxed mt-3">{{ t("impact.alumini.alumini_1.intro") }}</p>
-            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_1.quote_1") }}"</p>
-            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_1.body_1") }}</p>
-            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_1.quote_2") }}"</p>
-            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_1.body_2") }}</p>
-            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_1.impact") }}</p>
-            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_1.closing_quote") }}"</p>
-            <div class="mt-6 pt-6 border-t border-slate-50 flex items-center justify-between">
+
+            <div class="mt-6 pt-4 border-t border-slate-50 flex items-center justify-between">
               <span class="text-[10px] font-bold text-slate-300">{{ t("impact.alumini.alumini_1.class") }}</span>
               <svg class="w-5 h-5 text-sky-100 group-hover:text-[#00AEEF] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L21.017 3V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V3L10.017 3V15C10.017 18.3137 7.3307 21 4.017 21H3.017Z" /></svg>
             </div>
           </div>
-          <div class="reveal bg-white p-10 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-2xl transition-all duration-500 group"
-               :style="{ transitionDelay: `${i * 100}ms` }">
-            <div class="flex items-center gap-4 mb-8">
-              <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
-                <img src="@/assets/images/students/PISETH.jpg" alt="" class="w-full h-full object-cover" />
+
+          <div class="reveal bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-xl transition-all duration-500 group flex flex-col justify-between h-full">
+            <div>
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
+                  <img src="@/assets/images/students/PISETH.jpg" alt="" class="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900">{{ t("impact.alumini.alumini_2.name") }}</h4>
+                  <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.alumini_2.location") }}</p>
+                </div>
               </div>
-              <div>
-                <h4 class="font-bold text-slate-900">{{ t("impact.alumini.alumini_2.name") }}</h4>
-                <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.alumini_2.location") }}</p>
+              
+              <h3 class="text-xl font-bold italic mb-3">"{{ t("impact.alumini.alumini_2.title") }}"</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-2">{{ t("impact.alumini.alumini_2.intro") }}</p>
+              <p class="text-slate-600 text-sm italic leading-relaxed">"{{ t("impact.alumini.alumini_2.quote_1") }}"</p>
+              
+              <div class="grid transition-all duration-500 ease-in-out" :class="expandedCards.piseth ? 'grid-rows-[1fr] opacity-100 mt-4' : 'grid-rows-[0fr] opacity-0'">
+                <div class="overflow-hidden space-y-4 text-sm text-slate-600 leading-relaxed">
+                  <p>{{ t("impact.alumini.alumini_2.body_1") }}</p>
+                  <p class="italic">"{{ t("impact.alumini.alumini_2.quote_2") }}"</p>
+                  <p>{{ t("impact.alumini.alumini_2.body_2") }}</p>
+                  <p>{{ t("impact.alumini.alumini_2.impact") }}</p>
+                  <p class="italic">"{{ t("impact.alumini.alumini_2.closing_quote") }}"</p>
+                </div>
               </div>
+
+              <button @click="expandedCards.piseth = !expandedCards.piseth" class="mt-4 text-xs font-bold text-[#00AEEF] hover:text-sky-600 inline-flex items-center gap-1 transition-colors">
+                {{ expandedCards.piseth ? t("impact.alumini.cta_read_less") : t("impact.alumini.cta_read_more") }}
+                <svg class="w-3 h-3 transition-transform duration-300" :class="{ 'rotate-180': expandedCards.piseth }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              </button>
             </div>
-            <h3 class="text-2xl font-bold italic">"{{ t("impact.alumini.alumini_2.title") }}"</h3>
-            <p class="text-slate-600 leading-relaxed mt-3">{{ t("impact.alumini.alumini_2.intro") }}</p>
-            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_2.quote_1") }}"</p>
-            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_2.body_1") }}</p>
-            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_2.quote_2") }}"</p>
-            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_2.body_2") }}</p>
-            <p class="text-slate-600 leading-relaxed mt-4">{{ t("impact.alumini.alumini_2.impact") }}</p>
-            <p class="text-slate-600 italic leading-relaxed mt-4">"{{ t("impact.alumini.alumini_2.closing_quote") }}"</p>
-            <div class="mt-6 pt-6 border-t border-slate-50 flex items-center justify-between">
+
+            <div class="mt-6 pt-4 border-t border-slate-50 flex items-center justify-between">
               <span class="text-[10px] font-bold text-slate-300">{{ t("impact.alumini.alumini_2.class") }}</span>
               <svg class="w-5 h-5 text-sky-100 group-hover:text-[#00AEEF] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L21.017 3V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V3L10.017 3V15C10.017 18.3137 7.3307 21 4.017 21H3.017Z" /></svg>
             </div>
           </div>
-          <div class="reveal bg-white p-10 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-2xl transition-all duration-500 group"
-               :style="{ transitionDelay: `${i * 100}ms` }">
-            <div class="flex items-center gap-4 mb-8">
-              <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
-                <img src="@/assets/images/students/KUNTHEA.jpg" alt="" class="w-full h-full object-cover" />
+
+          <div class="reveal bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-xl transition-all duration-500 group flex flex-col justify-between h-full">
+            <div>
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
+                  <img src="@/assets/images/students/KUNTHEA.jpg" alt="" class="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900">{{ t("impact.alumini.alumini_3.name") }}</h4>
+                  <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.alumini_3.position") }} | {{ t("impact.alumini.alumini_3.work_at") }}</p>
+                </div>
               </div>
-              <div>
-                <h4 class="font-bold text-slate-900">{{ t("impact.alumini.alumini_3.name") }}</h4>
-                <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.alumini_3.position") }} | {{ t("impact.alumini.alumini_3.work_at") }}</p>
+              
+              <p class="text-slate-600 text-sm italic leading-relaxed">"{{ t("impact.alumini.alumini_3.qoute_1") }}</p>
+              
+              <div class="grid transition-all duration-500 ease-in-out" :class="expandedCards.kunthea ? 'grid-rows-[1fr] opacity-100 mt-4' : 'grid-rows-[0fr] opacity-0'">
+                <div class="overflow-hidden space-y-4 text-sm text-slate-600 leading-relaxed">
+                  <p class="italic">{{ t("impact.alumini.alumini_3.qoute_2") }}</p>
+                  <p class="italic">{{ t("impact.alumini.alumini_3.qoute_3") }}"</p>
+                </div>
               </div>
+
+              <button @click="expandedCards.kunthea = !expandedCards.kunthea" class="mt-4 text-xs font-bold text-[#00AEEF] hover:text-sky-600 inline-flex items-center gap-1 transition-colors">
+                {{ expandedCards.kunthea ? t("impact.alumini.cta_read_less") : t("impact.alumini.cta_read_more") }}
+                <svg class="w-3 h-3 transition-transform duration-300" :class="{ 'rotate-180': expandedCards.kunthea }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              </button>
             </div>
-            <p class="text-slate-600 italic leading-relaxed">
-              "{{ t("impact.alumini.alumini_3.qoute_1") }}
-            </p>
-            <p class="text-slate-600 italic leading-relaxed mt-4">
-              {{ t("impact.alumini.alumini_3.qoute_2") }}
-            </p>
-            <p class="text-slate-600 italic leading-relaxed mt-4">
-              {{ t("impact.alumini.alumini_3.qoute_3") }}"
-            </p>
-            <div class="mt-6 pt-6 border-t border-slate-50 flex items-center justify-between">
+
+            <div class="mt-6 pt-4 border-t border-slate-50 flex items-center justify-between">
               <span class="text-[10px] font-bold text-slate-300">{{ t("impact.alumini.alumini_3.class") }}</span>
               <svg class="w-5 h-5 text-sky-100 group-hover:text-[#00AEEF] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L21.017 3V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V3L10.017 3V15C10.017 18.3137 7.3307 21 4.017 21H3.017Z" /></svg>
             </div>
           </div>
-          <div class="reveal bg-white p-10 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-2xl transition-all duration-500 group"
-               :style="{ transitionDelay: `${i * 100}ms` }">
-            <div class="flex items-center gap-4 mb-8">
-              <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
-                <img src="@/assets/images/dlkh-logo.jpeg" alt="" class="w-full h-full object-cover" />
+
+          <div class="reveal bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-xl transition-all duration-500 group flex flex-col justify-between h-full">
+            <div>
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-14 h-14 rounded-full overflow-hidden ring-4 ring-sky-50 group-hover:ring-sky-100 transition-all">
+                  <img src="@/assets/images/dlkh-logo.jpeg" alt="" class="w-full h-full object-cover" />
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900">{{ t("impact.alumini.partner.name") }}</h4>
+                  <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.partner.position") }} | {{ t("impact.alumini.partner.work_at") }}</p>
+                </div>
               </div>
-              <div>
-                <h4 class="font-bold text-slate-900">{{ t("impact.alumini.partner.name") }}</h4>
-                <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">{{ t("impact.alumini.partner.position") }} | {{ t("impact.alumini.partner.work_at") }}</p>
+              
+              <p class="text-slate-600 text-sm italic leading-relaxed">"{{ t("impact.alumini.partner.qoute_1") }}</p>
+              
+              <div class="grid transition-all duration-500 ease-in-out" :class="expandedCards.partner ? 'grid-rows-[1fr] opacity-100 mt-4' : 'grid-rows-[0fr] opacity-0'">
+                <div class="overflow-hidden space-y-4 text-sm text-slate-600 leading-relaxed">
+                  <p class="italic">{{ t("impact.alumini.partner.qoute_2") }}</p>
+                  <p class="italic">{{ t("impact.alumini.partner.qoute_3") }}"</p>
+                </div>
               </div>
+
+              <button @click="expandedCards.partner = !expandedCards.partner" class="mt-4 text-xs font-bold text-[#00AEEF] hover:text-sky-600 inline-flex items-center gap-1 transition-colors">
+                {{ expandedCards.partner ? t("impact.alumini.cta_read_less") : t("impact.alumini.cta_read_more") }}
+                <svg class="w-3 h-3 transition-transform duration-300" :class="{ 'rotate-180': expandedCards.partner }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              </button>
             </div>
-            <p class="text-slate-600 italic leading-relaxed">
-              "{{ t("impact.alumini.partner.qoute_1") }}
-            </p>
-            <p class="text-slate-600 italic leading-relaxed mt-4">
-              {{ t("impact.alumini.partner.qoute_2") }}
-            </p>
-            <p class="text-slate-600 italic leading-relaxed mt-4">
-              {{ t("impact.alumini.partner.qoute_3") }}"
-            </p>
-            <div class="mt-6 pt-6 border-t border-slate-50 flex items-center justify-between">
+
+            <div class="mt-6 pt-4 border-t border-slate-50 flex items-center justify-between">
               <svg class="w-5 h-5 text-sky-100 group-hover:text-[#00AEEF] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L21.017 3V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V3L10.017 3V15C10.017 18.3137 7.3307 21 4.017 21H3.017Z" /></svg>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -140,33 +185,18 @@
 <script setup>
 import Footer from '@/components/common/Footer.vue';
 import HomeImpact from '@/components/home/HomeImpact.vue';
-import { onMounted } from 'vue';
+import { onMounted, reactive } from 'vue';
 import { useI18n } from 'vue-i18n';
+
 const { t } = useI18n();
 
-const alumni = [
-  {
-    name: 'Sovanmony Rath',
-    role: 'Senior Web Developer',
-    year: '2016',
-    image: 'https://ui-avatars.com/api/?name=Sovanmony+Rath&background=f1f5f9&color=00AEEF&bold=true',
-    quote: 'Coming from a rural province, I never thought I would be leading a dev team at an international agency. PSS gave me more than just technical skills; they gave me a community.'
-  },
-  {
-    name: 'Channary Kim',
-    role: 'Cybersecurity Analyst',
-    year: '2019',
-    image: 'https://ui-avatars.com/api/?name=Channary+Kim&background=f1f5f9&color=00AEEF&bold=true',
-    quote: 'Being a woman in tech was intimidating at first. But at PSS, I learned that my perspective is my strength. Today, I secure digital infrastructures for global companies.'
-  },
-  {
-    name: 'Vibol Soun',
-    role: 'IT Support Specialist',
-    year: '2021',
-    image: 'https://ui-avatars.com/api/?name=Vibol+Soun&background=f1f5f9&color=00AEEF&bold=true',
-    quote: 'The full support system meant I could study without worrying about where my next meal would come from. This program truly changes the trajectory of your life.'
-  }
-];
+// Tracking visibility state independently for each card
+const expandedCards = reactive({
+  chanut: false,
+  piseth: false,
+  kunthea: false,
+  partner: false
+});
 
 onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
@@ -182,12 +212,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
-
-.font-sans {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -199,21 +223,19 @@ onMounted(() => {
   transform: translateY(0);
 }
 
+/* Rest of your existing animation blocks remain untouched... */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes slideInLeft {
   from { opacity: 0; transform: translateX(-30px); }
   to { opacity: 1; transform: translateX(0); }
 }
-
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0); }
   50% { transform: translateY(-20px) rotate(5deg); }
 }
-
 .animate-fade-in-up { animation: fadeInUp 1s ease-out forwards; }
 .animate-fade-in { animation: fadeInUp 1.2s ease-out forwards; opacity: 0; }
 .animate-slide-in-left { animation: slideInLeft 0.8s ease-out forwards; }

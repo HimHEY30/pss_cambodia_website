@@ -5,6 +5,7 @@
     <HomeImpact></HomeImpact>
     <HomeCambodiaContext></HomeCambodiaContext>
     <HomePartnership></HomePartnership>
+    <Policy></Policy>
     <Footer></Footer>
   </div>
 </template>
@@ -16,6 +17,7 @@ import HomeImpact from '@/components/home/HomeImpact.vue';
 import HomeCambodiaContext from '@/components/home/HomeCambodiaContext.vue';
 import HomePartnership from '@/components/home/HomePartnership.vue';
 import Footer from '@/components/common/Footer.vue';
+import Policy from '@/components/about/Policy.vue';
 
 </script>
 
