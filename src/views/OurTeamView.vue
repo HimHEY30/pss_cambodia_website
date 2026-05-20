@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white text-slate-800 font-sans selection:bg-sky-100 selection:text-sky-900 overflow-x-hidden">
-    <BoardDirector class="reveal"></BoardDirector>
-    <ExecutiveTeam class="reveal"></ExecutiveTeam>
+    <BoardDirector class="reveal reveal-large"></BoardDirector>
+    <ExecutiveTeam class="reveal reveal-large"></ExecutiveTeam>
     <Footer></Footer>
   </div>
 </template>
@@ -12,59 +12,13 @@ import ExecutiveTeam from '@/components/team/ExecutiveTeam.vue';
 import BoardDirector from '@/components/team/BoardDirector.vue';
 import Footer from '@/components/common/Footer.vue';
 
+import { useScrollReveal } from '@/composables/useScrollReveal'
 
-import { onMounted, onUnmounted, nextTick } from 'vue';
-let observer = null;
-
-onMounted(async () => {
-  // nextTick ensures the child components are fully rendered in the DOM
-  await nextTick();
-
-  const observerOptions = {
-    threshold: 0.15, // Trigger when 15% of the component is visible
-    rootMargin: '0px 0px -100px 0px' // Offset to trigger slightly before it hits the bottom
-  };
-
-  observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      } else {
-        // OPTIONAL: Remove the comment below if you want the animation 
-        // to repeat every time you scroll back up and down.
-        entry.target.classList.remove('active');
-      }
-    });
-  }, observerOptions);
-
-  const targets = document.querySelectorAll('.reveal');
-  targets.forEach((el) => observer.observe(el));
-});
-
-onUnmounted(() => {
-  if (observer) observer.disconnect();
-});
+useScrollReveal({
+  options: {
+    threshold: 0.15,
+    rootMargin: '0px 0px -100px 0px',
+  },
+  repeat: true,
+})
 </script>
-
-<style scoped>
-/* Base state: Hidden and shifted down */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  /* Specify exact properties for better performance on mobile */
-  transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1), 
-              transform 1s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: opacity, transform; /* Tells browser to optimize these */
-}
-
-/* Active state: Visible and at original position */
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Custom smooth scroll behavior for the whole page */
-:global(html) {
-  scroll-behavior: smooth;
-}
-</style>

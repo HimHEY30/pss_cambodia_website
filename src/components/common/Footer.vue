@@ -2,13 +2,13 @@
   <footer class="w-full text-white font-sans">
     <div class="bg-primary py-12 px-6 lg:px-8">
       <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_2fr] gap-12">
-        
+
         <div class="space-y-4">
           <div class="flex items-center space-x-2">
             <img src="@/assets/images/pss_logo.png" alt="PSS Logo" class="w-16 h-16">
             <div class="text-white">
-                <p class="text-lg font-bold leading-none">{{ t('common.pss.short_name') }}</p>
-                <p class="text-sm"> {{ t('common.pss.name') }}</p>
+              <p class="text-lg font-bold leading-none">{{ t('common.pss.short_name') }}</p>
+              <p class="text-sm"> {{ t('common.pss.name') }}</p>
             </div>
           </div>
           <p class="text-slate-50 leading-relaxed text-sm opacity-90">
@@ -17,43 +17,49 @@
         </div>
 
         <div>
-          <h3 class="text-lg font-semibold mb-6 border-b border-white/20 pb-2 inline-block text-slate-00">{{ t('common.footer.quick_links') }}</h3>
+          <h3 class="text-lg font-semibold mb-6 border-b border-white/20 pb-2 inline-block text-slate-00">{{
+            t('common.footer.quick_links') }}</h3>
           <ul class="space-y-2">
             <li>
               <router-link to="/" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
-                {{ t("common.navbar.home")}}
+                {{ t("common.navbar.home") }}
               </router-link>
             </li>
             <li>
-              <router-link to="/about" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
-                {{ t("common.navbar.about")}}
+              <router-link to="/about"
+                class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
+                {{ t("common.navbar.about") }}
               </router-link>
             </li>
             <li>
               <router-link to="/team" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
-                {{ t("common.navbar.team")}}
+                {{ t("common.navbar.team") }}
               </router-link>
             </li>
             <li>
-              <router-link to="/programs" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
-                {{ t("common.navbar.programs")}}
+              <router-link to="/programs"
+                class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
+                {{ t("common.navbar.programs") }}
               </router-link>
             </li>
             <li>
-              <router-link to="/impact" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
-                {{ t("common.navbar.impact")}}
+              <router-link to="/impact"
+                class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
+                {{ t("common.navbar.impact") }}
               </router-link>
             </li>
             <li>
-              <router-link to="/get-involved" class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
-                {{ t("common.navbar.get_involved")}}
+              <router-link to="/get-involved"
+                class="text-slate-50 hover:text-slate-300 transition-colors duration-200 text-sm">
+                {{ t("common.navbar.get_involved") }}
               </router-link>
             </li>
           </ul>
         </div>
 
         <div>
-          <h3 class="text-lg font-semibold mb-6 border-b border-white/20 pb-2 inline-block">{{ t('common.footer.contact.title') }}</h3>
+          <h3 class="text-lg font-semibold mb-6 border-b border-white/20 pb-2 inline-block">{{
+            t('common.footer.contact.title') }}</h3>
           <ul class="space-y-4">
             <li class="flex items-start space-x-3 group">
               <component :is="Mail" class="w-5 h-5 text-white/80 group-hover:text-white transition-colors" />
@@ -65,18 +71,24 @@
             </li>
             <li>
               <p class="text-sm font-bold text-slate-50">{{ t('common.footer.contact.address_label') }}</p>
-              <a href="https://maps.app.goo.gl/S3Tjz2mkDaGfXCSa9" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-50">{{ t('common.footer.contact.address') }}</a>
+              <a href="https://maps.app.goo.gl/S3Tjz2mkDaGfXCSa9" target="_blank" rel="noopener noreferrer"
+                class="text-sm text-slate-50">{{ t('common.footer.contact.address') }}</a>
             </li>
           </ul>
         </div>
 
         <div>
-          <h3 class="text-lg font-semibold mb-6 border-b border-white/20 pb-2 inline-block">{{ t('common.footer.legal') }}</h3>
+          <h3 class="text-lg font-semibold mb-6 border-b border-white/20 pb-2 inline-block">{{ t('common.footer.legal')
+            }}</h3>
           <ul class="space-y-3">
-            <li><a class="hover:font-bold" :href="SAFETY_WORKPLACE_DOC" target="_blank">>> {{ t("about.policies.policy1_title") }}</a></li>
-            <li><a class="hover:font-bold" :href="ANTI_FRAUD_DOC" target="_blank">>> {{ t("about.policies.policy2_title") }}</a></li>
-            <li><a class="hover:font-bold" :href="DONOR_PRIVACY_DOC" target="_blank">>> {{ t("about.policies.policy3_title") }}</a></li>
-            <li><a class="hover:font-bold" :href="CHILD_SAFETY_DOC" target="_blank">>> {{ t("about.policies.policy4_title") }}</a></li>
+            <li><a class="hover:font-bold" :href="SAFETY_WORKPLACE_DOC" target="_blank">>> {{
+              t("about.policies.policy1_title") }}</a></li>
+            <li><a class="hover:font-bold" :href="ANTI_FRAUD_DOC" target="_blank">>> {{
+              t("about.policies.policy2_title") }}</a></li>
+            <li><a class="hover:font-bold" :href="DONOR_PRIVACY_DOC" target="_blank">>> {{
+              t("about.policies.policy3_title") }}</a></li>
+            <li><a class="hover:font-bold" :href="CHILD_SAFETY_DOC" target="_blank">>> {{
+              t("about.policies.policy4_title") }}</a></li>
           </ul>
         </div>
 
@@ -93,7 +105,7 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n';
-
+import { Mail, Phone } from 'lucide-vue-next';
 
 import SAFETY_WORKPLACE_DOC from '@/assets/doc/policies/PSS POLICY ON THE PREVENTION OF DISCRIMINATION AND HARASSMENT AT WORK.pdf';
 import ANTI_FRAUD_DOC from '@/assets/doc/policies/PSS POLICY ANTI FRAUD, CORRUPTION AND CONFLICTS OF INTEREST.pdf';
@@ -101,18 +113,8 @@ import DONOR_PRIVACY_DOC from '@/assets/doc/policies/PSS Donation Acceptance and
 import CHILD_SAFETY_DOC from '@/assets/doc/policies/PSS Child and young people safety policy.pdf';
 
 const { t } = useI18n();
-import { computed } from 'vue';
-import { 
-  Mail, 
-  Phone
-} from 'lucide-vue-next';
 
-
-
-// Dynamic Year Logic
-const currentYear = computed(() => new Date().getFullYear());
+const currentYear = new Date().getFullYear();
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
