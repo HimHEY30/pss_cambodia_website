@@ -11,7 +11,8 @@ import {
   GraduationCap, 
   Briefcase, 
   Clock, 
-  Users 
+  Users,
+  Pointer 
 } from 'lucide-vue-next';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -19,7 +20,9 @@ gsap.registerPlugin(ScrollTrigger);
 const { t } = useI18n();
 const sectionRef = ref(null);
 
-// Statistics Data with image URLs
+// Track the index of the active flipped card on mobile/tablet
+const activeCardIndex = ref(null);
+
 const stats = [
   { 
     value: t('home.impact.stat1_value'), 
@@ -55,20 +58,14 @@ const stats = [
   }
 ];
 
-// Reusable function to handle the count-up animation on hover
-const handleCardHover = (event, targetValue) => {
-  const counterElement = event.currentTarget.querySelector('.counter');
+// Reusable count-up animation function
+const animateCounter = (counterElement, targetValue) => {
   if (!counterElement) return;
-
   const parsedValue = parseFloat(targetValue) || 0;
 
-  // Kill any active count animations on this element to prevent overlapping
   gsap.killTweensOf(counterElement);
-
-  // Reset to 0 right before animating
   counterElement.innerText = "0";
 
-  // Run the counting animation with a slight delay so it syncs with the mid-flip rotation
   gsap.to(counterElement, {
     innerText: parsedValue,
     duration: 1.5,
@@ -78,9 +75,33 @@ const handleCardHover = (event, targetValue) => {
   });
 };
 
+// Handle Desktop Hover Actions
+const handleCardHover = (event, stat) => {
+  // Breakpoint matching Tailwind's 'lg' (1024px)
+  if (window.innerWidth < 1024) return;
+  
+  const counterElement = event.currentTarget.querySelector('.counter');
+  animateCounter(counterElement, stat.value);
+};
+
+// Handle Mobile/Tablet Tap Actions
+const handleCardClick = (event, index, stat) => {
+  // Ignore clicks if on desktop screen size
+  if (window.innerWidth >= 1024) return;
+
+  if (activeCardIndex.value === index) {
+    activeCardIndex.value = null; // Toggle closed if clicked again
+  } else {
+    activeCardIndex.value = index;
+    
+    const counterElement = event.currentTarget.querySelector('.counter');
+    animateCounter(counterElement, stat.value);
+  }
+};
+
 onMounted(() => {
   const ctx = gsap.context(() => {
-    // Header Fade-in from Left
+    // Header Intro Animation
     gsap.from(".animate-header", {
       x: -100,
       opacity: 0,
@@ -92,7 +113,7 @@ onMounted(() => {
       }
     });
 
-    // Handle overall entry animation of the card wrappers (without triggering counter yet)
+    // Grid Items Entrance Animation
     gsap.from(".flip-card-perspective", {
       y: 50,
       opacity: 0,
@@ -143,16 +164,29 @@ onMounted(() => {
           v-for="(stat, index) in stats" 
           :key="index"
           class="flip-card-perspective h-72 w-full group cursor-pointer"
-          @mouseenter="handleCardHover($event, stat.value)"
+          @mouseenter="handleCardHover($event, stat)"
+          @click="handleCardClick($event, index, stat)"
         >
-          <div class="flip-card-inner relative w-full h-full duration-500 structures-3d group-hover:rotate-y-180">
+          <div 
+            class="flip-card-inner relative w-full h-full duration-500 structures-3d"
+            :class="{ 
+              'lg:group-hover:rotate-y-180': true, 
+              'is-flipped': activeCardIndex === index 
+            }"
+          >
             
             <div class="flip-card-front absolute inset-0 backface-hidden rounded-2xl overflow-hidden shadow-lg">
               <img 
                 :src="stat.image" 
                 :alt="t(stat.labelKey)" 
-                class="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-500"
+                class="w-full h-full object-cover transform scale-100 lg:group-hover:scale-105 transition-transform duration-500"
               />
+              
+              <div class="absolute top-4 right-4 z-10 lg:hidden pointer-events-none flex items-center space-x-1.5 bg-black/50 backdrop-blur-md text-white text-xs px-2.5 py-1.5 rounded-full border border-white/20 shadow-sm animate-pulse-gentle">
+                <span>{{ t('home.impact.tap_hint', 'Tap') }}</span>
+                <component :is="Pointer" :size="13" class="animate-bounce-slight" />
+              </div>
+
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-6 flex flex-col justify-end">
                 <div class="flex items-center space-x-3 text-white">
                   <div class="p-2 bg-white/20 backdrop-blur-md rounded-lg">
@@ -195,7 +229,7 @@ onMounted(() => {
   font-variant-numeric: tabular-nums;
 }
 
-/* 3D Flip Mechanics */
+/* 3D Flip System */
 .flip-card-perspective {
   perspective: 1000px;
 }
@@ -203,6 +237,11 @@ onMounted(() => {
 .flip-card-inner {
   transform-style: preserve-3d;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Toggled on Mobile click/tap via JavaScript state */
+.flip-card-inner.is-flipped {
+  transform: rotateY(180deg);
 }
 
 .backface-hidden {
@@ -216,5 +255,25 @@ onMounted(() => {
 
 .structures-3d {
   transform-style: preserve-3d;
+}
+
+/* Touch Prompt Micro-Animations */
+@keyframes pulseGentle {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.03); }
+}
+
+@keyframes bounceSlight {
+  0%, 100% { transform: translateY(0) rotate(-15deg); }
+  50% { transform: translateY(-3px) rotate(-15deg); }
+}
+
+.animate-pulse-gentle {
+  animation: pulseGentle 2s infinite ease-in-out;
+}
+
+.animate-bounce-slight {
+  display: inline-block;
+  animation: bounceSlight 1.4s infinite ease-in-out;
 }
 </style>
