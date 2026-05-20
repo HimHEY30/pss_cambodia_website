@@ -66,13 +66,13 @@
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-import SAFETY_WORKPLACE_IMAGE from '@/assets/images/policy/safe_workplace.JPG';
+import SAFETY_WORKPLACE_IMAGE from '@/assets/images/policy/safety_workplace.png';
 import SAFETY_WORKPLACE_DOC from '@/assets/doc/policies/PSS POLICY ON THE PREVENTION OF DISCRIMINATION AND HARASSMENT AT WORK.pdf';
-import ANTI_FRAUD_IMAGE from '@/assets/images/policy/fruad.JPG';
+import ANTI_FRAUD_IMAGE from '@/assets/images/policy/anti_fraud.png';
 import ANTI_FRAUD_DOC from '@/assets/doc/policies/PSS POLICY ANTI FRAUD, CORRUPTION AND CONFLICTS OF INTEREST.pdf';
-import DONOR_PRIVACY_IMAGE from '@/assets/images/policy/donor.JPG';
+import DONOR_PRIVACY_IMAGE from '@/assets/images/policy/donation_safety.png';
 import DONOR_PRIVACY_DOC from '@/assets/doc/policies/PSS Donation Acceptance and Donor Safety & Privacy Policy.pdf';
-import CHILD_SAFETY_IMAGE from '@/assets/images/policy/child.JPG';
+import CHILD_SAFETY_IMAGE from '@/assets/images/policy/child_protection.png';
 import CHILD_SAFETY_DOC from '@/assets/doc/policies/PSS Child and young people safety policy.pdf';
 
 const { t } = useI18n();
