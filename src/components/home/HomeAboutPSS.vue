@@ -19,7 +19,7 @@
         <div class="relative animate-fade-in" style="animation-delay: 0.3s">
           <div class="rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white transform hover:rotate-0 rotate-3 transition-all duration-700 ease-out group">
             <img 
-              src="@/assets/images/home_about_pss.png" 
+              src="@/assets/images/about.jpg" 
               alt="Students learning" 
               class="w-full h-full object-cover aspect-video lg:aspect-square group-hover:scale-110 transition-transform duration-1000"
             />

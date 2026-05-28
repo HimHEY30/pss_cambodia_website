@@ -1,10 +1,10 @@
 <template>
   <Transition name="splash-fade">
-    <div v-if="isLoading" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-slate-900 text-white">
+    <div v-if="isLoading" class="fixed inset-0 z-[100] flex flex-col items-center justify-center text-slate-900 bg-white">
       <div class="flex flex-col items-center space-y-6 animate-fade-in">
-        <img :src="PSS_LOGO" alt="PSS Logo" class="w-84 h-84 object-contain" />
+        <img :src="PSS_LOGO" alt="PSS Logo" class="w-64 h-64 object-contain" />
         <h1 class="text-2xl font-bold tracking-wider text-center">
-          <span class="text-secondary">Promoting Skills for Success</span> <br>
+          <span>Promoting Skills for Success</span> <br>
           <span>Organization</span>
         </h1>
         <div class="flex flex-col items-center space-y-3">
@@ -117,9 +117,5 @@ onUnmounted(() => {
 
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out forwards;
-}
-
-.animate-pulse-slow {
-  animation: pulseSlow 2s ease-in-out infinite;
 }
 </style>

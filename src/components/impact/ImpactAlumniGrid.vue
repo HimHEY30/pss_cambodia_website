@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-32">
+    <div>
         <div class="text-center mb-16">
             <h3 class="text-sm font-black uppercase tracking-[0.3em] text-slate-400 mb-2">
                 {{ t('impact.alumini.subtitle') }}
@@ -7,7 +7,7 @@
             <h2 class="text-4xl font-extrabold text-slate-900">{{ t('impact.alumini.title') }}</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid px-34 my-8 grid-cols-1 md:grid-cols-2 gap-8">
             <div v-for="card in cards" :key="card.id"
                 class="reveal bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:border-[#00AEEF] hover:shadow-xl transition-all duration-500 group flex flex-col justify-between h-full">
                 <div>
@@ -17,8 +17,8 @@
                             <img :src="card.image" alt="" class="w-full h-full object-cover" />
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-900">{{ t(card.name) }}</h4>
-                            <p class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">
+                            <h4 v-if="card.name" class="font-bold text-slate-900">{{ t(card.name) }}</h4>
+                            <p v-if="card.subLabel" class="text-[10px] uppercase font-black text-[#00AEEF] tracking-widest">
                                 {{ t(card.subLabel) }}
                             </p>
                         </div>
@@ -27,8 +27,12 @@
                     <template v-if="card.title">
                         <h3 class="text-xl font-bold italic mb-3">"{{ t(card.title) }}"</h3>
                     </template>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-2">{{ t(card.intro) }}</p>
-                    <p class="text-slate-600 text-sm italic leading-relaxed">"{{ t(card.quote1) }}"</p>
+                    <template v-if="card.intro">
+                        <p class="text-slate-600 text-sm leading-relaxed mb-2">{{ t(card.intro) }}</p>
+                    </template>
+                    <template v-if="card.quote1">
+                        <p class="text-slate-600 text-sm italic leading-relaxed">"{{ t(card.quote1) }}"</p>
+                    </template>
 
                     <div class="grid transition-all duration-500 ease-in-out"
                         :class="expandedCards[card.id] ? 'grid-rows-[1fr] opacity-100 mt-4' : 'grid-rows-[0fr] opacity-0'">

@@ -112,7 +112,7 @@
       "message_line1": "I am honored to join Promoting Skills for Success (PSS) as the Executive Director. Today in Cambodia, only about 1 in 3 young people have a job that matches their education. For young women, the struggle is even harder. Between the lasting effects of the Covid-19 pandemic, global economic and the lack of equal opportunities, too many are being left behind.",
       "message_line2": "At PSS, we believe digital education is the ultimate equalizer and a gateway for a better life. Our programs are built on excellence, combining high-level IT training with the real-world skills that modern employers demand. By maintaining the highest standards in our classrooms, we ensure our graduates don't just find jobs—they become leaders in their fields.",
       "message_line3": "I look forward to collaborating with all our stakeholders, including local partners and communities, to grow our impact. Your support allows us to provide the quality training necessary to transform lives, ensuring every young woman in Cambodia has the opportunity to thrive in the digital age. Let’s build this future together!",
-      "signature": "Director of PSS Cambodia",
+      "signature": "Director of PSS",
       "director_name": "Mr. Hang Hybunna"
     },
     "core_values": {
@@ -167,12 +167,12 @@
   "ourTeam": {
     "hero": {
       "eye_catching_title": "Leadership & Governance",
-      "title_line1": "The People",
-      "title_line2": "Behind PSS.",
+      "title_line1": "The PSS Team",
       "subtitle": "Our team combines decades of experience in education, technology, and social impact to ensure every student has the support they need to succeed."
     },
     "executive_team": {
       "title": "Meet Our Executive Team",
+      "desc": "who strive to perform their work with professionalism and a high sense of responsibility.",
       "director_name": "Mr. Hang Hybunna",
       "director_role": "Director",
       "ero_director_name": "Ms. Leng Sreynich",
@@ -394,5 +394,12 @@
       "subject_option_3": "Partnership Opportunities",
       "subject_option_4": "Donation Questions"
     }
+  },
+  "notFound": {
+    "label": "Page Not Found",
+    "title": "Oops! We can't find that page.",
+    "description": "The page you’re looking for doesn’t exist or has been relocated. We couldn’t find the page you requested. It may have been moved or deleted. Let’s head back home.",
+    "button": "Take Me Home",
+    "back_button": "Go Back"
   }
 }

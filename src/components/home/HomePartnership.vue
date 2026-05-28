@@ -53,6 +53,11 @@ import partner_40 from "@/assets/images/partners/ngo/ngo (18).png";
 import partner_41 from "@/assets/images/partners/ngo/ngo (19).png";
 import partner_42 from "@/assets/images/partners/ngo/ngo (20).png";
 import partner_43 from "@/assets/images/partners/ngo/ngo (21).png";
+import partner_44 from "@/assets/images/partners/banks/APD Bank logo.png";
+import partner_45 from "@/assets/images/partners/banks/BRED Bank.webp";
+import partner_46 from "@/assets/images/partners/banks/Amret.png";
+import partner_47 from "@/assets/images/partners/banks/JTR bank logo.png";
+import partner_48 from "@/assets/images/dlkh-logo.jpeg";
 
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
@@ -71,6 +76,11 @@ const partners = ref(
     { id: 5, logo: partner_5 },
     { id: 6, logo: partner_6 },
     { id: 100, logo: ai_logo },
+    { id: 44, logo: partner_44},
+    { id: 45, logo: partner_45},
+    { id: 46, logo: partner_46},
+    { id: 47, logo: partner_47},
+    { id: 48, logo: partner_48},
     { id: 15, logo: partner_15 },
     { id: 9, logo: partner_9 },
     { id: 10, logo: partner_10 },
