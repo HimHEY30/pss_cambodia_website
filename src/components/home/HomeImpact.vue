@@ -1,12 +1,14 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import GRADUATE from "@/assets/images/impact/1.jpg";
-import WORK from "@/assets/images/impact/2.jpg";
-import VOLUNTEER from "@/assets/images/impact/3.PNG";
-import GENDER from "@/assets/images/impact/4.JPG";
+
+// module-scoped placeholders for GSAP (loaded dynamically)
+let gsap;
+let ScrollTrigger;
+import GRADUATE from "@/assets/images/impact/IMPACT (1).png";
+import WORK from "@/assets/images/impact/IMPACT (2).png";
+import VOLUNTEER from "@/assets/images/impact/IMPACT (3).png";
+import GENDER from "@/assets/images/impact/IMPACT (4).png";
 import { 
   GraduationCap, 
   Briefcase, 
@@ -15,7 +17,6 @@ import {
   Pointer 
 } from 'lucide-vue-next';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const { t } = useI18n();
 const sectionRef = ref(null);
@@ -99,7 +100,14 @@ const handleCardClick = (event, index, stat) => {
   }
 };
 
-onMounted(() => {
+onMounted(async () => {
+  const [{ gsap: gs }, { ScrollTrigger: ST }] = await Promise.all([
+    import('gsap'),
+    import('gsap/ScrollTrigger'),
+  ]);
+  gsap = gs; // assign to module-scoped variable
+  ScrollTrigger = ST;
+  gsap.registerPlugin(ScrollTrigger);
   const ctx = gsap.context(() => {
     // Header Intro Animation
     gsap.from(".animate-header", {

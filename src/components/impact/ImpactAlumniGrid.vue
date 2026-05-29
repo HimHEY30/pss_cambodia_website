@@ -87,7 +87,7 @@ import { useI18n } from 'vue-i18n'
 import ChanutImage from '@/assets/images/students/CHANUT.jpg'
 import PisethImage from '@/assets/images/students/PISETH.jpg'
 import KuntheaImage from '@/assets/images/students/KUNTHEA.jpg'
-import PartnerImage from '@/assets/images/dlkh-logo.jpeg'
+import PartnerImage from '@/assets/images/partners/DL.png'
 
 const { t } = useI18n()
 const expandedCards = reactive({ chanut: false, piseth: false, kunthea: false, partner: false })
@@ -128,17 +128,22 @@ const cards = [
         image: KuntheaImage,
         name: 'impact.alumini.alumini_3.name',
         subLabel: 'impact.alumini.alumini_3.position',
-        intro: 'impact.alumini.alumini_3.qoute_1',
-        quote1: 'impact.alumini.alumini_3.qoute_2',
-        quote2: 'impact.alumini.alumini_3.qoute_3',
+        intro: 'impact.alumini.alumini_3.intro',
+        quote1: 'impact.alumini.alumini_3.qoute_1',
+        body_1: 'impact.alumini.alumini_3.body_1',
+        quote2: 'impact.alumini.alumini_3.qoute_2',
         classLabel: 'impact.alumini.alumini_3.class',
     },
     {
         id: 'partner',
         image: PartnerImage,
-        quote1: 'impact.alumini.partner.qoute_2',
-        quote2: 'impact.alumini.partner.qoute_3',
-        classLabel: 'impact.alumini.partner.work_at',
+        name: 'impact.alumini.partner.name',
+        subLabel: 'impact.alumini.partner.position',
+        intro: 'impact.alumini.partner.intro',
+        quote1: 'impact.alumini.partner.qoute_1',
+        body_1: 'impact.alumini.partner.body_1',
+        quote2: 'impact.alumini.partner.qoute_2',
+        classLabel: 'impact.alumini.partner.class',
     },
 ]
 

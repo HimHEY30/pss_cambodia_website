@@ -2,8 +2,14 @@
   <section ref="heroSection" class="relative w-full h-screen overflow-hidden bg-[#003366]">
     <img 
       ref="heroBg"
-      src="@/assets/images/bg_hero.jpg" 
-      alt="Home Hero Background"
+      src="@/assets/images/bg_hero.webp"
+      alt=""
+      aria-hidden="true"
+      width="1375"
+      height="917"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
       class="absolute inset-0 w-full h-full object-cover scale-110"
     >
     
@@ -48,14 +54,14 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-import gsap from 'gsap';
 
 const { t } = useI18n();
 
 const heroSection = ref(null);
 const heroBg = ref(null);
 
-onMounted(() => {
+onMounted(async () => {
+  const { default: gsap } = await import('gsap');
   const tl = gsap.timeline({ defaults: { ease: 'power4.out' } });
 
   // Ken Burns Effect

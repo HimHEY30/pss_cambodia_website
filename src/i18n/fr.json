@@ -64,7 +64,8 @@
       "stat3_sub": "plus find a job within 2 months of graduation ",
       "stat4_label": "Young Women",
       "stat4_value": "52",
-      "stat4_sub": "of our current students are young women, helping bridge the gender gap in tech"
+      "stat4_sub": "of our current students are young women, helping bridge the gender gap in tech",
+      "tap_hint": "Appuyez"
     },
     "context": {
       "eye_catching_title": "Cambodia Context",

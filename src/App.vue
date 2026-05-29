@@ -1,24 +1,5 @@
 <template>
-  <Transition name="splash-fade">
-    <div v-if="isLoading" class="fixed inset-0 z-[100] flex flex-col items-center justify-center text-slate-900 bg-white">
-      <div class="flex flex-col items-center space-y-6 animate-fade-in">
-        <img :src="PSS_LOGO" alt="PSS Logo" class="w-64 h-64 object-contain" />
-        <h1 class="text-2xl font-bold tracking-wider text-center">
-          <span>Promoting Skills for Success</span> <br>
-          <span>Organization</span>
-        </h1>
-        <div class="flex flex-col items-center space-y-3">
-          <div class="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
-          <p class="text-sm font-medium tracking-widest text-slate-400 uppercase animate-pulse">
-            PSS WEBSITE IS LOADING...
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </Transition>
-
-  <div v-if="!isLoading" class="min-h-screen bg-white">
+  <div class="min-h-screen bg-white">
     
     <header class="fixed w-full top-0 z-50 bg-primary shadow-md">
       <Navbar />
@@ -53,10 +34,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import Navbar from './components/common/Navbar.vue';
-import PSS_LOGO from "@/assets/images/pss_logo.png"; // Example logo import for splash screen
 
 const showButton = ref(false);
-const isLoading = ref(true); // Splash screen controls
 
 const handleScroll = () => {
   showButton.value = window.scrollY > 300;
@@ -71,12 +50,6 @@ const scrollToTop = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
-  
-  // Simulates initial app loading/fetching (e.g., 2.5 seconds)
-  // If you have real API calls, trigger this when those promises resolve.
-  setTimeout(() => {
-    isLoading.value = false;
-  }, 2500);
 });
 
 onUnmounted(() => {

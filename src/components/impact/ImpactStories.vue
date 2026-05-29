@@ -13,7 +13,7 @@
             <div class="reveal relative">
                 <div
                     class="aspect-video rounded-[3rem] bg-slate-200 overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
-                    <img src="@/assets/images/IMPACT_PIC.jpg" alt="Testimony" class="w-full h-full object-cover" />
+                    <img src="@/assets/images/impact/IMPACT (2).png" alt="Testimony" class="w-full h-full object-cover" />
                 </div>
             </div>
         </div>

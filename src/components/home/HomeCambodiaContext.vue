@@ -99,11 +99,13 @@
 import { onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { MapPinIcon, TrendingDownIcon, GraduationCapIcon, MicroscopeIcon } from 'lucide-vue-next';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// module-scoped placeholders for GSAP (loaded dynamically)
+let gsap;
+let ScrollTrigger;
 
 const { t } = useI18n();
-gsap.registerPlugin(ScrollTrigger);
+// (GSAP will be registered after dynamic import inside onMounted)
 const contextSection = ref(null);
 
 const standardStats = [
@@ -112,7 +114,14 @@ const standardStats = [
   { icon: GraduationCapIcon, value: 'home.context.s3_value', label: 'home.context.s3_label', source: 'home.context.s3_source' }
 ];
 
-onMounted(() => {
+onMounted(async () => {
+  const [{ gsap: _gs }, { ScrollTrigger: _ST }] = await Promise.all([
+    import('gsap'),
+    import('gsap/ScrollTrigger'),
+  ]);
+  gsap = _gs;
+  ScrollTrigger = _ST;
+  gsap.registerPlugin(ScrollTrigger);
   const ctx = gsap.context(() => {
     gsap.to('.animate-item', {
       opacity: 1, y: 0, duration: 0.3,

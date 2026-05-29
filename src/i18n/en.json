@@ -64,7 +64,8 @@
       "stat3_sub": "find a job within 2 months of graduation ",
       "stat4_label": "Gender and Inclusion",
       "stat4_value": "50",
-      "stat4_sub": "At least 50% of our students are girls. All of them are underprivileged youths including ethnic minorities"
+      "stat4_sub": "At least 50% of our students are girls. All of them are underprivileged youths including ethnic minorities",
+      "tap_hint": "Tap"
     },
     "context": {
       "eye_catching_title": "Cambodia Context",
@@ -308,17 +309,19 @@
         "class":"CLASS OF 2024",
         "work_at": "Borey Golden Park",
         "position": "IT Programme",
-        "qoute_1": "PNC means growth, opportunity, and preparation for my future career. It has given me the technical knowledge and practical skills needed to succeed in the IT industry.The supportive learning environment, hands-on projects, and professional development activities have helped me build confidence and adapt to real-worldchallenges. Beyond academics, PNC has encouraged me to think critically,collaborate effectively, and communicate clearly—skills that are essential in anycareer. The mentoring from my instructors and the teamwork with my classmateshave pushed me to the limit and constantly improved.",
-        "qoute_2": "Most importantly, PNC has defined not only my career path, but also my mindset. I now see challenges as opportunities to grow. I am proud to be part of a community that believes in empowering students and making a lasting impact on them.",
-        "qoute_3": "Thank you so much for supporting me and giving me this part of my life."
+        "intro": "PNC means growth, opportunity, and preparation for my future career. It has given me the technical knowledge and practical skills needed to succeed in the IT industry.",
+        "qoute_1": "The supportive learning environment, hands-on projects, and professional development activities have helped me build confidence and adapt to real-worldchallenges.",
+        "body_1": "Most importantly, PNC has defined not only my career path, but also my mindset. I now see challenges as opportunities to grow. I am proud to be part of a community that believes in empowering students and making a lasting impact on them. Beyond academics, PNC has encouraged me to think critically,collaborate effectively, and communicate clearly—skills that are essential in anycareer. The mentoring from my instructors and the teamwork with my classmateshave pushed me to the limit and constantly improved.",
+        "qoute_2": "Thank you so much for supporting me and giving me this part of my life."
       },
       "partner": {
         "name": "Peng Chanmony",
         "work_at": "Daiichi Life",
         "position": "Senior Manager, HRBP talent Acquisition",
-        "qoute_1": "On behalf of Daiichi Life, we proudly acknowledge our partnership with PNC in developing  future talent. Over the past three consecutive years, Daiichi Life has provided internship opportunities to PNC students, enabling them to gain valuable industry exposure and practical skills.",
-        "qoute_2": "This initiative reflects our commitment to corporate social responsibility and talent development. We are pleased to see PNC students grow through this program, with some progressing into full-time roles.",
-        "qoute_3": "We look forward to continuing this meaningful collaboration."
+        "intro": "On behalf of Daiichi Life, we proudly acknowledge our partnership with PNC in developing  future talent.",
+        "qoute_1": "Over the past three consecutive years, Daiichi Life has provided internship opportunities to PNC students, enabling them to gain valuable industry exposure and practical skills.",
+        "body_1": "This initiative reflects our commitment to corporate social responsibility and talent development. We are pleased to see PNC students grow through this program, with some progressing into full-time roles.",
+        "qoute_2": "We look forward to continuing this meaningful collaboration."
       },
       "cta_read_more": "Read More",
       "cta_read_less": "Read Less"

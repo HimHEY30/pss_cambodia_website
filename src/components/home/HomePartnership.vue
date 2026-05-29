@@ -1,128 +1,80 @@
 <script setup>
-
 // Ministry Partners Logos
-import partner_1 from "@/assets/images/partners/ministries/1.png";
-import partner_2 from "@/assets/images/partners/ministries/2.png";
-
-// University Partners Logos
-import partner_3 from "@/assets/images/partners/universities/UNIVERSITY (1).png";
-import partner_4 from "@/assets/images/partners/universities/UNIVERSITY (2).png";
-import partner_5 from "@/assets/images/partners/universities/UP.webp";
-import partner_6 from "@/assets/images/partners/universities/UNIVERSITY (4).png";
-import ai_logo from "@/assets/images/partners/universities/Logo AI.png";
+import mini_1 from "@/assets/images/partners/ministries/MINISTORY (1).png";
+import mini_2 from "@/assets/images/partners/ministries/MINISTORY (2).png";
 
 // Donor Partners Logos
-import partner_7 from "@/assets/images/partners/donors/sdf.png";
-import partner_8 from "@/assets/images/partners/donors/afd.png";
+import donor_1 from "@/assets/images/partners/donors/DONOR (1).png";
+import donor_2 from "@/assets/images/partners/donors/DONOR (2).png";
+import donor_3 from "@/assets/images/partners/donors/DONOR (3).png";
 
-// Companies Partners Logos
-import partner_9 from "@/assets/images/partners/companies/COMPANY (1).png";
-import partner_10 from "@/assets/images/partners/companies/COMPANY (2).png";
-import partner_11 from "@/assets/images/partners/companies/COMPANY (3).png";
-import partner_12 from "@/assets/images/partners/companies/COMPANY (4).png";
-import partner_13 from "@/assets/images/partners/companies/COMPANY (5).png";
-import partner_14 from "@/assets/images/partners/companies/COMPANY (6).png";
-import partner_15 from "@/assets/images/partners/companies/COMPANY (7).png";
-import partner_16 from "@/assets/images/partners/companies/COMPANY (8).png";
-import partner_17 from "@/assets/images/partners/companies/COMPANY (9).png";
-import partner_18 from "@/assets/images/partners/companies/COMPANY (10).png";
-import partner_19 from "@/assets/images/partners/companies/COMPANY (11).png";
-import partner_20 from "@/assets/images/partners/companies/COMPANY (12).png";
-import partner_21 from "@/assets/images/partners/companies/COMPANY (13).png";
-import partner_22 from "@/assets/images/partners/companies/COMPANY (14).png"; 
+// University Partners Logos
+import uni_1 from "@/assets/images/partners/universities/UNI (1).png";
+import uni_2 from "@/assets/images/partners/universities/UNI (2).png";
+import uni_3 from "@/assets/images/partners/universities/UNI (3).png";
+import uni_4 from "@/assets/images/partners/universities/UNI (4).png";
+import uni_5 from "@/assets/images/partners/universities/UNI (5).png";
 
-// NGOs Partners Logos
-import partner_23 from "@/assets/images/partners/ngo/ngo (1).png";
-import partner_24 from "@/assets/images/partners/ngo/ngo (2).png";
-import partner_25 from "@/assets/images/partners/ngo/ngo (3).png";
-import partner_26 from "@/assets/images/partners/ngo/ngo (4).png";
-import partner_27 from "@/assets/images/partners/ngo/ngo (5).png";
-import partner_28 from "@/assets/images/partners/ngo/ngo (6).png";
-import partner_29 from "@/assets/images/partners/ngo/ngo (7).png";
-import partner_30 from "@/assets/images/partners/ngo/ngo (8).png";
-import partner_31 from "@/assets/images/partners/ngo/ngo (9).png";
-import partner_32 from "@/assets/images/partners/ngo/ngo (10).png";
-import partner_33 from "@/assets/images/partners/ngo/ngo (11).png";
-import partner_34 from "@/assets/images/partners/ngo/ngo (12).png";
-import partner_35 from "@/assets/images/partners/ngo/ngo (13).png";
-import partner_36 from "@/assets/images/partners/ngo/ngo (14).png";
-import partner_37 from "@/assets/images/partners/ngo/ngo (15).png";
-import partner_38 from "@/assets/images/partners/ngo/ngo (16).png";
-import partner_39 from "@/assets/images/partners/ngo/ngo (17).png";
-import partner_40 from "@/assets/images/partners/ngo/ngo (18).png";
-import partner_41 from "@/assets/images/partners/ngo/ngo (19).png";
-import partner_42 from "@/assets/images/partners/ngo/ngo (20).png";
-import partner_43 from "@/assets/images/partners/ngo/ngo (21).png";
-import partner_44 from "@/assets/images/partners/banks/APD Bank logo.png";
-import partner_45 from "@/assets/images/partners/banks/BRED Bank.webp";
-import partner_46 from "@/assets/images/partners/banks/Amret.png";
-import partner_47 from "@/assets/images/partners/banks/JTR bank logo.png";
-import partner_48 from "@/assets/images/dlkh-logo.jpeg";
+// Bank Corporate Partners Logos
+import bank_1 from "@/assets/images/partners/banks/BANK (1).png";
+import bank_2 from "@/assets/images/partners/banks/BANK (2).png";
+import bank_3 from "@/assets/images/partners/banks/BANK (3).png";
+import bank_4 from "@/assets/images/partners/banks/BANK (4).png";
+import bank_5 from "@/assets/images/partners/banks/BANK (5).png";
 
-import { ref } from 'vue';
+// NGOs and International Organizations Partners Logos
+import ngo_1 from "@/assets/images/partners/ngos/NGO (1).png";
+import ngo_2 from "@/assets/images/partners/ngos/NGO (2).png";
+import ngo_3 from "@/assets/images/partners/ngos/NGO (3).png";
+import ngo_4 from "@/assets/images/partners/ngos/NGO (4).png";
+import ngo_5 from "@/assets/images/partners/ngos/NGO (5).png";
+import ngo_6 from "@/assets/images/partners/ngos/NGO (6).png";
+import ngo_7 from "@/assets/images/partners/ngos/NGO (7).png";
+import ngo_8 from "@/assets/images/partners/ngos/NGO (8).png";
+import ngo_9 from "@/assets/images/partners/ngos/NGO (9).png";
+import ngo_10 from "@/assets/images/partners/ngos/NGO (10).png";
+import ngo_11 from "@/assets/images/partners/ngos/NGO (11).png";
+import ngo_12 from "@/assets/images/partners/ngos/NGO (12).png";
+import ngo_13 from "@/assets/images/partners/ngos/NGO (13).png";
+import ngo_14 from "@/assets/images/partners/ngos/NGO (14).png";
+import ngo_15 from "@/assets/images/partners/ngos/NGO (15).png";
+import ngo_16 from "@/assets/images/partners/ngos/NGO (16).png";
+import ngo_17 from "@/assets/images/partners/ngos/NGO (17).png";
+import ngo_18 from "@/assets/images/partners/ngos/NGO (18).png";
+import ngo_19 from "@/assets/images/partners/ngos/NGO (19).png";
+import ngo_20 from "@/assets/images/partners/ngos/NGO (20).png";
+import ngo_21 from "@/assets/images/partners/ngos/NGO (21).png";
+import ngo_22 from "@/assets/images/partners/ngos/NGO (22).png";
+
+import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 
-// Simple Data Structure: Array of 20 Partner Objects
-const partners = ref(
-  [
-    { id: 1, logo: partner_1 },
-    { id: 2, logo: partner_2 },
-    { id: 8, logo: partner_8 },
-    { id: 7, logo: partner_7 },
-    { id: 25, logo: partner_25 },
-    { id: 3, logo: partner_3 },
-    { id: 4, logo: partner_4 },
-    { id: 5, logo: partner_5 },
-    { id: 6, logo: partner_6 },
-    { id: 100, logo: ai_logo },
-    { id: 44, logo: partner_44},
-    { id: 45, logo: partner_45},
-    { id: 46, logo: partner_46},
-    { id: 47, logo: partner_47},
-    { id: 48, logo: partner_48},
-    { id: 15, logo: partner_15 },
-    { id: 9, logo: partner_9 },
-    { id: 10, logo: partner_10 },
-    { id: 11, logo: partner_11 },
-    { id: 12, logo: partner_12 },
-    { id: 13, logo: partner_13 },
-    { id: 14, logo: partner_14 },
-    { id: 16, logo: partner_16 },
-    { id: 17, logo: partner_17 },
-    { id: 18, logo: partner_18 },
-    { id: 19, logo: partner_19 },
-    { id: 20, logo: partner_20 },
-    { id: 21, logo: partner_21 },
-    { id: 22, logo: partner_22 },
-    { id: 23, logo: partner_23 },
-    { id: 24, logo: partner_24 },
-    { id: 26, logo: partner_26 },
-    { id: 27, logo: partner_27 },
-    { id: 28, logo: partner_28 },
-    { id: 29, logo: partner_29 },
-    { id: 30, logo: partner_30 },
-    { id: 31, logo: partner_31 },
-    { id: 32, logo: partner_32 },
-    { id: 33, logo: partner_33 },
-    { id: 34, logo: partner_34 },
-    { id: 35, logo: partner_35 },
-    { id: 36, logo: partner_36 },
-    { id: 37, logo: partner_37 },
-    { id: 38, logo: partner_38 },
-    { id: 39, logo: partner_39 },
-    { id: 40, logo: partner_40 },
-    { id: 41, logo: partner_41 },
-    { id: 42, logo: partner_42 },
-    { id: 43, logo: partner_43 },
-  ]
-);
+const allLogos = [
+  mini_1, mini_2,
+  donor_1, donor_2, donor_3,
+  uni_1, uni_2, uni_3, uni_4, uni_5,
+  bank_1, bank_2, bank_3, bank_4, bank_5,
+  ngo_1, ngo_2, ngo_3, ngo_4, ngo_5, ngo_6, ngo_7, ngo_8,
+  ngo_9, ngo_10, ngo_11, ngo_12, ngo_13, ngo_14, ngo_15,
+  ngo_16, ngo_17, ngo_18, ngo_19, ngo_20, ngo_21, ngo_22,
+];
+
+// Split logos evenly across 3 rows
+const rows = computed(() => {
+  const size = Math.ceil(allLogos.length / 3);
+  return [
+    allLogos.slice(0, size),
+    allLogos.slice(size, size * 2),
+    allLogos.slice(size * 2),
+  ];
+});
 </script>
 
 <template>
-  <section class="py-16 px-4 bg-white">
+  <section class="py-16 px-4 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto">
-      
+
       <div class="text-center mb-12">
         <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
           {{ t('home.partner.title') }}
@@ -132,18 +84,27 @@ const partners = ref(
         </p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+      <!-- Three marquee rows, alternating direction -->
+      <div class="flex flex-col gap-6">
         <div
-          v-for="partner in partners"
-          :key="partner.id"
-          class="flex flex-col items-center justify-center p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
+          v-for="(row, rowIndex) in rows"
+          :key="rowIndex"
+          class="marquee-wrapper"
         >
-          <div class="h-32 w-full flex items-center justify-center mb-4">
-            <img
-              :src="partner.logo"
-              :alt="partner.name"
-              class="max-h-full max-w-full object-contain"
-            />
+          <div
+            class="marquee-track"
+            :class="rowIndex % 2 === 0 ? 'animate-scroll-left' : 'animate-scroll-right'"
+          >
+            <!-- Duplicate logos for seamless loop -->
+            <template v-for="pass in 2" :key="pass">
+              <div
+                v-for="(logo, i) in row"
+                :key="`${pass}-${i}`"
+                class="logo-card"
+              >
+                <img :src="logo" alt="Partner logo" class="max-h-full max-w-full object-contain" />
+              </div>
+            </template>
           </div>
         </div>
       </div>
@@ -153,8 +114,62 @@ const partners = ref(
 </template>
 
 <style scoped>
-/* Standard CSS for fine-tuning letter spacing if needed */
-span {
-  font-family: 'Inter', sans-serif;
+.marquee-wrapper {
+  overflow: hidden;
+  /* Fade edges for a polished look */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  will-change: transform;
+}
+
+.logo-card {
+  flex-shrink: 0;
+  width: 220px;      /* was 160px */
+  height: 140px;     /* was 100px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;   /* was 1rem */
+  background: #fff;
+  border: 1px solid #f3f4f6;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.logo-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Scroll left (→ direction): row 1 & 3 */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Scroll right (← direction): row 2 */
+@keyframes scroll-right {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 50s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 50s linear infinite;
+}
+
+/* Pause on hover for better UX */
+.marquee-wrapper:hover .marquee-track {
+  animation-play-state: paused;
 }
 </style>
