@@ -143,7 +143,7 @@ const cards = [
         quote1: 'impact.alumini.partner.qoute_1',
         body_1: 'impact.alumini.partner.body_1',
         quote2: 'impact.alumini.partner.qoute_2',
-        classLabel: 'impact.alumini.partner.class',
+        classLabel: 'impact.alumini.partner.work_at',
     },
 ]
 
