@@ -119,6 +119,7 @@ import { useI18n } from 'vue-i18n'
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import engFlag from '@/assets/images/icons/eng_flag.png'
 import khFlag from '@/assets/images/icons/kh_flag.png'
+import frFlag from '@/assets/images/icons/french_flag.png'
 
 const { t, locale } = useI18n()
 const navRef = ref(null)
@@ -141,6 +142,7 @@ const menuLinkClass = 'block px-4 py-3 rounded-xl text-sm font-medium hover:bg-p
 const languages = [
     { code: 'en', name: 'English', icon: engFlag },
     { code: 'kh', name: 'ភាសាខ្មែរ', icon: khFlag },
+    { code: 'fr', name: 'Français', icon: frFlag },
 ]
 
 const currentLanguage = computed(() => languages.find(l => l.code === locale.value) ?? languages[0])
