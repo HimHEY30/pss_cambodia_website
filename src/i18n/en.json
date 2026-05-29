@@ -243,7 +243,7 @@
     },
     "selection":{
       "process_title": "Selection Process",
-      "process_desc": "Every year from Jan to Oct, we select 75-100 youth from disadvantaged backgrounds who are motivated to bridge the digital gap.",
+      "process_desc": "Every year, from January to October, the selection team conducts a rigorous 4-step selection process across Cambodia, closely working with local partners, high schools, community organizations and local NGOs. The goal is to select 75-100 young people from disadvantaged backgrounds who are motivated to join PSS, with a target of at least 50% of female students, in an effort to bridge the gender gap in both tech and higher education.",
       "target_value": "50%",
       "target_label": "Target for Female Students in Tech",
       "step1": "Outreach across Cambodia",
