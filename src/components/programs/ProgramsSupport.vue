@@ -4,9 +4,7 @@
 
             <!-- Section Header -->
             <div class="text-center mb-16">
-                <span class="inline-block text-xs font-bold tracking-[0.2em] uppercase text-[#00AEEF] bg-[#00AEEF]/10 px-4 py-2 rounded-full mb-4">
-                    {{ t('programs.subject_support.badge') || 'Subject Support' }}
-                </span>
+               
                 <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-5 leading-tight">
                     {{ t('programs.subject_support.english_pl') }}
                 </h2>

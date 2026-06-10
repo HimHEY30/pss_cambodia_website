@@ -34,14 +34,14 @@
   },
   "home": {
     "hero": {
-      "title": "Autonomiser les Jeunes Cambodgiens grâce aux Compétences et à l'Éducation",
+      "title": "Autonomiser les Jeunes Cambodgiens par les Compétences et l'Éducation",
       "subtitle": "Promoting Skills for Success (PSS) est une ONG locale enregistrée auprès du Ministère de l'Intérieur du Cambodge. Elle lutte contre la pauvreté en révélant le potentiel des jeunes défavorisés grâce à l'accès à l'éducation numérique.",
       "button": "Faire un Don"
     },
     "about": {
       "eye_catching_title": "À Propos de Nous",
       "title": "Lutter contre la Pauvreté grâce à l'Éducation Numérique",
-      "subtitle": "PSS est le partenaire opérationnel local de Passerelles Numériques Cambodia (PNC), fondé en 2005 à Phnom Penh, qui propose un programme de formation informatique à temps plein de deux ans pour les jeunes défavorisés. Le programme associe le développement logiciel aux compétences comportementales, à l'anglais, aux activités de bien-être et à un fort soutien à l'employabilité. PSS apporte également un soutien technique à NomadLab, une solution open source d'infrastructure TIC utilisée comme outil pédagogique pour les clubs de jeunes, les étudiants, les enseignants et les prisonniers au Cambodge, afin de favoriser l'accès au numérique et de développer les compétences numériques."
+      "subtitle": "PSS est le partenaire opérationnel local de Passerelles Numériques Cambodia (PNC), fondé en 2005 à Phnom Penh, qui propose un programme de formation en informatique à temps plein de deux ans pour les jeunes issus de milieux défavorisés. Le programme combine l’apprentissage du développement logiciel aux compétences comportementales (soft skills), à l'anglais, aux activités de bien-être et à un soutien à l'insertion professionnelle. PSS apporte également un soutien technique à NomadLab, une solution open source d'infrastructure TIC utilisée comme outil pédagogique pour les clubs de jeunes, les étudiants, les enseignants et les détenus au Cambodge."
     },
     "partner": {
       "title": "Nos Partenaires",
@@ -51,7 +51,7 @@
       "eye_catching_title": "Notre Impact",
       "title_line1": "Des Vies Réelles,",
       "title_line2": "Un Changement Réel",
-      "description": "Chez PSS, en partenariat avec PNC et d'autres organisations, nous pensons que l'impact réel se mesure en résultats concrets : compétences acquises, avenirs transformés et communautés renforcées. Notre programme donne aux jeunes — notamment ceux issus de milieux ruraux et défavorisés — les compétences techniques et l'accompagnement professionnel nécessaires pour s'épanouir dans l'économie numérique.",
+      "description": "Chez PSS, en partenariat avec PNC et d'autres organisations, nous pensons que l'impact se mesure en résultats concrets : compétences acquises, avenirs transformés et communautés renforcées. Notre programme donne aux jeunes — notamment ceux issus de milieux ruraux et défavorisés — les compétences techniques et l'accompagnement professionnel nécessaires pour s'épanouir dans l'économie numérique.",
       "quote": "\"Grâce à une prise en charge complète du logement, de l'alimentation, du matériel et des frais de santé, les étudiants peuvent se concentrer sur leur apprentissage et construire un avenir stable.\"",
       "stat1_label": "Diplômés",
       "stat1_value": "1800",
@@ -110,9 +110,9 @@
     },
     "director_message": {
       "eye_catching_title": "Message de Notre Directeur",
-      "message_line1": "C'est un honneur pour moi de rejoindre Promoting Skills for Success (PSS) en tant que Directeur Exécutif. Aujourd'hui au Cambodge, seulement environ 1 jeune sur 3 occupe un emploi correspondant à son niveau d'études. Pour les jeunes femmes, la situation est encore plus difficile. Entre les séquelles durables de la pandémie de Covid-19, la crise économique mondiale et le manque d'égalité des chances, trop nombreux sont ceux qui sont laissés pour compte.",
-      "message_line2": "Chez PSS, nous croyons que l'éducation numérique est le grand niveleur et une passerelle vers une vie meilleure. Nos programmes sont fondés sur l'excellence, alliant une formation informatique de haut niveau aux compétences pratiques exigées par les employeurs modernes. En maintenant les plus hauts standards dans nos salles de classe, nous veillons à ce que nos diplômés ne se contentent pas de trouver un emploi — ils deviennent des leaders dans leur domaine.",
-      "message_line3": "Je me réjouis de collaborer avec toutes nos parties prenantes, notamment les partenaires locaux et les communautés, pour accroître notre impact. Votre soutien nous permet de dispenser la formation de qualité nécessaire pour transformer des vies, en veillant à ce que chaque jeune femme au Cambodge ait la possibilité de s'épanouir à l'ère numérique. Construisons ensemble cet avenir !",
+      "message_line1": "C'est un honneur pour moi de rejoindre Promoting Skills for Success (PSS) en tant que Directeur Exécutif. Aujourd'hui, au Cambodge, seul environ un jeune sur trois occupe un emploi correspondant à son niveau d'études. Pour les jeunes femmes, les défis sont encore plus importants. Entre les séquelles durables de la pandémie de Covid-19, les incertitudes économiques mondiales et les inégalités d'accès aux opportunités, trop de jeunes restent encore à l'écart des perspectives qui leur permettraient de réaliser leur potentiel.",
+      "message_line2": "Chez PSS, nous sommes convaincus que les compétences numériques constituent un puissant levier d'inclusion et d'émancipation. Nos programmes reposent sur l'excellence et associent une formation informatique de haut niveau au développement des compétences professionnelles recherchées par les employeurs d'aujourd'hui. En maintenant des standards de qualité exigeants, nous donnons à nos diplômés les moyens non seulement d'accéder à un emploi qualifié, mais aussi de construire des carrières durables et porteuses d'avenir.",
+      "message_line3": "Je me réjouis de travailler aux côtés de l'ensemble de nos partenaires, des acteurs locaux et des communautés que nous accompagnons afin d'amplifier notre impact. Votre soutien est essentiel pour offrir aux jeunes Cambodgiens, et en particulier aux jeunes femmes, les compétences et les opportunités dont ils ont besoin pour réussir dans l'économie numérique. Ensemble, continuons à construire un avenir plus inclusif et porteur d'espoir.",
       "signature": "Directeur de PSS",
       "director_name": "M. Hang Hybunna"
     },
@@ -138,14 +138,14 @@
       "event2": "Mise en place d'un Programme de Gestion des Données de 6 mois, ayant formé plus de 400 diplômés, qui ont ensuite poursuivi leurs études et travaillé avec Digital Divide Data.",
       "year3": "2015",
       "event3_title": "Lancement de l'Outil de Saisie Khmer",
-      "event3": "Outil de Saisie Khmer (Plateforme Nationale d'Apprentissage Numérique) : un produit numérique national éprouvé et pérenne, soutenant l'alphabétisation en khmer et les compétences numériques.",
+      "event3": "2015: Lancement de l'Outil de Saisie Khmer L’Outil de Saisie Khmer (Plateforme Nationale d’Apprentissage Numérique) est une solution numérique nationale éprouvée et durable, qui favorise l’alphabétisation en khmer et le développement des compétences numériques.",
       "event3_link": "https://khmer-typing.passerellesnumeriques.org",
       "year4": "2019-2025",
       "event4_title": "Introduction de NomadLab",
       "event4": "NomadLab, plateforme de gestion et de déploiement sur tablettes et ordinateurs : une solution open source d'infrastructure TIC utilisée comme outil pédagogique pour les clubs de jeunes, les étudiants, les enseignants et les prisonniers au Cambodge, afin de favoriser l'accès au numérique et de développer les compétences numériques.",
       "year5": "2024-2025",
       "event5_title": "Programme de Développement des Compétences",
-      "event5": "Programme de Développement des Compétences (PDC), Éducation en Prison — une plateforme d'e-learning hors ligne pour permettre aux prisonniers d'accéder aux compétences numériques et de les développer.",
+      "event5": "Programme de Développement des Compétences (PDC), Éducation en Prison — une plateforme d'e-learning hors ligne pour permettre aux détenus d'accéder aux compétences numériques et de les développer.",
       "year6": "2025",
       "event6_title": "PSS Cambodia Devient une ONG Locale",
       "event6": "PSS Cambodia devient une ONG locale, enregistrée auprès du Ministère des Affaires Sociales, du Travail et de l'Emploi."
@@ -153,13 +153,13 @@
     "policies": {
       "eyes_catching_title": "Responsabilité & Confiance",
       "title": "Nos Politiques & Engagements",
-      "subtitle": "Nous nous engageons aux plus hauts standards de pratique éthique, de sécurité et de transparence absolue. Nos politiques fondamentales garantissent la protection des communautés que nous servons, de notre personnel et des généreux donateurs qui rendent notre mission possible.",
+      "subtitle": "Nous nous engageons à respecter les plus hauts standards d’éthique, de sécurité et de transparence. Nos politiques fondamentales visent à protéger les communautés que nous accompagnons, nos collaborateurs ainsi que les généreux donateurs qui rendent notre mission possible.",
       "policy1_title": "Politique de Protection de l'Enfance",
       "policy1_desc": "Notre politique de protection de l'enfance chez PSS place la protection et le bien-être des jeunes au cœur de toutes nos activités. Nous appliquons des directives strictes pour garantir un environnement sûr, conformes aux normes internationales et aux meilleures pratiques…",
       "policy2_title": "Politique de Sécurité au Travail",
       "policy2_desc": "Nous nous engageons à promouvoir le bien-être de nos employés en créant un environnement de travail sûr, inclusif et bienveillant. Cela comprend non seulement la mise en œuvre de politiques strictes en matière de sécurité au travail, mais aussi la promotion d'une culture organisationnelle qui valorise la santé physique et mentale des employés.",
-      "policy3_title": "Politique Mondiale Anti-Fraude, Anti-Corruption et Anti-Corruption",
-      "policy3_desc": "Notre politique mondiale anti-fraude, anti-corruption et anti-corruption chez PSS garantit la mise en place de mesures rigoureuses pour prévenir les pratiques contraires à l'éthique. Nous appliquons des directives strictes et réalisons des audits réguliers pour maintenir l'intégrité dans toutes nos opérations et engagements.",
+      "policy3_title": "Politique Contre la Fraude, la Corruption et les Pots-de-vin",
+      "policy3_desc": "Notre politique contre la fraude, la corruption et les pots-de-vin chez PSS garantit la mise en œuvre de mesures rigoureuses visant à prévenir toute pratique contraire à l’éthique. Nous appliquons des procédures strictes et effectuons des audits réguliers afin d’assurer l’intégrité, la transparence et la redevabilité dans l’ensemble de nos opérations et de nos partenariats.",
       "policy4_title": "Politique de Sécurité des Donateurs, d'Acceptation des Dons et de Confidentialité",
       "policy4_desc": "Notre politique de sécurité des donateurs, d'acceptation des dons et de confidentialité garantit le traitement sécurisé et éthique des transactions financières et des informations des donateurs. Nous respectons des protocoles stricts pour assurer la transparence, protéger la vie privée des donateurs et maintenir la confiance de nos partenaires et parties prenantes.",
       "cta": "Lire les Politiques Complètes"
@@ -207,7 +207,7 @@
       "eye_catching_title": "Notre Programme",
       "title_line1": "Formation Informatique",
       "title_line2": "de 2 Ans",
-      "subtitle": "Fondé sur 20 ans d'expérience de PNC, le programme est aligné sur les besoins du marché et combine la formation informatique avec le développement professionnel, les compétences comportementales, l'anglais, les activités de bien-être et un fort soutien à l'employabilité. Il aide des étudiants motivés à passer de zéro à l'état prêt pour l'emploi."
+      "subtitle": "Fort de 20 ans d’expérience de PNC, ce programme répond aux besoins du marché du travail en combinant formation en informatique, développement professionnel, compétences transversales, anglais, bien-être et accompagnement vers l’emploi. Il permet à des étudiants motivés de progresser de zéro jusqu’à une pleine préparation à l’insertion professionnelle."
     },
     "majors": {
       "major1_title": "Programmation Web",
@@ -230,22 +230,22 @@
     },
     "subject_support": {
       "english_pl": "Anglais & Préparation Professionnelle",
-      "english_pl_desc": "Les compétences techniques ouvrent les portes, mais les compétences professionnelles construisent la carrière. Nous intégrons quotidiennement la formation linguistique et des ateliers de savoir-être pour préparer les étudiants aux standards des environnements de travail internationaux.",
+      "english_pl_desc": "Les compétences techniques ouvrent des portes, mais ce sont les compétences professionnelles qui bâtissent une carrière. C’est pourquoi nous intégrons au quotidien des cours de langues et des ateliers de savoir-être afin de préparer les étudiants aux exigences du monde professionnel international.",
       "english_bage_title": "Immersion en Anglais",
       "english_bage_desc": "Communication professionnelle et anglais technique pour la documentation informatique.",
-      "pl_bage_title": "Compétences Comportementales",
+      "pl_bage_title": "Compétences Transversales",
       "pl_bage_desc": "Pensée critique, résolution de problèmes et intelligence émotionnelle.",
       "metoring_title": "Mentorat Professionnel",
       "metoring_desc": "Chaque étudiant est jumelé à un mentor qui l'accompagne dans ses choix de carrière, la préparation aux entretiens et les usages professionnels.",
       "metoring_highlight": "Réseau Professionnel",
-      "employment_title": "Soutien à l'Employabilité",
+      "employment_title": "Accompagnement vers l’emploi",
       "employment_desc": "Des ateliers CV aux entretiens simulés, notre équipe offre un accompagnement continu jusqu'à ce que l'étudiant décroche son premier emploi de qualité."
     },
     "selection": {
       "process_title": "Processus de Sélection",
-      "process_desc": "Chaque année, de janvier à octobre, nous sélectionnons 75 à 100 jeunes issus de milieux défavorisés, motivés à combler le fossé numérique.",
+      "process_desc": "Chaque année, de janvier à octobre, nous sélectionnons 75 à 100 jeunes issus de milieux défavorisés et motivés à réduire la fracture numérique.",
       "target_value": "50%",
-      "target_label": "Objectif pour les Étudiantes dans la Tech",
+      "target_label": "Objectif de parité : 50 % de femmes dans les filières technologiques",
       "step1": "Sensibilisation à travers le Cambodge",
       "step2": "Examen Écrit",
       "step3": "Entretiens Individuels",
@@ -347,7 +347,7 @@
       "subtitle": "Votre soutien impacte directement la vie de nos étudiants. Voici comment votre contribution est répartie :",
       "total_budget": "Le coût total pour un étudiant est d'environ 2 500 USD par an, couvrant tout, de l'enseignement informatique professionnel à leurs trois repas quotidiens et aux soins de santé.",
       "training": {
-        "label": "IT & Compétences Comportementales",
+        "label": "IT & Compétences Transversales",
         "desc": "Enseignement de haute qualité, développement des programmes et formation en anglais.",
         "value": "45%",
         "value_desc": "DU BUDGET"
