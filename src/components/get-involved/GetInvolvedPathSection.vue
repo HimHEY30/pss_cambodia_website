@@ -6,7 +6,7 @@
                 t('getInvolved.path_of_donation.subtitle') }}</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <DonationPathCard v-for="card in cards" :key="card.id" :icon="card.icon" :title="card.title"
                 :description="card.description" :value="card.value" :valueDesc="card.valueDesc" />
         </div>
@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import { BookOpen, Home, Monitor, Heart } from 'lucide-vue-next'
+import { GraduationCap, HouseHeart, BookCheck, University, BriefcaseBusiness } from 'lucide-vue-next'
 import { useI18n } from 'vue-i18n'
 import DonationPathCard from './DonationPathCard.vue'
 
@@ -27,35 +27,43 @@ const { t } = useI18n()
 const cards = [
     {
         id: 'training',
-        icon: BookOpen,
+        icon: GraduationCap,
         title: 'getInvolved.path_of_donation.training.label',
         description: 'getInvolved.path_of_donation.training.desc',
         value: 'getInvolved.path_of_donation.training.value',
         valueDesc: 'getInvolved.path_of_donation.training.value_desc',
     },
     {
-        id: 'food_house',
-        icon: Home,
-        title: 'getInvolved.path_of_donation.food_house.label',
-        description: 'getInvolved.path_of_donation.food_house.desc',
-        value: 'getInvolved.path_of_donation.food_house.value',
-        valueDesc: 'getInvolved.path_of_donation.food_house.value_desc',
+        id: 'social_support',
+        icon: HouseHeart,
+        title: 'getInvolved.path_of_donation.social_support.label',
+        description: 'getInvolved.path_of_donation.social_support.desc',
+        value: 'getInvolved.path_of_donation.social_support.value',
+        valueDesc: 'getInvolved.path_of_donation.social_support.value_desc',
     },
     {
-        id: 'tech_tools',
-        icon: Monitor,
-        title: 'getInvolved.path_of_donation.tech_tools.label',
-        description: 'getInvolved.path_of_donation.tech_tools.desc',
-        value: 'getInvolved.path_of_donation.tech_tools.value',
-        valueDesc: 'getInvolved.path_of_donation.tech_tools.value_desc',
+        id: 'selection',
+        icon: BookCheck,
+        title: 'getInvolved.path_of_donation.selection.label',
+        description: 'getInvolved.path_of_donation.selection.desc',
+        value: 'getInvolved.path_of_donation.selection.value',
+        valueDesc: 'getInvolved.path_of_donation.selection.value_desc',
     },
     {
-        id: 'health_support',
-        icon: Heart,
-        title: 'getInvolved.path_of_donation.health_support.label',
-        description: 'getInvolved.path_of_donation.health_support.desc',
-        value: 'getInvolved.path_of_donation.health_support.value',
-        valueDesc: 'getInvolved.path_of_donation.health_support.value_desc',
+        id: 'education',
+        icon: University,
+        title: 'getInvolved.path_of_donation.education.label',
+        description: 'getInvolved.path_of_donation.education.desc',
+        value: 'getInvolved.path_of_donation.education.value',
+        valueDesc: 'getInvolved.path_of_donation.education.value_desc',
+    },
+    {
+        id: 'employment',
+        icon: BriefcaseBusiness,
+        title: 'getInvolved.path_of_donation.employment.label',
+        description: 'getInvolved.path_of_donation.employment.desc',
+        value: 'getInvolved.path_of_donation.employment.value',
+        valueDesc: 'getInvolved.path_of_donation.employment.value_desc',
     },
 ]
 </script>

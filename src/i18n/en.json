@@ -345,29 +345,35 @@
     "path_of_donation": {
       "title": "Where Your Donation Goes",
       "subtitle": "Your support directly impacts our students' lives. Here's how your contribution is allocated:",
-      "total_budget": "The total cost for one student is roughly $2,500 per year, covering everything from professional IT instruction to their daily three meals and healthcare.",
+      "total_budget": "The total cost for one student is roughly $3,175 per year, covering everything from professional IT instruction to their daily three meals and healthcare.",
       "training": {
-        "label": "IT & Soft Skills",
-        "desc": "High-quality instruction, curriculum development, and English training.",
-        "value": "45%",
+        "label": "TRAINING",
+        "desc": "Provide our students with technical and professional skills suited to the local market.",
+        "value": "$1229",
         "value_desc": "OF BUDGET"
       },
-      "food_house": {
-        "label": "Food & Housing",
-        "desc": "Secure dormitory living and three nutritious warm meals every day.",
-        "value": "30%",
+      "social_support": {
+        "label": "SOCIAL SUPPORT",
+        "desc": "Cover the basic needs of students (food, healthcare, accommodation, etc.).",
+        "value": "$900",
         "value_desc": "OF BUDGET"
       },
-      "health_support": {
-        "label": "Healthcare & Prep",
-        "desc": "Fully covered medical costs and professional career orientation.",
-        "value": "10%",
+      "education": {
+        "label": "EDUCATION",
+        "desc": "Prepare students for an independent and responsible adult life, with an emphasis on gender awareness.",
+        "value": "$450",
         "value_desc": "OF BUDGET"
       },
-      "tech_tools": {
-        "label": "Tools & Tech",
-        "desc": "Laptops, networking equipment, and high-speed campus internet.",
-        "value": "15%",
+      "selection": {
+        "label": "SELECTION",
+        "desc": "Select underprivileged students from rural areas.",
+        "value": "$254",
+        "value_desc": "OF BUDGET"
+      },
+      "employment": {
+        "label": "EMPLOYMENT",
+        "desc": "Guide our students toward employment and professional development.",
+        "value": "$343",
         "value_desc": "OF BUDGET"
       }
     }

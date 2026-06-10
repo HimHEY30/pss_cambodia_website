@@ -345,29 +345,35 @@
     "path_of_donation": {
       "title": "Où Va Votre Don",
       "subtitle": "Votre soutien impacte directement la vie de nos étudiants. Voici comment votre contribution est répartie :",
-      "total_budget": "Le coût total pour un étudiant est d'environ 2 500 USD par an, couvrant tout, de l'enseignement informatique professionnel à leurs trois repas quotidiens et aux soins de santé.",
+      "total_budget": "Le coût total pour un étudiant est d'environ 3175 USD par an, couvrant tout, de l'enseignement informatique professionnel à leurs trois repas quotidiens et aux soins de santé.",
       "training": {
-        "label": "IT & Compétences Transversales",
-        "desc": "Enseignement de haute qualité, développement des programmes et formation en anglais.",
-        "value": "45%",
+        "label": "FORMATION",
+        "desc": "Offrir à nos étudiants des compétences techniques et professionnelles adaptées au marché local.",
+        "value": "$1229",
         "value_desc": "DU BUDGET"
       },
-      "food_house": {
-        "label": "Alimentation & Hébergement",
-        "desc": "Vie en dortoir sécurisée et trois repas chauds et nutritifs chaque jour.",
-        "value": "30%",
+      "social_support": {
+        "label": "SOUTIEN SOCIAL",
+        "desc": "Couvrir les besoins fondamentaux des étudiants (alimentation, soins de santé, hébergement, etc.).",
+        "value": "$900",
         "value_desc": "DU BUDGET"
       },
-      "health_support": {
-        "label": "Santé & Préparation",
-        "desc": "Frais médicaux entièrement pris en charge et orientation professionnelle.",
-        "value": "10%",
+      "education": {
+        "label": "ÉDUCATION",
+        "desc": "Préparer les étudiants à une vie adulte autonome et responsable, en mettant l'accent sur la sensibilisation au genre.",
+        "value": "$450",
         "value_desc": "DU BUDGET"
       },
-      "tech_tools": {
-        "label": "Outils & Technologie",
-        "desc": "Ordinateurs portables, équipements réseau et internet haut débit sur le campus.",
-        "value": "15%",
+      "selection": {
+        "label": "SÉLECTION",
+        "desc": "Sélectionner des étudiants défavorisés issus des zones rurales.",
+        "value": "$254",
+        "value_desc": "DU BUDGET"
+      },
+      "employment": {
+        "label": "EMPLOI",
+        "desc": "Accompagner nos étudiants vers l'emploi et le développement professionnel.",
+        "value": "$343",
         "value_desc": "DU BUDGET"
       }
     }
