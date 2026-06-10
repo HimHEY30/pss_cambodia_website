@@ -22,6 +22,28 @@ import bank_3 from "@/assets/images/partners/banks/BANK (3).png";
 import bank_4 from "@/assets/images/partners/banks/BANK (4).png";
 import bank_5 from "@/assets/images/partners/banks/BANK (5).png";
 
+// Companies partner logos
+import com_1 from "@/assets/images/partners/companies/COMPANY (1).png";
+import com_2 from "@/assets/images/partners/companies/COMPANY (2).png";
+import com_3 from "@/assets/images/partners/companies/COMPANY (3).png";
+import com_4 from "@/assets/images/partners/companies/COMPANY (4).png";
+import com_5 from "@/assets/images/partners/companies/COMPANY (5).png";
+import com_6 from "@/assets/images/partners/companies/COMPANY (6).png";
+import com_7 from "@/assets/images/partners/companies/COMPANY (7).png";
+import com_8 from "@/assets/images/partners/companies/COMPANY (8).png";
+import com_9 from "@/assets/images/partners/companies/COMPANY (9).png";
+import com_10 from "@/assets/images/partners/companies/COMPANY (10).png";
+import com_11 from "@/assets/images/partners/companies/COMPANY (11).png";
+import com_12 from "@/assets/images/partners/companies/COMPANY (12).png";
+import com_13 from "@/assets/images/partners/companies/COMPANY (13).png";
+import com_14 from "@/assets/images/partners/companies/COMPANY (14).png";
+import com_15 from "@/assets/images/partners/companies/COMPANY (15).png";
+import com_16 from "@/assets/images/partners/companies/COMPANY (16).png";
+import com_17 from "@/assets/images/partners/companies/COMPANY (17).png";
+import com_18 from "@/assets/images/partners/companies/COMPANY (18).png";
+import com_19 from "@/assets/images/partners/companies/COMPANY (19).png";
+import com_20 from "@/assets/images/partners/companies/COMPANY (20).png";
+
 // NGOs and International Organizations Partners Logos
 import ngo_1 from "@/assets/images/partners/ngos/NGO (1).png";
 import ngo_2 from "@/assets/images/partners/ngos/NGO (2).png";
@@ -45,6 +67,7 @@ import ngo_19 from "@/assets/images/partners/ngos/NGO (19).png";
 import ngo_20 from "@/assets/images/partners/ngos/NGO (20).png";
 import ngo_21 from "@/assets/images/partners/ngos/NGO (21).png";
 import ngo_22 from "@/assets/images/partners/ngos/NGO (22).png";
+import ngo_23 from "@/assets/images/partners/ngos/NGO (23).png";
 
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
@@ -55,9 +78,10 @@ const allLogos = [
   donor_1, donor_2, donor_3,
   uni_1, uni_2, uni_3, uni_4, uni_5,
   bank_1, bank_2, bank_3, bank_4, bank_5,
+  com_1, com_2, com_3, com_4, com_5, com_6, com_7, com_8, com_9, com_10, com_11, com_12, com_13, com_14, com_15, com_16, com_17, com_18, com_19, com_20,
   ngo_1, ngo_2, ngo_3, ngo_4, ngo_5, ngo_6, ngo_7, ngo_8,
   ngo_9, ngo_10, ngo_11, ngo_12, ngo_13, ngo_14, ngo_15,
-  ngo_16, ngo_17, ngo_18, ngo_19, ngo_20, ngo_21, ngo_22,
+  ngo_16, ngo_17, ngo_18, ngo_19, ngo_20, ngo_21, ngo_22, ngo_23
 ];
 
 // Split logos evenly across 3 rows
