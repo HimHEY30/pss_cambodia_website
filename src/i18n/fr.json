@@ -38,11 +38,6 @@
       "subtitle": "Promoting Skills for Success (PSS) est une ONG locale enregistrée auprès du Ministère de l'Intérieur du Cambodge. Elle lutte contre la pauvreté en révélant le potentiel des jeunes défavorisés grâce à l'accès à l'éducation numérique.",
       "button": "Faire un Don"
     },
-    "about": {
-      "eye_catching_title": "À Propos de Nous",
-      "title": "Lutter contre la Pauvreté grâce à l'Éducation Numérique",
-      "subtitle": "PSS est le partenaire opérationnel local de Passerelles Numériques Cambodia (PNC), fondé en 2005 à Phnom Penh, qui propose un programme de formation en informatique à temps plein de deux ans pour les jeunes issus de milieux défavorisés. Le programme combine l’apprentissage du développement logiciel aux compétences comportementales (soft skills), à l'anglais, aux activités de bien-être et à un soutien à l'insertion professionnelle. PSS apporte également un soutien technique à NomadLab, une solution open source d'infrastructure TIC utilisée comme outil pédagogique pour les clubs de jeunes, les étudiants, les enseignants et les détenus au Cambodge."
-    },
     "partner": {
       "title": "Nos Partenaires",
       "subtitle": "Nous sommes fiers de collaborer avec un large éventail de partenaires qui partagent notre mission d'autonomiser les jeunes grâce aux compétences et à l'éducation numérique."
@@ -94,7 +89,7 @@
       "eyes_catching_title": "À Propos de Nous",
       "title_line_01": "Promoting Skills for Success",
       "title_line_02": "",
-      "subtitle": "PSS est le partenaire opérationnel local de Passerelles Numériques Cambodia (PNC), fondé en 2005 à Phnom Penh, qui propose un programme de formation en informatique à temps plein de deux ans pour les jeunes issus de milieux défavorisés. Le programme combine l’apprentissage du développement logiciel aux compétences comportementales (soft skills), à l'anglais, aux activités de bien-être et à un soutien à l'insertion professionnelle. PSS apporte également un soutien technique à NomadLab, une solution open source d'infrastructure TIC utilisée comme outil pédagogique pour les clubs de jeunes, les étudiants, les enseignants et les détenus au Cambodge.",
+      "subtitle": "PSS est le partenaire opérationnel local de <a style='color:#22bbea' href='https://www.passerellesnumeriques.org/' target='_blank' class='custom-link'>Passerelles Numériques Cambodia (PNC)</a>, fondé en 2005 à Phnom Penh, qui propose un programme de formation en informatique à temps plein de deux ans pour les jeunes issus de milieux défavorisés. Le programme combine l’apprentissage du développement logiciel aux compétences comportementales (soft skills), à l'anglais, aux activités de bien-être et à un soutien à l'insertion professionnelle. PSS apporte également un soutien technique à NomadLab, une solution open source d'infrastructure TIC utilisée comme outil pédagogique pour les clubs de jeunes, les étudiants, les enseignants et les détenus au Cambodge.",
       "cta": "Découvrir notre impact"
     },
     "mission_vision": {

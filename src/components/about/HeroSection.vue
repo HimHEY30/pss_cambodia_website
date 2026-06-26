@@ -7,8 +7,7 @@
             {{ t('about.hero.title_line_01') }} <br/>
             <span class="text-slate-900">{{ t('about.hero.title_line_02') }}</span>
           </h1>
-          <p class="text-lg text-slate-600 max-w-xl leading-relaxed mb-8 opacity-90">
-           {{ t('about.hero.subtitle') }}
+          <p v-html="t('about.hero.subtitle')" class="text-lg text-slate-600 max-w-xl leading-relaxed mb-8 opacity-90">
           </p>
           <div class="flex gap-4">
             <router-link to="/impact" class="bg-[#F6A240] hover:bg-orange-500 text-white px-8 py-4 rounded-md font-bold transition-all shadow-lg hover:shadow-orange-200 hover:-translate-y-1 active:scale-95">
@@ -34,4 +33,14 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
+
+
 </script>
+
+<style scoped>
+  #link-pnc {
+    text-decoration: underline;
+    color: blue;
+    background: #000;
+  }
+</style>
